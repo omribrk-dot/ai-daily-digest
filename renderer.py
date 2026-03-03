@@ -72,6 +72,7 @@ class ArticleWrapper:
 
     def __init__(self, article: Article):
         self._article = article
+        self._category_display = ""
 
     def __getattr__(self, name):
         return getattr(self._article, name)
@@ -80,13 +81,25 @@ class ArticleWrapper:
     def time_ago(self):
         return _time_ago(self._article.published)
 
+    @property
+    def category_display(self):
+        return self._category_display
+
 
 def render_digest(
     articles: List[Article],
     max_age_hours: int = 48,
 ) -> str:
-    wrapped = [ArticleWrapper(a) for a in articles]
-    grouped = _group_articles(wrapped)
+    # Sort newest first for swipe UI
+    sorted_articles = sorted(articles, key=lambda a: a.published, reverse=True)
+    wrapped = [ArticleWrapper(a) for a in sorted_articles]
+
+    # Map category keys to Hebrew display names
+    cat_display = {k: v for k, v in CATEGORY_DISPLAY.items()}
+
+    for w in wrapped:
+        w._category_display = cat_display.get(w.category, w.category)
+
     source_names = set(a.source_name for a in articles)
 
     now = datetime.now(timezone.utc)
@@ -94,7 +107,7 @@ def render_digest(
     template = env.get_template("digest.html")
 
     return template.render(
-        grouped=grouped,
+        articles=wrapped,
         date_hebrew=_hebrew_date(now),
         total_articles=len(articles),
         total_sources=len(source_names),

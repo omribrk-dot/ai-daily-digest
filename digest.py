@@ -24,6 +24,7 @@ import yaml
 
 from fetcher import Article, fetch_all_rss
 from gmail_fetcher import fetch_gmail, discover_senders
+from splitter import split_articles
 from summarizer import summarize_articles
 from renderer import render_digest
 
@@ -182,7 +183,7 @@ def main():
     # Apply total limit
     new_articles = new_articles[:max_total]
 
-    # Summarize
+    # Split & Summarize
     if not args.dry_run:
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
@@ -195,6 +196,11 @@ def main():
         model = settings.get("model", "claude-sonnet-4-6")
         batch_size = settings.get("batch_size", 5)
         delay = settings.get("api_delay_seconds", 0.5)
+
+        # Split multi-topic newsletters into individual items
+        print(f"\nSplitting multi-topic newsletters...")
+        new_articles = split_articles(new_articles, api_key, model)
+        print(f"  After split: {len(new_articles)} articles")
 
         print(f"\nSummarizing {len(new_articles)} articles with {model}...")
         summarize_articles(new_articles, api_key, model, batch_size, delay)

@@ -1,55 +1,95 @@
 {
-  "last_updated": "2026-03-03T16:40:02.272683+00:00",
+  "last_updated": "2026-03-03T17:33:33.194467+00:00",
   "articles": {
-    "ef791025fa896518": {
-      "title": "OpenAI steps into Anthropic's Pentagon void",
-      "url": "https://www.therundown.ai/p/openai-steps-into-anthropic-pentagon-void",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "53d701c38d8db1c4": {
-      "title": "The new top banana in AI image generation",
-      "url": "https://www.therundown.ai/p/the-new-top-banana-in-ai-image-generation",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "fd1a98ed79347548": {
-      "title": "Perplexity's 19-model AI ‘Computer’",
-      "url": "https://www.therundown.ai/p/perplexitys-19-model-ai-computer",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "4e3aa55e3b14ba6e": {
-      "title": "Pentagon hits Claude with scary AI ultimatum",
-      "url": "https://www.therundown.ai/p/pentagon-hits-claude-with-scary-ai-ultimatum",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "3f6c6c5c4fca5103": {
-      "title": "We’re Speaking Different Languages",
-      "url": "https://edwardelson.substack.com/p/were-speaking-different-languages",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "e604c64e3c6e0898": {
-      "title": "Anthropic calls out China's AI copycats",
-      "url": "https://www.therundown.ai/p/anthropic-calls-out-china-ai-copycats",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
-    "0cfd060a8de9fc9c": {
-      "title": "🗞️ OpenAI war pact",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-02T11:53:04.692728+00:00"
-    },
     "f09ed9084ab02355": {
-      "title": "Someone Needs To Go To Jail",
+      "title": "US-Iran Conflict Dominates Geopolitical Landscape",
       "url": "https://edwardelson.substack.com/p/someone-needs-to-go-to-jail",
-      "first_seen": "2026-03-03T16:24:40.515514+00:00"
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
     },
     "4939da27e3e4a026": {
-      "title": "Supreme Court ducks AI copyright question",
+      "title": "Supreme Court décline de se prononcer sur le droit d'auteur lié à l'IA",
       "url": "https://www.therundown.ai/p/supreme-court-ducks-ai-copyright-question",
-      "first_seen": "2026-03-03T16:24:40.515514+00:00"
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
     },
-    "d2cafd13a39e803c": {
-      "title": "🗞️ Elon debt purge",
+    "ef791025fa896518": {
+      "title": "OpenAI Signs Government Deal as Anthropic Loses Pentagon Contract",
+      "url": "https://www.therundown.ai/p/openai-steps-into-anthropic-pentagon-void",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "53d701c38d8db1c4": {
+      "title": "Google's Nano Banana 2 reclaims top spot in AI image generation",
+      "url": "https://www.therundown.ai/p/the-new-top-banana-in-ai-image-generation",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "fd1a98ed79347548": {
+      "title": "Perplexity lance 'Computer', un agent IA orchestrant 19 modèles différents",
+      "url": "https://www.therundown.ai/p/perplexitys-19-model-ai-computer",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "4e3aa55e3b14ba6e": {
+      "title": "Pentagon issues ultimatum to Anthropic over AI safeguards for weapons and survei",
+      "url": "https://www.therundown.ai/p/pentagon-hits-claude-with-scary-ai-ultimatum",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "6680677cc3c432f5": {
+      "title": "OpenAI to amend Department of War contract to bar domestic surveillance use",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T16:40:02.272578+00:00"
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "483a8fbd62a10af5": {
+      "title": "Anthropic boycott spreads as State Department shifts to OpenAI",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "4700265c32dd841b": {
+      "title": "Elon's X and xAI said to repay $17.5B debt in full as SpaceX IPO nears",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "12078a8cd8e43d21": {
+      "title": "Alibaba launches Qwen3.5 small open-weight models",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "db4286bd6b9327af": {
+      "title": "Reflection AI said to seek $2B+ raise at $20B+ valuation",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "ae48d1ab0bb6965f": {
+      "title": "Apple unveils $599+ iPhone 17e with A19 chip, ships March 11",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "3f22c94286d70f44": {
+      "title": "OpenAI partners with DoD on AI deployment after Anthropic blacklisted",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "3d9309b38800579e": {
+      "title": "Paramount to acquire WBD in $111B deal, paying Netflix $2.8B",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "be0a0757cce11de6": {
+      "title": "Brent oil surges 6% to $77/barrel after U.S.-Israel strikes on Iran",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "97ffb4fefaf7c1e5": {
+      "title": "SpaceX weighs confidential IPO filing in March, eyes June listing",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "9256f5487a8887e4": {
+      "title": "OpenAI raises $110B at $840B valuation backed by Amazon, NVIDIA, SoftBank",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
+    },
+    "4b129df761410d76": {
+      "title": "Billionaire mortality analysis finds ~90% of deaths age-related",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-03T17:33:33.191643+00:00"
     }
   }
 }

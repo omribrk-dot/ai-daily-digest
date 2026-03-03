@@ -1,6 +1,6 @@
 settings:
   model: "claude-sonnet-4-6"
-  max_articles_per_source: 5
+  max_articles_per_source: 10
   max_total_articles: 50
   max_age_hours: 168  # 7 days - covers weekly newsletters
   batch_size: 5

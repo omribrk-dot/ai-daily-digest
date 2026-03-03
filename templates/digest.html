@@ -235,12 +235,11 @@
             border-top: 1px solid var(--border);
         }
 
-        .card-snippet {
-            font-size: 0.85rem;
-            color: var(--text-tertiary);
-            line-height: 1.7;
+        .card-detail {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
             margin-bottom: 14px;
-            font-style: italic;
         }
 
         .card-read-more {
@@ -506,21 +505,19 @@
             <div class="date">{{ date_hebrew }}</div>
         </header>
 
-        {% if grouped %}
+        {% if articles %}
         <div class="progress-container">
             <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
             <span class="progress-text" id="progressText">0 / {{ total_articles }}</span>
         </div>
 
         <div class="card-stack" id="cardStack">
-            {% set ns = namespace(idx=0) %}
-            {% for category_name, articles in grouped.items() %}
             {% for article in articles %}
             <div class="card"
-                 data-index="{{ ns.idx }}"
+                 data-index="{{ loop.index0 }}"
                  data-id="{{ article.id }}"
                  data-source="{{ article.source_name }}"
-                 data-category="{{ category_name }}"
+                 data-category="{{ article.category_display }}"
                  data-url="{{ article.url }}"
                  style="display:none;">
 
@@ -528,18 +525,18 @@
                 <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
 
                 <div class="card-inner">
-                    <div class="card-category">{{ category_name }}</div>
+                    <div class="card-category">{{ article.source_name }}</div>
                     <h2 class="card-title">{{ article.title }}</h2>
                     <p class="card-summary">{{ article.summary_he }}</p>
                     <div class="card-meta">
-                        <span class="source-badge">{{ article.source_name }}</span>
+                        <span class="source-badge">{{ article.category_display }}</span>
                         <span class="card-time">{{ article.time_ago }}</span>
                     </div>
 
                     <div class="card-expanded">
                         <div class="card-expanded-inner">
-                            {% if article.content_snippet %}
-                            <p class="card-snippet">{{ article.content_snippet[:300] }}</p>
+                            {% if article.detail_he %}
+                            <p class="card-detail">{{ article.detail_he }}</p>
                             {% endif %}
                             <a href="{{ article.url }}" target="_blank" rel="noopener" class="card-read-more">
                                 קרא את המאמר המלא
@@ -553,8 +550,6 @@
                     </button>
                 </div>
             </div>
-            {% set ns.idx = ns.idx + 1 %}
-            {% endfor %}
             {% endfor %}
         </div>
 
@@ -578,7 +573,7 @@
         </footer>
     </div>
 
-    {% if grouped %}
+    {% if articles %}
     <script>
     (function() {
         'use strict';

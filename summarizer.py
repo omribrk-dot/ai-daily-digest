@@ -15,11 +15,15 @@ from fetcher import Article
 logger = logging.getLogger(__name__)
 
 BATCH_PROMPT = """You are a tech news summarizer for an Israeli AI audience.
-For each article below, write a 2-3 sentence summary IN HEBREW.
-Capture the key news and why it matters. Clear, informative tone. No hype, no exclamation marks.
+For each article below, produce TWO things IN HEBREW:
+
+1. "summary" - 2-3 sentence summary capturing the key news and why it matters.
+2. "detail" - 1-2 sentences that DEEPEN the same topics from the summary. Add a specific number, quote, context, or implication that makes the summary richer. Do NOT introduce new topics - stay on the same story.
+
+Clear, informative tone. No hype, no exclamation marks.
 
 Output ONLY a JSON array:
-[{{"index": 0, "summary": "..."}}, {{"index": 1, "summary": "..."}}, ...]
+[{{"index": 0, "summary": "...", "detail": "..."}}, {{"index": 1, "summary": "...", "detail": "..."}}, ...]
 
 Articles:
 
@@ -33,25 +37,28 @@ def _build_batch_text(articles: List[Article]) -> str:
     return "\n".join(parts)
 
 
-def _parse_response(text: str, count: int) -> List[str]:
+def _parse_response(text: str, count: int) -> List[dict]:
     # Try to extract JSON from response (handles code fences, preamble text)
     json_match = re.search(r"\[.*\]", text, re.DOTALL)
     if not json_match:
         logger.warning("No JSON array found in response")
-        return [""] * count
+        return [{"summary": "", "detail": ""}] * count
 
     try:
         data = json.loads(json_match.group())
     except json.JSONDecodeError as e:
         logger.warning(f"JSON parse error: {e}")
-        return [""] * count
+        return [{"summary": "", "detail": ""}] * count
 
-    summaries = [""] * count
+    results = [{"summary": "", "detail": ""}] * count
     for item in data:
         idx = item.get("index", -1)
         if 0 <= idx < count:
-            summaries[idx] = item.get("summary", "")
-    return summaries
+            results[idx] = {
+                "summary": item.get("summary", ""),
+                "detail": item.get("detail", ""),
+            }
+    return results
 
 
 def summarize_articles(
@@ -75,18 +82,18 @@ def summarize_articles(
         logger.info(f"Summarizing batch {batch_num}/{total_batches} ({len(batch)} articles)")
 
         prompt = BATCH_PROMPT.format(articles_text=_build_batch_text(batch))
-        summaries = None
+        results = None
 
         for attempt in range(3):
             try:
                 response = client.messages.create(
                     model=model,
-                    max_tokens=2000,
+                    max_tokens=4000,
                     messages=[{"role": "user", "content": prompt}],
                 )
                 total_input_tokens += response.usage.input_tokens
                 total_output_tokens += response.usage.output_tokens
-                summaries = _parse_response(response.content[0].text, len(batch))
+                results = _parse_response(response.content[0].text, len(batch))
                 break
 
             except anthropic.RateLimitError:
@@ -99,11 +106,12 @@ def summarize_articles(
                 if attempt < 2:
                     time.sleep(2)
 
-        if summaries is None:
-            summaries = [""] * len(batch)
+        if results is None:
+            results = [{"summary": "", "detail": ""}] * len(batch)
 
-        for article, summary in zip(batch, summaries):
-            article.summary_he = summary or "[סיכום לא זמין]"
+        for article, result in zip(batch, results):
+            article.summary_he = result["summary"] or "[סיכום לא זמין]"
+            article.detail_he = result.get("detail", "")
 
         if i + batch_size < len(articles):
             time.sleep(delay)

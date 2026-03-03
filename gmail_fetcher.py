@@ -91,7 +91,7 @@ def _extract_email_content(payload: dict) -> str:
     else:
         text = ""
 
-    return re.sub(r"\s+", " ", text).strip()[:1000]
+    return re.sub(r"\s+", " ", text).strip()[:3000]
 
 
 def _get_header(headers: list, name: str) -> str:
@@ -207,7 +207,7 @@ def fetch_gmail(senders: List[dict], max_age_hours: int = 48) -> List[Article]:
                 source_name=source_name,
                 category="newsletters",
                 published=published,
-                content_snippet=content[:500],
+                content_snippet=content[:2000],
             ))
 
         except Exception as e:

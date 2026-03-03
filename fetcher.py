@@ -26,6 +26,7 @@ class Article:
     published: datetime
     content_snippet: str
     summary_he: str = ""
+    detail_he: str = ""
 
 
 def _make_id(url: str) -> str:
