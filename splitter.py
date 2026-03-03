@@ -17,23 +17,27 @@ from fetcher import Article, _make_id
 
 logger = logging.getLogger(__name__)
 
-SPLIT_PROMPT = """You are analyzing a newsletter email to extract individual news items.
+SPLIT_PROMPT = """You are analyzing a newsletter email to extract individual NEWS ITEMS for a tech/AI digest.
 
-The email below may contain MULTIPLE separate news stories. Your job is to identify each distinct news story and extract it.
+The email below may contain MULTIPLE separate news stories. Your job is to identify each STANDALONE news item and extract it.
 
 Rules:
-- Each news story should be about a DIFFERENT topic/company/event
+- Each item must be a SPECIFIC, CONCRETE news event (e.g. "Company X raised $Y", "Product Z launched")
+- Skip vague summaries or roundup paragraphs that just overview multiple topics without details
 - Skip promotional content, ads, and "read more" teasers with no substance
-- Skip items that are just a headline with no real content
-- Keep only items that have enough substance for a meaningful summary
-- If the email contains only ONE topic, return just that one item
+- Skip items that are just a headline with no real content (need at least 1-2 sentences of substance)
+- Skip items not related to tech, AI, or business/markets
+- Do NOT create duplicate items about the same event
+- Titles must be in ENGLISH
+- If the email contains only ONE real news item, return just that one item
+- Maximum 5 items per email - pick the most newsworthy ones
 
 Output ONLY a JSON array:
 [{{"index": 0, "title": "...", "content": "..."}}, ...]
 
 Where:
-- "title" = a clear, concise headline for this specific news item (in the original language)
-- "content" = the relevant text/details for this item (2-4 sentences of source content)
+- "title" = a clear, specific English headline for this news item (what happened, to whom)
+- "content" = the key facts for this item (2-4 sentences from the source)
 
 Email subject: {subject}
 Email source: {source}
