@@ -15,15 +15,16 @@ from fetcher import Article
 logger = logging.getLogger(__name__)
 
 BATCH_PROMPT = """You are a tech news summarizer for an Israeli AI audience.
-For each article below, produce TWO things IN HEBREW:
+For each article below, produce THREE things IN HEBREW:
 
-1. "summary" - 2-3 sentence summary capturing the key news and why it matters.
-2. "detail" - 1-2 sentences that DEEPEN the same topics from the summary. Add a specific number, quote, context, or implication that makes the summary richer. Do NOT introduce new topics - stay on the same story.
+1. "title_he" - A clear, concise Hebrew headline for this news item.
+2. "summary" - 2-3 sentence summary capturing the key news and why it matters.
+3. "detail" - 1-2 sentences that DEEPEN the same topics from the summary. Add a specific number, quote, context, or implication that makes the summary richer. Do NOT introduce new topics - stay on the same story.
 
 Clear, informative tone. No hype, no exclamation marks.
 
 Output ONLY a JSON array:
-[{{"index": 0, "summary": "...", "detail": "..."}}, {{"index": 1, "summary": "...", "detail": "..."}}, ...]
+[{{"index": 0, "title_he": "...", "summary": "...", "detail": "..."}}, ...]
 
 Articles:
 
@@ -42,21 +43,22 @@ def _parse_response(text: str, count: int) -> List[dict]:
     json_match = re.search(r"\[.*\]", text, re.DOTALL)
     if not json_match:
         logger.warning("No JSON array found in response")
-        return [{"summary": "", "detail": ""}] * count
+        return [{"summary": "", "detail": "", "title_he": ""}] * count
 
     try:
         data = json.loads(json_match.group())
     except json.JSONDecodeError as e:
         logger.warning(f"JSON parse error: {e}")
-        return [{"summary": "", "detail": ""}] * count
+        return [{"summary": "", "detail": "", "title_he": ""}] * count
 
-    results = [{"summary": "", "detail": ""}] * count
+    results = [{"summary": "", "detail": "", "title_he": ""}] * count
     for item in data:
         idx = item.get("index", -1)
         if 0 <= idx < count:
             results[idx] = {
                 "summary": item.get("summary", ""),
                 "detail": item.get("detail", ""),
+                "title_he": item.get("title_he", ""),
             }
     return results
 
@@ -112,6 +114,8 @@ def summarize_articles(
         for article, result in zip(batch, results):
             article.summary_he = result["summary"] or "[סיכום לא זמין]"
             article.detail_he = result.get("detail", "")
+            if result.get("title_he"):
+                article.title = result["title_he"]
 
         if i + batch_size < len(articles):
             time.sleep(delay)

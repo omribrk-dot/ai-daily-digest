@@ -28,7 +28,7 @@ Rules:
 - Skip items that are just a headline with no real content (need at least 1-2 sentences of substance)
 - Skip items not related to tech, AI, or business/markets
 - Do NOT create duplicate items about the same event
-- Titles must be in ENGLISH
+- Titles must be in HEBREW
 - If the email contains only ONE real news item, return just that one item
 - Maximum 5 items per email - pick the most newsworthy ones
 
@@ -36,7 +36,7 @@ Output ONLY a JSON array:
 [{{"index": 0, "title": "...", "content": "..."}}, ...]
 
 Where:
-- "title" = a clear, specific English headline for this news item (what happened, to whom)
+- "title" = a clear, specific HEBREW headline for this news item (what happened, to whom)
 - "content" = the key facts for this item (2-4 sentences from the source)
 
 Email subject: {subject}

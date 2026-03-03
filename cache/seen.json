@@ -1,85 +1,70 @@
 {
-  "last_updated": "2026-03-03T17:50:12.850200+00:00",
+  "last_updated": "2026-03-03T18:27:27.665597+00:00",
   "articles": {
     "f09ed9084ab02355": {
-      "title": "Someone Needs To Go To Jail",
+      "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
       "url": "https://edwardelson.substack.com/p/someone-needs-to-go-to-jail",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "4939da27e3e4a026": {
-      "title": "Supreme Court Declines to Hear Major AI Copyright Authorship Case",
+      "title": "בית המשפט העליון האמריקאי לא ידון בזכויות יוצרים ליצירות AI",
       "url": "https://www.therundown.ai/p/supreme-court-ducks-ai-copyright-question",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "ef791025fa896518": {
-      "title": "OpenAI Signs Pentagon Deal After Anthropic Booted as 'Supply Chain Risk'",
+      "title": "OpenAI חותמת על חוזה פנטגון לאחר שממשל טראמפ הדיח את Anthropic",
       "url": "https://www.therundown.ai/p/openai-steps-into-anthropic-pentagon-void",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "53d701c38d8db1c4": {
-      "title": "Google Launches Nano Banana 2, Reclaims Top Spot in AI Image Generation",
+      "title": "גוגל משיקה Imagen 3: מודל ייצור תמונות המוביל בלידרבורדים במחיר מחצית המתחרים",
       "url": "https://www.therundown.ai/p/the-new-top-banana-in-ai-image-generation",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "fd1a98ed79347548": {
-      "title": "Perplexity Launches 'Computer' AI Agent Powered by 19 Models",
+      "title": "פרפלקסיטי משיקה 'מחשב AI' המתזמר 19 מודלים ממעבדות שונות",
       "url": "https://www.therundown.ai/p/perplexitys-19-model-ai-computer",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "4e3aa55e3b14ba6e": {
-      "title": "Pentagon Issues Ultimatum to Anthropic to Remove Claude's Safety Guardrails for ",
+      "title": "הפנטגון דורש מאנתרופיק להסיר הגנות בטיחות מ-Claude",
       "url": "https://www.therundown.ai/p/pentagon-hits-claude-with-scary-ai-ultimatum",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "6680677cc3c432f5": {
-      "title": "OpenAI to Amend Department of War Contract to Bar Domestic Surveillance Use",
+      "title": "אלטמן: OpenAI תתקן חוזה עם הפנטגון כדי לאסור מעקב פנים-אמריקאי",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "483a8fbd62a10af5": {
-      "title": "Anthropic Boycott Spreads Across U.S. Government Agencies as State Department Sh",
+      "title": "חרם ממשלתי על אנתרופיק מתרחב: מחלקות פדרליות עוברות ל-OpenAI",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
-    },
-    "4700265c32dd841b": {
-      "title": "Elon Musk's X and xAI Said to Repay $17.5B Debt in Full as SpaceX IPO Nears",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
-    },
-    "12078a8cd8e43d21": {
-      "title": "Alibaba Launches Qwen3.5 Small Open-Weight AI Models",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
-    },
-    "db4286bd6b9327af": {
-      "title": "Apple Unveils $599+ iPhone 17e with A19 Chip, Shipping March 11",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "3f22c94286d70f44": {
-      "title": "OpenAI Partners with Department of Defense on AI Deployment After Anthropic Blac",
+      "title": "OpenAI חותמת על שותפות עם הפנטגון בעוד אנתרופיק מוחרמת",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "3d9309b38800579e": {
-      "title": "Pentagon Designates Anthropic a Supply Chain Risk, Triggering Industry Backlash",
+      "title": "הפנטגון מייעד את אנתרופיק כ'סיכון שרשרת אספקה'; אנתרופיק מאיימת בתביעה",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "be0a0757cce11de6": {
-      "title": "OpenAI Raises $110B at $840B Valuation Backed by Amazon, NVIDIA, and SoftBank",
+      "title": "OpenAI גייסה 110 מיליארד דולר בשווי של 840 מיליארד דולר",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "97ffb4fefaf7c1e5": {
-      "title": "Paramount to Acquire Warner Bros. Discovery in $111B Deal, Paying Netflix $2.8B",
+      "title": "מיזוג ענק: פרמאונט רוכשת את Warner Bros. Discovery ב-111 מיליארד דולר",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     },
     "9256f5487a8887e4": {
-      "title": "SpaceX Weighs Confidential IPO Filing in March, Eyes June Listing",
+      "title": "SpaceX שוקלת הנפקה פומבית: בקשת IPO סודית במרץ, כניסה לבורסה ביוני",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T17:50:12.845036+00:00"
+      "first_seen": "2026-03-03T18:27:27.664669+00:00"
     }
   }
 }
