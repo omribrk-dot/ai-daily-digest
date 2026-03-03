@@ -1,0 +1,26 @@
+settings:
+  model: "claude-sonnet-4-6"
+  max_articles_per_source: 5
+  max_total_articles: 50
+  max_age_hours: 168  # 7 days - covers weekly newsletters
+  batch_size: 5
+  api_delay_seconds: 0.5
+  open_in_browser: true
+
+sources:
+  rss:
+    - name: "The Rundown AI"
+      url: "https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml"
+      category: "newsletters"
+
+    - name: "Simply Put (Ed Elson)"
+      url: "https://edwardelson.substack.com/feed"
+      category: "newsletters"
+
+  gmail:
+    enabled: true
+    senders:
+      - name: "Bay Area Times"
+        email: "bayareatimes@bayareatimes.com"
+      - name: "Substack Newsletters"
+        email: "no-reply@substack.com"

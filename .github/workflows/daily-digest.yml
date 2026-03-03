@@ -1,0 +1,53 @@
+name: Daily AI Digest
+
+on:
+  schedule:
+    # Run 3 times a day (Israel time: 7:00, 14:00, 21:00)
+    - cron: '0 4,11,18 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore Gmail credentials
+        run: |
+          mkdir -p credentials
+          echo '${{ secrets.GMAIL_CLIENT_SECRET }}' > credentials/client_secret.json
+          echo '${{ secrets.GMAIL_TOKEN }}' > credentials/token.json
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python digest.py --no-open
+
+      - name: Copy to docs for GitHub Pages
+        run: |
+          mkdir -p docs
+          cp output/*.html docs/
+          # Create index.html that redirects to latest digest
+          LATEST=$(ls -t output/*.html | head -1 | xargs basename)
+          echo "<meta http-equiv='refresh' content='0; url=$LATEST'>" > docs/index.html
+
+      - name: Commit and push output
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/ cache/seen.json
+          git diff --staged --quiet || git commit -m "Daily digest $(date +%Y-%m-%d)"
+          git push
