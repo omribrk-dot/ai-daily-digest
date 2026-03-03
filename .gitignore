@@ -1,7 +1,7 @@
 .venv/
 .env
 output/
-cache/
+cache/*.tmp
 credentials/token.json
 credentials/client_secret.json
 __pycache__/
