@@ -1,40 +1,50 @@
 {
-  "last_updated": "2026-03-03T16:07:52.105097+00:00",
+  "last_updated": "2026-03-03T16:24:40.517034+00:00",
   "articles": {
-    "4939da27e3e4a026": {
-      "title": "Supreme Court ducks AI copyright question",
-      "url": "https://www.therundown.ai/p/supreme-court-ducks-ai-copyright-question",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
-    },
     "ef791025fa896518": {
       "title": "OpenAI steps into Anthropic's Pentagon void",
       "url": "https://www.therundown.ai/p/openai-steps-into-anthropic-pentagon-void",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
     },
     "53d701c38d8db1c4": {
       "title": "The new top banana in AI image generation",
       "url": "https://www.therundown.ai/p/the-new-top-banana-in-ai-image-generation",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
     },
     "fd1a98ed79347548": {
       "title": "Perplexity's 19-model AI ‘Computer’",
       "url": "https://www.therundown.ai/p/perplexitys-19-model-ai-computer",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
     },
     "4e3aa55e3b14ba6e": {
       "title": "Pentagon hits Claude with scary AI ultimatum",
       "url": "https://www.therundown.ai/p/pentagon-hits-claude-with-scary-ai-ultimatum",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
     },
-    "d2cafd13a39e803c": {
-      "title": "🗞️ Elon debt purge",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+    "3f6c6c5c4fca5103": {
+      "title": "We’re Speaking Different Languages",
+      "url": "https://edwardelson.substack.com/p/were-speaking-different-languages",
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
+    },
+    "e604c64e3c6e0898": {
+      "title": "Anthropic calls out China's AI copycats",
+      "url": "https://www.therundown.ai/p/anthropic-calls-out-china-ai-copycats",
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
     },
     "0cfd060a8de9fc9c": {
       "title": "🗞️ OpenAI war pact",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
-      "first_seen": "2026-03-03T16:07:52.105005+00:00"
+      "first_seen": "2026-03-02T11:53:04.692728+00:00"
+    },
+    "f09ed9084ab02355": {
+      "title": "Someone Needs To Go To Jail",
+      "url": "https://edwardelson.substack.com/p/someone-needs-to-go-to-jail",
+      "first_seen": "2026-03-03T16:24:40.515514+00:00"
+    },
+    "4939da27e3e4a026": {
+      "title": "Supreme Court ducks AI copyright question",
+      "url": "https://www.therundown.ai/p/supreme-court-ducks-ai-copyright-question",
+      "first_seen": "2026-03-03T16:24:40.515514+00:00"
     }
   }
 }
