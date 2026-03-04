@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-04T05:10:26.478454+00:00",
+  "last_updated": "2026-03-04T11:33:00.967800+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -80,6 +80,41 @@
       "title": "Apple מציגה את iPhone 17e במחיר 599 דולר עם שבב A19",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d",
       "first_seen": "2026-03-03T18:48:58.467182+00:00"
+    },
+    "29d9a34da489dcf6": {
+      "title": "עסקת הפנטגון של OpenAI הפכה למשבר מותג: אולטמן מודה בנזק",
+      "url": "https://www.therundown.ai/p/altman-faces-the-fallout-from-openai-s-pentagon-deal",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "ec00f3ca3a75f3c7": {
+      "title": "Anthropic חצתה $19 מיליארד ARR וטוענת לשימור לקוחות גבוה מ-OpenAI",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "e8c670fdcd16143a": {
+      "title": "Anduril שוקלת גיוס של $4 מיליארד לפי שווי של $60 מיליארד",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "a07b312af024981d": {
+      "title": "OpenAI משיקה GPT-5.3 Instant עם יכולות חיפוש אינטרנט משופרות",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "29ee0a224ffd3415": {
+      "title": "גוגל משיקה Gemini 3.1 Flash-Lite: מודל מהיר ויעיל יותר",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "bf5a65d5168d28f3": {
+      "title": "OpenAI שוקלת פריסת מערכות AI על רשתות NATO לא מסווגות",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
+    },
+    "0cfd060a8de9fc9c": {
+      "title": "OpenAI חותמת על הסכם עם משרד ההגנה האמריקאי בעוד Anthropic מואשמת בסיכון שרשרת א",
+      "url": "https://mail.google.com/mail/u/0/#inbox/19cae4da0d5d5d7b",
+      "first_seen": "2026-03-04T11:33:00.967691+00:00"
     }
   }
 }
