@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AI Daily Digest - יום שישי, 6 במרץ 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F5F5F0;
+            --surface: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --text-tertiary: #888888;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --border: #E8E8E5;
+            --category-bg: #EDEDEA;
+            --badge-bg: #F0F0ED;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+            --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+            --like-color: #22C55E;
+            --nope-color: #EF4444;
+            --radius: 20px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0F0F0F;
+                --surface: #1A1A1A;
+                --text-primary: #EAEAEA;
+                --text-secondary: #B0B0B0;
+                --text-tertiary: #666666;
+                --accent: #60A5FA;
+                --accent-hover: #93C5FD;
+                --border: #2A2A2A;
+                --category-bg: #252525;
+                --badge-bg: #2A2A2A;
+                --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+                --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+                --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Heebo', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow: hidden;
+            height: 100dvh;
+            position: fixed;
+            width: 100%;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            height: 100dvh;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 16px 16px 0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding-bottom: 12px;
+            flex-shrink: 0;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        header .date {
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        /* Progress */
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0 12px;
+            flex-shrink: 0;
+        }
+
+        .progress-track {
+            flex: 1;
+            height: 3px;
+            background: var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            white-space: nowrap;
+            min-width: 45px;
+            text-align: center;
+            direction: ltr;
+            unicode-bidi: isolate;
+        }
+
+        /* Card Stack */
+        .card-stack {
+            position: relative;
+            flex: 1;
+            min-height: 0;
+            margin-bottom: 8px;
+        }
+
+        .card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            user-select: none;
+            will-change: transform, opacity;
+            touch-action: pan-y;
+        }
+
+        .card.swiping {
+            transition: none !important;
+        }
+
+        .card.animate-out {
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        }
+
+        .card.swipe-right {
+            transform: translateX(120%) rotate(15deg) !important;
+            opacity: 0 !important;
+        }
+
+        .card.swipe-left {
+            transform: translateX(-120%) rotate(-15deg) !important;
+            opacity: 0 !important;
+        }
+
+        .card-inner {
+            height: 100%;
+            overflow-y: auto;
+            padding: 24px 20px 80px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* Card content */
+        .card-category {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-tertiary);
+            background: var(--category-bg);
+            padding: 3px 10px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-summary {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.78rem;
+            margin-bottom: 12px;
+        }
+
+        .source-badge {
+            background: var(--badge-bg);
+            color: var(--text-tertiary);
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .card-time {
+            color: var(--text-tertiary);
+        }
+
+        /* Expand section */
+        .card-expanded {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out;
+        }
+
+        .card-expanded.open {
+            max-height: 400px;
+        }
+
+        .card-expanded-inner {
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .card-detail {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .card-read-more {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background 0.15s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-read-more:hover { background: var(--accent-hover); }
+
+        .expand-btn {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--accent);
+            padding: 8px 16px;
+            font-family: inherit;
+            font-size: 0.82rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 4px;
+            transition: background 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .expand-btn:hover { background: var(--category-bg); }
+
+        .expand-icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 0.7rem;
+        }
+
+        .expand-btn.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Swipe indicators */
+        .swipe-indicator {
+            position: absolute;
+            top: 30px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .swipe-indicator.like {
+            right: 20px;
+            border: 3px solid var(--like-color);
+            color: var(--like-color);
+            transform: rotate(12deg);
+        }
+
+        .swipe-indicator.nope {
+            left: 20px;
+            border: 3px solid var(--nope-color);
+            color: var(--nope-color);
+            transform: rotate(-12deg);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 12px 0;
+            flex-shrink: 0;
+            padding-bottom: max(12px, env(safe-area-inset-bottom));
+        }
+
+        .action-btn {
+            border-radius: 50%;
+            border: 2px solid var(--border);
+            background: var(--surface);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .action-btn:active { transform: scale(0.9); }
+
+        .action-btn.nope-btn {
+            width: 52px; height: 52px;
+            font-size: 1.3rem;
+            color: var(--nope-color);
+        }
+
+        .action-btn.like-btn {
+            width: 52px; height: 52px;
+            font-size: 1.3rem;
+            color: var(--like-color);
+        }
+
+        .action-btn.expand-action-btn {
+            width: 40px; height: 40px;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+
+        /* Summary Screen */
+        .summary-screen {
+            flex: 1;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .summary-screen.hidden {
+            display: none;
+        }
+
+        .summary-content {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .summary-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .summary-stats {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 28px;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+        }
+
+        .stat.liked .stat-number { color: var(--like-color); }
+        .stat.skipped .stat-number { color: var(--nope-color); }
+
+        .liked-list {
+            list-style: none;
+            text-align: right;
+            margin: 16px 0;
+        }
+
+        .liked-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .liked-list li:last-child { border-bottom: none; }
+
+        .liked-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.92rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .liked-list a:hover { color: var(--accent); }
+
+        .liked-list .source-badge {
+            font-size: 0.72rem;
+        }
+
+        .summary-section {
+            margin-top: 24px;
+            text-align: right;
+        }
+
+        .summary-section h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .summary-insight {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            background: var(--category-bg);
+            padding: 14px 16px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .reset-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: background 0.15s;
+        }
+
+        .reset-btn:hover { background: var(--accent-hover); }
+
+        /* Empty state */
+        .empty {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-tertiary);
+        }
+
+        .empty h2 { font-size: 1.2rem; font-weight: 500; margin-bottom: 8px; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 8px 0;
+            flex-shrink: 0;
+        }
+
+        footer p {
+            font-size: 0.7rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Desktop adjustments */
+        @media (min-width: 600px) {
+            .app { padding: 24px 24px 0; }
+            .card-inner { padding: 28px 24px 80px; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>AI Daily Digest</h1>
+            <div class="date">יום שישי, 6 במרץ 2026</div>
+        </header>
+
+        
+        <div class="progress-container">
+            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">0 / 15</span>
+        </div>
+
+        <div class="card-stack" id="cardStack">
+            
+            <div class="card"
+                 data-index="0"
+                 data-id="db162b595e1fffb0"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">OpenAI חוצה 25 מיליארד דולר בהכנסות שנתיות ומתכוננת להנפקה</h2>
+                    <p class="card-summary">הכנסות OpenAI עברו את רף 25 מיליארד דולר בסוף פברואר 2025, עם שיא של כ-30 מיליארד דולר בחישוב שבועי שיא. החברה מתכוננת להנפקה ציבורית הצפויה ברבעון הרביעי של השנה. הנתונים ממחישים את הקצב המהיר שבו OpenAI הפכה לאחת מחברות הצמיחה המהירות בהיסטוריה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 17 שעות</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">מספר המשתמשים הפעילים השבועיים של ChatGPT הגיע לכ-920 מיליון, ו-NVIDIA, שהשקיעה 30 מיליארד דולר בחברה, ציינה שהשקעה זו תהיה ככל הנראה האחרונה לפני ה-IPO.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="1"
+                 data-id="934528d361af718c"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">אפל משיקה MacBook Neo ב-599 דולר עם שבב A18 Pro</h2>
+                    <p class="card-summary">אפל הכריזה על MacBook Neo, מחשב נייד תקציבי המצויד בשבב A18 Pro ומציע עד 16 שעות סוללה במחיר התחלתי של 599 דולר. זוהי כניסה משמעותית של אפל לשוק המחשבים הניידים הנגישים, שבו החברה לא הייתה נוכחת עד כה. המהלך עשוי להרחיב את בסיס המשתמשים של אפל למגזרי שוק חדשים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 17 שעות</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">שילוב השבב A18 Pro, שנחשב לשבב ביצועים גבוהים בסדרת אייפון, במכשיר במחיר 599 דולר מעיד על אסטרטגיית אפל להציע יכולות חומרה מתקדמות גם בקטגוריית המחיר הנמוך.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="2"
+                 data-id="68ab537636e4c413"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">Anthropic מגייסת תמיכת ענקיות טכנולוגיה בעוד מנכ"לה תוקף את OpenAI</h2>
+                    <p class="card-summary">Anthropic זוכה לגיבוי פיננסי מחברות טכנולוגיה מובילות, ובכלל זה השקעה של 10 מיליארד דולר מ-NVIDIA. במקביל, מנכ"ל Anthropic דריו אמוד'י יצא בביקורת פומבית על עסקת DoW של OpenAI, בעוד OpenAI מדווחת על ניהול משא ומתן להגנה מפני מעקב פנים-מדינתי. התפתחויות אלה משקפות את המתח הגובר בין שתי החברות המובילות בתחום ה-AI.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 17 שעות</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">ג'נסן הואנג, מנכ"ל NVIDIA, ציין כי השקעת 10 המיליארד דולר ב-Anthropic תהיה ככל הנראה האחרונה לפני אירוע נזילות, מה שמרמז על הנפקה אפשרית גם עבור Anthropic בטווח הנראה לעין.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="3"
+                 data-id="cccb814e7a87d64a"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">גוגל מפחיתה עמלות ב-Play Store ופותחת לחנויות אפליקציות חלופיות</h2>
+                    <p class="card-summary">גוגל הכריזה על הפחתת עמלות בחנות Google Play ועל אפשרות להתקין חנויות אפליקציות חלופיות במכשירי אנדרואיד. מדובר בשינוי מדיניות מהותי שמשנה את הדינמיקה בין גוגל למפתחי אפליקציות ויצרני מכשירים. המהלך מגיע על רקע לחץ רגולטורי גובר ברחבי העולם על חנויות האפליקציות של ענקיות הטכנולוגיה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 17 שעות</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">פתיחת האפשרות לחנויות חלופיות באנדרואיד מהווה צעד שאפל טרם נקטה באופן מלא במערכת ה-iOS, וממצבת את גוגל כגמישה יותר מבחינה רגולטורית בשוק הגלובלי.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="4"
+                 data-id="e19b65b398ce1135"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">Neura Robotics גייסה מיליארד אירו לפי שווי של 4 מיליארד אירו</h2>
+                    <p class="card-summary">חברת הרובוטיקה הגרמנית Neura Robotics השלימה סבב גיוס של מיליארד אירו לפי שווי של כ-4 מיליארד אירו, בהשתתפות חברת הקריפטו Tether. הסבב הופך את Neura Robotics לאחת מחברות הרובוטיקה הממומנות ביותר באירופה. הגיוס מצביע על עניין גובר של משקיעים גלובליים בתחום הרובוטיקה ההומנואידית.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 17 שעות</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">כניסת Tether כמשקיעה בסבב זה מייצגת מגמה של חברות קריפטו המחפשות חשיפה לתחומי טכנולוגיה פיזית כגון רובוטיקה, תוך פיזור תיק ההשקעות מעבר לנכסים דיגיטליים.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cbdbec4c138c46" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="5"
+                 data-id="ec00f3ca3a75f3c7"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">אנתרופיק חצתה 19 מיליארד דולר ב-ARR – ובמקביל נחסמת מחוזי פנטגון</h2>
+                    <p class="card-summary">אנתרופיק הגיעה ל-19 מיליארד דולר בהכנסות שנתיות חוזרות, והמנכ"ל דריו אמודאי טוען כי שיעור השימור של הלקוחות גבוה מזה של OpenAI. במקביל, לוקהיד מרטין הודיעה שתציית לצו האוסר על קבלני משרד ההגנה האמריקאי להשתמש במוצרי אנתרופיק. מדובר בצמד ידיעות המשקף את המתח הגובר בין הצמיחה המסחרית של אנתרופיק לבין מגבלות כניסתה לשוק הביטחון.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">אתמול</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">אמודאי ייחס את שיעור השימור הגבוה ל'משימה' של החברה ולאמון שהיא מעוררת בקרב לקוחות ארגוניים – אולם איסור הפנטגון עלול לחסום לה נתח משמעותי מהשוק הממשלתי האמריקאי, שבו פועלים קבלני ביטחון ענקיים כמו לוקהיד.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="6"
+                 data-id="e8c670fdcd16143a"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">Anduril שוקלת גיוס של 4 מיליארד דולר בשווי 60 מיליארד</h2>
+                    <p class="card-summary">חברת הטכנולוגיה הביטחונית Anduril מנהלת מגעים לגיוס של 4 מיליארד דולר בהובלת קרנות Thrive ו-a16z, לפי שווי של כ-60 מיליארד דולר. הגיוס הנוכחי נמוך מהסכום של 8 מיליארד דולר שנשקל בפברואר, מה שעשוי להצביע על שינוי בתנאי השוק או בצרכי החברה. ההכנסות של Anduril צפויות להכפיל את עצמן ל-כ-2 מיליארד דולר ב-2025.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">אתמול</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">הצמיחה בהכנסות מונעת בעיקר מחוזי ביטחון אמריקאיים ובינלאומיים, מה שממצב את Anduril כשחקן מרכזי בגל ההשקעות הממשלתיות בטכנולוגיה ביטחונית – תחום שצובר תאוצה גם בישראל ובאירופה.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="7"
+                 data-id="a07b312af024981d"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">OpenAI משיקה GPT-5.3 Instant עם חיפוש ברשת משופר</h2>
+                    <p class="card-summary">OpenAI השיקה את GPT-5.3 Instant, מודל חדש המשלב יכולות חיפוש ברשת משופרות עבור משתמשי ChatGPT. המודל מתמקד במהירות תגובה גבוהה יותר ובגישה עדכנית למידע מהאינטרנט. ההשקה ממשיכה את מגמת OpenAI לשפר את שילוב החיפוש בזמן אמת בתוך הממשק השיחתי.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">אתמול</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">שיפור יכולות החיפוש בזמן אמת הוא תחום תחרותי ישירות מול גוגל, שמשלבת את Gemini עם מנוע החיפוש שלה – מה שהופך את ה-Instant לצעד אסטרטגי, לא רק טכני.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="8"
+                 data-id="29ee0a224ffd3415"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">גוגל משיקה את Gemini 3.1 Flash-Lite – גרסה קלה ומהירה יותר</h2>
+                    <p class="card-summary">גוגל הכריזה על Gemini 3.1 Flash-Lite, גרסה חדשה במשפחת מודלי Gemini המתמקדת במהירות ויעילות. המודל מיועד לשימושים שבהם מהירות התגובה קריטית יותר מעומק העיבוד. הוא מרחיב את הגישה של גוגל להציע טווח מודלים לפי צרכים שונים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">אתמול</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">מודלים "קלים" מסוג זה נפוצים במיוחד בשילוב ב-API לצד מפתחים וסטארטאפים, שם עלות ומהירות גוברות לרוב על עוצמת המודל – מה שהופך את ה-Flash-Lite לנשק תחרותי מול מודלים מהירים של OpenAI ו-Anthropic.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="9"
+                 data-id="bf5a65d5168d28f3"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">OpenAI בוחנת פריסת AI על רשתות לא מסווגות של נאט"ו</h2>
+                    <p class="card-summary">OpenAI בוחנת אפשרות לפרוס את יכולות ה-AI שלה על רשתות לא מסווגות של ארגון נאט"ו, בצעד שמרחיב את נוכחותה בשוק הביטחוני הבינלאומי. המהלך מצביע על שינוי אסטרטגי של החברה לעבר שיתוף פעולה עמוק יותר עם ממשלות וגופי ביטחון. זאת בעוד מתחרים כמו אנתרופיק מתמודדים עם מגבלות בכניסה לאותו שוק.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">אתמול</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">הפריסה על רשתות "לא מסווגות" מאפשרת ל-OpenAI לעקוף חלק מהמחסומים הרגולטוריים הקשורים בטיפול במידע סודי, תוך יצירת דריסת רגל בתשתיות ביטחוניות של 32 מדינות חברות נאט"ו.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb897a8b4b4021" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="10"
+                 data-id="6680677cc3c432f5"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">OpenAI תתקן חוזה עם הפנטגון כדי לאסור מעקב מקומי</h2>
+                    <p class="card-summary">סם אלטמן הודיע כי OpenAI תעדכן את תנאי החוזה עם משרד המלחמה האמריקאי כדי לאסור במפורש שימוש בכלי AI למעקב מקומי. משרד המלחמה אישר כי הכלים לא יועברו לסוכנויות כמו NSA ללא שינויים חוזיים נוספים. הסכמה זו נולדה לאחר שהמשרד עמד על דרישות גישה למאגרי נתונים, מה שמצביע על מתח בין צרכי הביטחון הלאומי לבין מדיניות השימוש האחראי של OpenAI.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 2 ימים</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">OpenAI התחייבה לפעול בהתאם לחוקי המעקב האמריקאיים הקיימים, מה שמרמז כי הגבולות המוסכמים אינם חדשים לחלוטין אלא עיגון חוזי של מסגרת משפטית שכבר חלה — צעד שנועד בעיקר לאותת לציבור ולמחוקקים על מחויבות לפיקוח.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="11"
+                 data-id="483a8fbd62a10af5"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">גורמים פדרליים מחרימים את Anthropic; מחלקת המדינה עוברת ל-OpenAI</h2>
+                    <p class="card-summary">שר האוצר סקוט בסנט הכריז על חרם על מוצרי Anthropic, ובהם Claude, כאשר משרדי האוצר, HHS וסוכנויות דיור הצטרפו להחלטה. הסכסוך נובע מחילוקי דעות בין ממשל טראמפ לבין Anthropic על אמצעי הגנה בשימוש צבאי ומעקב מקומי. במקביל, מחלקת המדינה עברה לשירותי OpenAI, מה שמחזק את מעמד OpenAI כספק AI מועדף של הממשל.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 2 ימים</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">Anthropic אף הגישה הצעה בשווי 100 מיליון דולר לפיתוח נחיל רחפנים אוטונומיים עבור משרד המלחמה — ניסיון שנראה כמהלך לשיקום הקשר עם הממשל בעוד החרם ממשיך להתרחב.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="12"
+                 data-id="4700265c32dd841b"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">X ו-xAI צפויות לפרוע חוב של 17.5 מיליארד דולר לקראת הנפקת SpaceX</h2>
+                    <p class="card-summary">חברות X ו-xAI של אילון מאסק צפויות להחזיר במלואו חוב של 17.5 מיליארד דולר. הפירעון מתוזמן בסמוך להנפקה הציבורית הצפויה של SpaceX בבורסה. מהלך זה עשוי לשפר את הפרופיל הפיננסי של מאסק ולחזק את האמון של משקיעים לקראת ההנפקה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 2 ימים</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">פירעון חוב בסדר גודל של 17.5 מיליארד דולר בטרם הנפקה הוא צעד אסטרטגי משמעותי, שכן הוא מפחית מינוף פיננסי ועלול להעלות את שווי השוק הצפוי של SpaceX בעיני מוסדות ומשקיעים פרטיים.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="13"
+                 data-id="12078a8cd8e43d21"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">אליבאבא משיקה סדרת מודלים קטנים בקוד פתוח: Qwen3.5</h2>
+                    <p class="card-summary">אליבאבא השיקה את סדרת המודלים Qwen3.5 — מודלים קטנים בקוד פתוח המיועדים לשימוש יעיל עם דרישות חישוב נמוכות יחסית. ההשקה ממשיכה את מגמת חברות AI סיניות לפרסם מודלים תחרותיים בקוד פתוח. מודלים קטנים מסוג זה רלוונטיים במיוחד לפריסה על מכשירים קצה ולשווקים עם משאבי ענן מוגבלים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 2 ימים</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">סדרת Qwen של אליבאבא צברה תשומת לב בינלאומית בחודשים האחרונים בזכות ביצועים תחרותיים ביחס לגודלם, ו-Qwen3.5 ממשיכה מגמה זו תוך הורדת סף הכניסה לשימוש במודלים איכותיים ללא עלויות תשתית גבוהות.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card"
+                 data-index="14"
+                 data-id="db4286bd6b9327af"
+                 data-source="Bay Area Times"
+                 data-category="ניוזלטרים"
+                 data-url="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d"
+                 style="display:none;">
+
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+
+                <div class="card-inner">
+                    <div class="card-category">Bay Area Times</div>
+                    <h2 class="card-title">אפל מציגה את iPhone 17e במחיר 599 דולר עם שבב A19</h2>
+                    <p class="card-summary">אפל הכריזה על iPhone 17e, גרסה משתלמת יחסית של קו ה-iPhone 17, במחיר התחלתי של 599 דולר ועם שבב A19. המכשיר צפוי להגיע ללקוחות החל מה-11 במרץ. הדגם מכוון לקהל המחפש חומרה עדכנית של אפל במחיר נגיש יותר.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">ניוזלטרים</span>
+                        <span class="card-time">לפני 2 ימים</span>
+                    </div>
+
+                    <div class="card-expanded">
+                        <div class="card-expanded-inner">
+                            
+                            <p class="card-detail">שבב A19 בדגם הכלכלי מרמז כי אפל בוחרת שלא לפשר על עוצמת המעבד גם בקו המחירים הנמוך יותר — אסטרטגיה שנועדת לשמור על חוויית משתמש אחידה ולהתמודד עם תחרות גוברת מיצרני אנדרואיד במגזר הביניים.</p>
+                            
+                            <a href="https://mail.google.com/mail/u/0/#inbox/19cb370c0ab5540d" target="_blank" rel="noopener" class="card-read-more">
+                                קרא את המאמר המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="expand-btn" type="button">
+                        <span class="expand-icon">&#9660;</span>
+                        <span class="expand-label">עוד פרטים</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="action-buttons" id="actionButtons">
+            <button class="action-btn nope-btn" id="nopeBtn" aria-label="דלג">&#10007;</button>
+            <button class="action-btn expand-action-btn" id="expandBtn" aria-label="הרחב">&#9660;</button>
+            <button class="action-btn like-btn" id="likeBtn" aria-label="מעניין">&#10084;</button>
+        </div>
+
+        <div class="summary-screen hidden" id="summaryScreen"></div>
+
+        
+
+        <footer>
+            <p>05:12 | Powered by Claude API</p>
+        </footer>
+    </div>
+
+    
+    <script>
+    (function() {
+        'use strict';
+
+        const TOTAL = 15;
+        const SWIPE_THRESHOLD = 80;
+        const ROTATION_FACTOR = 0.12;
+
+        const state = {
+            current: 0,
+            cards: [],
+            isDragging: false,
+            isExpanded: false,
+            isAnimating: false,
+            startX: 0,
+            deltaX: 0,
+            liked: [],
+            dismissed: []
+        };
+
+        // DOM refs
+        const stack = document.getElementById('cardStack');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const actionButtons = document.getElementById('actionButtons');
+        const summaryScreen = document.getElementById('summaryScreen');
+        const nopeBtn = document.getElementById('nopeBtn');
+        const likeBtn = document.getElementById('likeBtn');
+        const expandBtn = document.getElementById('expandBtn');
+
+        // Init
+        function init() {
+            state.cards = Array.from(stack.querySelectorAll('.card'));
+            sortByPreference();
+            updateStack();
+            updateProgress();
+            bindButtons();
+            bindKeyboard();
+        }
+
+        // Sort cards by user preference (from localStorage)
+        function sortByPreference() {
+            const prefs = loadPrefs();
+            if (!prefs.sourceScores || Object.keys(prefs.sourceScores).length === 0) return;
+
+            state.cards.forEach(card => {
+                const src = card.dataset.source;
+                const cat = card.dataset.category;
+                const ss = prefs.sourceScores[src]?.score ?? 0.5;
+                const cs = prefs.categoryScores[cat]?.score ?? 0.5;
+                card._prefScore = ss * 0.6 + cs * 0.4;
+            });
+
+            state.cards.sort((a, b) => (b._prefScore || 0.5) - (a._prefScore || 0.5));
+            state.cards.forEach((card, i) => {
+                card.dataset.index = i;
+                stack.appendChild(card);
+            });
+        }
+
+        // Card stack display
+        function updateStack() {
+            state.cards.forEach((card, i) => {
+                const offset = i - state.current;
+                if (offset < 0 || offset > 2) {
+                    card.style.display = 'none';
+                    return;
+                }
+                card.style.display = '';
+                card.style.zIndex = 3 - offset;
+                card.style.pointerEvents = offset === 0 ? 'auto' : 'none';
+
+                if (offset === 0) {
+                    card.style.transform = '';
+                    card.style.opacity = '1';
+                } else {
+                    const s = 1 - offset * 0.04;
+                    const y = offset * 8;
+                    card.style.transform = 'scale(' + s + ') translateY(' + y + 'px)';
+                    card.style.opacity = String(1 - offset * 0.15);
+                }
+
+                card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+                // Bind touch on top card
+                if (offset === 0 && !card._bound) {
+                    bindTouch(card);
+                    bindMouse(card);
+                    bindExpand(card);
+                    card._bound = true;
+                }
+            });
+        }
+
+        // Progress
+        function updateProgress() {
+            const pct = (state.current / TOTAL) * 100;
+            progressFill.style.width = pct + '%';
+            progressText.textContent = state.current + ' / ' + TOTAL;
+        }
+
+        // Swipe complete
+        function completeSwipe(direction) {
+            if (state.isAnimating || state.current >= TOTAL) return;
+            state.isAnimating = true;
+
+            const card = state.cards[state.current];
+            const id = card.dataset.id;
+            const source = card.dataset.source;
+            const category = card.dataset.category;
+
+            // Collapse if expanded
+            if (state.isExpanded) toggleExpand(card);
+
+            // Animate out
+            card.classList.remove('swiping');
+            card.classList.add('animate-out');
+            card.classList.add(direction === 'like' ? 'swipe-right' : 'swipe-left');
+
+            // Record
+            if (direction === 'like') {
+                state.liked.push(id);
+            } else {
+                state.dismissed.push(id);
+            }
+            recordPref(id, source, category, direction === 'like');
+
+            // Haptic
+            if (navigator.vibrate) navigator.vibrate(direction === 'like' ? [15] : [10, 10, 10]);
+
+            state.current++;
+            updateProgress();
+
+            setTimeout(function() {
+                card.style.display = 'none';
+                card.classList.remove('animate-out', 'swipe-right', 'swipe-left');
+                state.isAnimating = false;
+
+                if (state.current >= TOTAL) {
+                    showSummary();
+                } else {
+                    updateStack();
+                }
+            }, 420);
+        }
+
+        // Touch handlers
+        function bindTouch(card) {
+            let startX = 0, startY = 0, deltaX = 0, locked = false, scrolling = false;
+
+            card.addEventListener('touchstart', function(e) {
+                if (state.isExpanded || state.isAnimating) return;
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                deltaX = 0;
+                locked = false;
+                scrolling = false;
+                card.classList.add('swiping');
+            }, { passive: true });
+
+            card.addEventListener('touchmove', function(e) {
+                if (state.isExpanded || state.isAnimating || scrolling) return;
+                const dx = e.touches[0].clientX - startX;
+                const dy = e.touches[0].clientY - startY;
+
+                if (!locked) {
+                    if (Math.abs(dy) > Math.abs(dx) && Math.abs(dx) < 15) {
+                        scrolling = true;
+                        card.classList.remove('swiping');
+                        return;
+                    }
+                    locked = true;
+                }
+
+                e.preventDefault();
+                deltaX = dx;
+                const rot = dx * ROTATION_FACTOR;
+                card.style.transform = 'translateX(' + dx + 'px) rotate(' + rot + 'deg)';
+
+                const progress = Math.min(Math.abs(dx) / SWIPE_THRESHOLD, 1);
+                const likeInd = card.querySelector('.swipe-indicator.like');
+                const nopeInd = card.querySelector('.swipe-indicator.nope');
+                if (dx > 0) {
+                    likeInd.style.opacity = progress;
+                    nopeInd.style.opacity = 0;
+                } else {
+                    nopeInd.style.opacity = progress;
+                    likeInd.style.opacity = 0;
+                }
+            }, { passive: false });
+
+            card.addEventListener('touchend', function() {
+                if (state.isExpanded || state.isAnimating || scrolling) return;
+                card.classList.remove('swiping');
+
+                if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
+                    completeSwipe(deltaX > 0 ? 'like' : 'nope');
+                } else {
+                    // Snap back
+                    card.style.transition = 'transform 0.3s ease';
+                    card.style.transform = '';
+                    card.querySelector('.swipe-indicator.like').style.opacity = 0;
+                    card.querySelector('.swipe-indicator.nope').style.opacity = 0;
+                    setTimeout(function() { card.style.transition = ''; }, 300);
+                }
+                deltaX = 0;
+            });
+        }
+
+        // Mouse drag (desktop)
+        function bindMouse(card) {
+            let startX = 0, deltaX = 0, dragging = false;
+
+            card.addEventListener('mousedown', function(e) {
+                if (state.isExpanded || state.isAnimating) return;
+                if (e.target.closest('.expand-btn') || e.target.closest('.card-read-more')) return;
+                startX = e.clientX;
+                deltaX = 0;
+                dragging = true;
+                card.classList.add('swiping');
+                card.style.cursor = 'grabbing';
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!dragging) return;
+                deltaX = e.clientX - startX;
+                const rot = deltaX * ROTATION_FACTOR;
+                card.style.transform = 'translateX(' + deltaX + 'px) rotate(' + rot + 'deg)';
+
+                const progress = Math.min(Math.abs(deltaX) / SWIPE_THRESHOLD, 1);
+                const likeInd = card.querySelector('.swipe-indicator.like');
+                const nopeInd = card.querySelector('.swipe-indicator.nope');
+                if (deltaX > 0) {
+                    likeInd.style.opacity = progress;
+                    nopeInd.style.opacity = 0;
+                } else {
+                    nopeInd.style.opacity = progress;
+                    likeInd.style.opacity = 0;
+                }
+            });
+
+            document.addEventListener('mouseup', function() {
+                if (!dragging) return;
+                dragging = false;
+                card.classList.remove('swiping');
+                card.style.cursor = '';
+
+                if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
+                    completeSwipe(deltaX > 0 ? 'like' : 'nope');
+                } else {
+                    card.style.transition = 'transform 0.3s ease';
+                    card.style.transform = '';
+                    card.querySelector('.swipe-indicator.like').style.opacity = 0;
+                    card.querySelector('.swipe-indicator.nope').style.opacity = 0;
+                    setTimeout(function() { card.style.transition = ''; }, 300);
+                }
+            });
+        }
+
+        // Expand
+        function bindExpand(card) {
+            const btn = card.querySelector('.expand-btn');
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleExpand(card);
+            });
+        }
+
+        function toggleExpand(card) {
+            if (!card) card = state.cards[state.current];
+            if (!card) return;
+            const expanded = card.querySelector('.card-expanded');
+            const btn = card.querySelector('.expand-btn');
+            const icon = btn.querySelector('.expand-icon');
+            const label = btn.querySelector('.expand-label');
+
+            if (expanded.classList.contains('open')) {
+                expanded.classList.remove('open');
+                btn.classList.remove('expanded');
+                label.textContent = 'עוד פרטים';
+                state.isExpanded = false;
+            } else {
+                expanded.classList.add('open');
+                btn.classList.add('expanded');
+                label.textContent = 'פחות פרטים';
+                state.isExpanded = true;
+            }
+        }
+
+        // Buttons
+        function bindButtons() {
+            nopeBtn.addEventListener('click', function() { completeSwipe('nope'); });
+            likeBtn.addEventListener('click', function() { completeSwipe('like'); });
+            expandBtn.addEventListener('click', function() {
+                if (state.current < TOTAL) toggleExpand(state.cards[state.current]);
+            });
+        }
+
+        // Keyboard
+        function bindKeyboard() {
+            document.addEventListener('keydown', function(e) {
+                if (state.current >= TOTAL) return;
+                switch(e.key) {
+                    case 'ArrowRight': completeSwipe('like'); break;
+                    case 'ArrowLeft': completeSwipe('nope'); break;
+                    case 'ArrowDown':
+                    case ' ':
+                        toggleExpand(state.cards[state.current]);
+                        e.preventDefault();
+                        break;
+                }
+            });
+        }
+
+        // localStorage preferences
+        function loadPrefs() {
+            try {
+                const raw = localStorage.getItem('aiDigestPrefs');
+                if (!raw) return { version: 1, interactions: {}, sourceScores: {}, categoryScores: {}, stats: { totalLiked: 0, totalDismissed: 0 } };
+                return JSON.parse(raw);
+            } catch(e) {
+                return { version: 1, interactions: {}, sourceScores: {}, categoryScores: {}, stats: { totalLiked: 0, totalDismissed: 0 } };
+            }
+        }
+
+        function savePrefs(prefs) {
+            try {
+                // Prune old interactions (keep last 500)
+                const keys = Object.keys(prefs.interactions);
+                if (keys.length > 500) {
+                    const sorted = keys.sort((a,b) => {
+                        return (prefs.interactions[a].ts || '') > (prefs.interactions[b].ts || '') ? 1 : -1;
+                    });
+                    sorted.slice(0, keys.length - 500).forEach(k => delete prefs.interactions[k]);
+                }
+                prefs.lastUpdated = new Date().toISOString();
+                localStorage.setItem('aiDigestPrefs', JSON.stringify(prefs));
+            } catch(e) {}
+        }
+
+        function recordPref(id, source, category, liked) {
+            const prefs = loadPrefs();
+            prefs.interactions[id] = { liked: liked, source: source, category: category, ts: new Date().toISOString() };
+
+            if (!prefs.sourceScores[source]) prefs.sourceScores[source] = { liked: 0, dismissed: 0, score: 0.5 };
+            const ss = prefs.sourceScores[source];
+            liked ? ss.liked++ : ss.dismissed++;
+            ss.score = ss.liked / (ss.liked + ss.dismissed);
+
+            if (!prefs.categoryScores[category]) prefs.categoryScores[category] = { liked: 0, dismissed: 0, score: 0.5 };
+            const cs = prefs.categoryScores[category];
+            liked ? cs.liked++ : cs.dismissed++;
+            cs.score = cs.liked / (cs.liked + cs.dismissed);
+
+            prefs.stats.totalLiked += liked ? 1 : 0;
+            prefs.stats.totalDismissed += liked ? 0 : 1;
+
+            savePrefs(prefs);
+        }
+
+        // Summary screen
+        function showSummary() {
+            stack.style.display = 'none';
+            actionButtons.style.display = 'none';
+
+            const prefs = loadPrefs();
+            const likedCards = state.liked.map(function(id) {
+                const card = stack.querySelector('[data-id="' + id + '"]');
+                return card ? { title: card.querySelector('.card-title').textContent, url: card.dataset.url, source: card.dataset.source } : null;
+            }).filter(Boolean);
+
+            // Top sources
+            const topSources = Object.entries(prefs.sourceScores || {})
+                .sort((a,b) => b[1].score - a[1].score)
+                .slice(0, 3)
+                .map(e => e[0])
+                .join(', ');
+
+            let html = '<div class="summary-content">';
+            html += '<h2>סיכום הקריאה</h2>';
+            html += '<div class="summary-stats">';
+            html += '<div class="stat liked"><span class="stat-number">' + state.liked.length + '</span><span class="stat-label">מעניינים</span></div>';
+            html += '<div class="stat skipped"><span class="stat-number">' + state.dismissed.length + '</span><span class="stat-label">דולגו</span></div>';
+            html += '</div>';
+
+            if (likedCards.length > 0) {
+                html += '<div class="summary-section"><h3>שמרת לקריאה</h3><ul class="liked-list">';
+                likedCards.forEach(function(a) {
+                    html += '<li><a href="' + a.url + '" target="_blank" rel="noopener">' + a.title + '</a>';
+                    html += '<span class="source-badge">' + a.source + '</span></li>';
+                });
+                html += '</ul></div>';
+            }
+
+            if (topSources) {
+                html += '<div class="summary-section"><h3>המקורות המובילים שלך</h3>';
+                html += '<div class="summary-insight">' + topSources + '</div></div>';
+            }
+
+            html += '<button class="reset-btn" onclick="location.reload()">צפה שוב</button>';
+            html += '</div>';
+
+            summaryScreen.innerHTML = html;
+            summaryScreen.classList.remove('hidden');
+        }
+
+        // Go
+        init();
+    })();
+    </script>
+    
+</body>
+</html>
