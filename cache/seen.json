@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09T11:40:54.036396+00:00",
+  "last_updated": "2026-03-10T11:32:58.419023+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -215,6 +215,11 @@
       "title": "Anthropic משיקה מרקטפלייס לאפליקציות Claude ארגוניות",
       "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
       "first_seen": "2026-03-09T11:40:54.036273+00:00"
+    },
+    "892229465c868c6c": {
+      "title": "אנתרופיק תובעת את ממשלת ארה\"ב בטענה לנקמה על אזהרות בטיחות AI",
+      "url": "https://www.therundown.ai/p/anthropic-takes-us-government-to-court",
+      "first_seen": "2026-03-10T11:32:58.418924+00:00"
     }
   }
 }
