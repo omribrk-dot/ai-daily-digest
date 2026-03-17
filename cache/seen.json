@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-16T11:47:10.109116+00:00",
+  "last_updated": "2026-03-17T11:43:15.052855+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -240,6 +240,11 @@
       "title": "xAI של מאסק בונה את עצמה מחדש: 9 מתוך 11 מייסדים עזבו",
       "url": "https://www.therundown.ai/p/musk-takes-xai-into-a-full-rebuild",
       "first_seen": "2026-03-16T11:47:10.108999+00:00"
+    },
+    "ecaf32c350bd773a": {
+      "title": "Nvidia בכנס GTC: שבבים חדשים, AI לגיימינג ורובוטיקה",
+      "url": "https://www.therundown.ai/p/nvidia-big-ai-day-at-gtc",
+      "first_seen": "2026-03-17T11:43:15.052740+00:00"
     }
   }
 }
