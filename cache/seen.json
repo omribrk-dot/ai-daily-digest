@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-19T11:35:30.040249+00:00",
+  "last_updated": "2026-03-20T11:31:42.902050+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -255,6 +255,11 @@
       "title": "גוגל משיקה את Stitch: כלי עיצוב ממשקים מבוסס בינה מלאכותית",
       "url": "https://www.therundown.ai/p/google-bets-on-vibe-design-with-stitch",
       "first_seen": "2026-03-19T11:35:30.040130+00:00"
+    },
+    "f99ef41a055987c2": {
+      "title": "אנתרופיק סקרה 81,000 איש על עמדותיהם כלפי בינה מלאכותית",
+      "url": "https://www.therundown.ai/p/how-81k-people-really-feel-about-ai",
+      "first_seen": "2026-03-20T11:31:42.901907+00:00"
     }
   }
 }
