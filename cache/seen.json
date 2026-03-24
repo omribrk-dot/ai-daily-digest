@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T11:43:08.146251+00:00",
+  "last_updated": "2026-03-24T11:44:56.887879+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -265,6 +265,11 @@
       "title": "מאסק מקים 'טרהפאב': מפעל שבבי AI שישלב טסלה, SpaceX ו-xAI",
       "url": "https://www.therundown.ai/p/elon-musk-terafab-ai-chip-factory",
       "first_seen": "2026-03-23T11:43:08.146131+00:00"
+    },
+    "d7b5e3958702a6aa": {
+      "title": "קלוד של Anthropic יכול כעת לשלוט מרחוק במחשב Mac",
+      "url": "https://www.therundown.ai/p/anthropic-claude-gets-remote-control",
+      "first_seen": "2026-03-24T11:44:56.887749+00:00"
     }
   }
 }
