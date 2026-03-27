@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-26T11:50:05.760819+00:00",
+  "last_updated": "2026-03-27T11:41:25.624361+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -280,6 +280,11 @@
       "title": "ARC-AGI-3: המבחן החדש שמשאיר את מודלי הבינה המלאכותית המובילים מתחת ל-1%",
       "url": "https://www.therundown.ai/p/arc-agi-3-resets-frontier-ai-scoreboard",
       "first_seen": "2026-03-26T11:50:05.760693+00:00"
+    },
+    "24d65f3c90f73cdc": {
+      "title": "מטא משיקה מודל AI בקוד פתוח לחיזוי פעילות נוירונים במוח",
+      "url": "https://www.therundown.ai/p/meta-new-open-source-brain-ai",
+      "first_seen": "2026-03-27T11:41:25.624248+00:00"
     }
   }
 }
