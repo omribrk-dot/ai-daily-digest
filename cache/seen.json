@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-29T11:28:39.493968+00:00",
+  "last_updated": "2026-03-30T11:54:06.819040+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -290,6 +290,11 @@
       "title": "עליבאבא מציגה Accio Work: מערכת סוכנים דיגיטליים לעסקים",
       "url": "https://www.therundown.ai/p/an-exclusive-q-a-with-alibaba-com-s-kuo-zhang",
       "first_seen": "2026-03-29T11:28:39.493829+00:00"
+    },
+    "06d62db7fbfd41e4": {
+      "title": "אנתרופיק חשפה בטעות פרטים על מודל קלוד חדש בשם 'Mythos'",
+      "url": "https://www.therundown.ai/p/anthropic-secret-mythos-model",
+      "first_seen": "2026-03-30T11:54:06.818916+00:00"
     }
   }
 }
