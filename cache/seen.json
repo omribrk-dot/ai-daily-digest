@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-30T11:54:06.819040+00:00",
+  "last_updated": "2026-03-31T11:49:47.928982+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -295,6 +295,11 @@
       "title": "אנתרופיק חשפה בטעות פרטים על מודל קלוד חדש בשם 'Mythos'",
       "url": "https://www.therundown.ai/p/anthropic-secret-mythos-model",
       "first_seen": "2026-03-30T11:54:06.818916+00:00"
+    },
+    "2d45c5c02be74adc": {
+      "title": "דיסני קיבלה התראה של פחות משעה על סגירת Sora — חשיפת הפרטים מאחורי הקלעים",
+      "url": "https://www.therundown.ai/p/openai-1b-disney-blindside",
+      "first_seen": "2026-03-31T11:49:47.928864+00:00"
     }
   }
 }
