@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-31T11:49:47.928982+00:00",
+  "last_updated": "2026-04-01T11:53:23.622315+00:00",
   "articles": {
     "f09ed9084ab02355": {
       "title": "האם מלחמת איראן תבלע את שאר האג'נדה הטכנולוגית?",
@@ -300,6 +300,11 @@
       "title": "דיסני קיבלה התראה של פחות משעה על סגירת Sora — חשיפת הפרטים מאחורי הקלעים",
       "url": "https://www.therundown.ai/p/openai-1b-disney-blindside",
       "first_seen": "2026-03-31T11:49:47.928864+00:00"
+    },
+    "1582ea81d269b60e": {
+      "title": "OpenAI גייסה 122 מיליארד דולר בסבב ההון סיכון הגדול בהיסטוריה",
+      "url": "https://www.therundown.ai/p/openai-new-122b-funding-superapp",
+      "first_seen": "2026-04-01T11:53:23.622195+00:00"
     }
   }
 }
