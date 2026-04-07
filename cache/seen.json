@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-04-06T11:49:15.274101+00:00",
+  "last_updated": "2026-04-07T11:54:08.034130+00:00",
   "articles": {
-    "d2f2562eb432fec3": {
-      "title": "New follower on Substack",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cc91bae302095f",
-      "first_seen": "2026-03-07T18:37:33.875170+00:00"
-    },
-    "e2d44508939c0b84": {
-      "title": "בינה מלאכותית בפיתוח תוכנה: המציאות מורכבת יותר מהכותרות",
-      "url": "https://www.therundown.ai/p/ai-will-make-engineering-more-human-not-less",
-      "first_seen": "2026-03-08T11:25:11.983201+00:00"
-    },
     "32e63f8d160505e7": {
       "title": "ראש רובוטיקה של OpenAI התפטרה בשל עסקת הפנטגון",
       "url": "https://www.therundown.ai/p/openai-robotics-lead-exits-over-pentagon-deal",
@@ -145,6 +135,11 @@
       "title": "אנתרופיק מנתקת פלטפורמות סוכנים חיצוניות מתוכניות המנוי של קלוד",
       "url": "https://www.therundown.ai/p/anthropic-tells-openclaw-users-to-pay-up",
       "first_seen": "2026-04-06T11:49:15.273984+00:00"
+    },
+    "1ca19a4e1053a1bc": {
+      "title": "אלטמן מציע מס על רובוטים, שבוע עבודה של 4 ימים וקרן עושר לאומית לעידן ה-AI",
+      "url": "https://www.therundown.ai/p/sam-altman-new-social-contract-for-ai",
+      "first_seen": "2026-04-07T11:54:08.033989+00:00"
     }
   }
 }
