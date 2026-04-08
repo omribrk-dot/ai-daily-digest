@@ -1,36 +1,6 @@
 {
-  "last_updated": "2026-04-07T11:54:08.034130+00:00",
+  "last_updated": "2026-04-08T11:55:08.504590+00:00",
   "articles": {
-    "32e63f8d160505e7": {
-      "title": "ראש רובוטיקה של OpenAI התפטרה בשל עסקת הפנטגון",
-      "url": "https://www.therundown.ai/p/openai-robotics-lead-exits-over-pentagon-deal",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
-    "6ee106a0517b6773": {
-      "title": "מינוי בן חמינאי כמנהיג עליון דחף את מחירי הנפט ל-99 דולר לחבית",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
-    "f136588e8144cdf2": {
-      "title": "Kalshi ו-Polymarket שואפות להערכת שווי של 20 מיליארד דולר",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
-    "772376afeae5603e": {
-      "title": "Luma AI משיקה מודל Uni-1 המשלב הבנה ויצירת תמונות",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
-    "86ba4ba732d8fd93": {
-      "title": "הפנטגון מינה בכיר לשעבר של Uber לניהול מגעים עם Anthropic",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
-    "9b479f81af9317e0": {
-      "title": "Anthropic משיקה מרקטפלייס לאפליקציות Claude ארגוניות",
-      "url": "https://mail.google.com/mail/u/0/#inbox/19cd221f3b681f1b",
-      "first_seen": "2026-03-09T11:40:54.036273+00:00"
-    },
     "892229465c868c6c": {
       "title": "אנתרופיק תובעת את ממשלת ארה\"ב בטענה לנקמה על אזהרות בטיחות AI",
       "url": "https://www.therundown.ai/p/anthropic-takes-us-government-to-court",
@@ -140,6 +110,11 @@
       "title": "אלטמן מציע מס על רובוטים, שבוע עבודה של 4 ימים וקרן עושר לאומית לעידן ה-AI",
       "url": "https://www.therundown.ai/p/sam-altman-new-social-contract-for-ai",
       "first_seen": "2026-04-07T11:54:08.033989+00:00"
+    },
+    "eef08593b2280878": {
+      "title": "אנתרופיק משיקה מודל Claude Mythos Preview – בלעדי לשימוש הגנתי בסייבר",
+      "url": "https://www.therundown.ai/p/anthropic-new-ai-is-too-powerful-for-the-world",
+      "first_seen": "2026-04-08T11:55:08.504483+00:00"
     }
   }
 }
