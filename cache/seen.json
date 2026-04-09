@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-08T11:55:08.504590+00:00",
+  "last_updated": "2026-04-09T11:54:49.343701+00:00",
   "articles": {
-    "892229465c868c6c": {
-      "title": "אנתרופיק תובעת את ממשלת ארה\"ב בטענה לנקמה על אזהרות בטיחות AI",
-      "url": "https://www.therundown.ai/p/anthropic-takes-us-government-to-court",
-      "first_seen": "2026-03-10T11:32:58.418924+00:00"
-    },
     "67e05d6954dab21a": {
       "title": "יאן לקון משיק סטארטאפ AMI במימון של מעל מיליארד דולר – ומאתגר את עידן מודלי השפה",
       "url": "https://www.therundown.ai/p/yann-lecun-1b-bet-against-llms",
@@ -115,6 +110,11 @@
       "title": "אנתרופיק משיקה מודל Claude Mythos Preview – בלעדי לשימוש הגנתי בסייבר",
       "url": "https://www.therundown.ai/p/anthropic-new-ai-is-too-powerful-for-the-world",
       "first_seen": "2026-04-08T11:55:08.504483+00:00"
+    },
+    "badb50b736ee40e1": {
+      "title": "מטא משיקה את המודל הראשון של Meta Superintelligence Labs",
+      "url": "https://www.therundown.ai/p/meta-superintelligence-labs-ships-its-first-model",
+      "first_seen": "2026-04-09T11:54:49.343590+00:00"
     }
   }
 }
