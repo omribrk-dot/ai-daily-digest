@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-09T11:54:49.343701+00:00",
+  "last_updated": "2026-04-10T11:48:35.156292+00:00",
   "articles": {
-    "67e05d6954dab21a": {
-      "title": "יאן לקון משיק סטארטאפ AMI במימון של מעל מיליארד דולר – ומאתגר את עידן מודלי השפה",
-      "url": "https://www.therundown.ai/p/yann-lecun-1b-bet-against-llms",
-      "first_seen": "2026-03-11T11:33:10.204829+00:00"
-    },
     "95bbb87d723767a9": {
       "title": "פרפלקסיטי משיקה סוכן מחשב עם מצב מקומי כחלופה ל-OpenAI",
       "url": "https://www.therundown.ai/p/perplexity-new-answer-to-openclaw",
@@ -115,6 +110,11 @@
       "title": "מטא משיקה את המודל הראשון של Meta Superintelligence Labs",
       "url": "https://www.therundown.ai/p/meta-superintelligence-labs-ships-its-first-model",
       "first_seen": "2026-04-09T11:54:49.343590+00:00"
+    },
+    "e7e69be8329710f9": {
+      "title": "פרפלקסיטי מרחיבה לפיננסים אישיים ומס, עם צמיחה של 50% בהכנסות",
+      "url": "https://www.therundown.ai/p/perplexity-agent-pivot-is-on-the-money",
+      "first_seen": "2026-04-10T11:48:35.156168+00:00"
     }
   }
 }
