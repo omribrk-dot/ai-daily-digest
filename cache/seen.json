@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-04-10T11:48:35.156292+00:00",
+  "last_updated": "2026-04-13T12:02:24.026829+00:00",
   "articles": {
-    "95bbb87d723767a9": {
-      "title": "פרפלקסיטי משיקה סוכן מחשב עם מצב מקומי כחלופה ל-OpenAI",
-      "url": "https://www.therundown.ai/p/perplexity-new-answer-to-openclaw",
-      "first_seen": "2026-03-12T11:31:43.142225+00:00"
-    },
-    "5a408706d62e4972": {
-      "title": "גוגל משלבת את Gemini ב-Google Maps לחוויית ניווט חכמה יותר",
-      "url": "https://www.therundown.ai/p/google-brings-gemini-to-the-road",
-      "first_seen": "2026-03-13T11:31:21.297138+00:00"
-    },
     "0862900d9f4a017f": {
       "title": "xAI של מאסק בונה את עצמה מחדש: 9 מתוך 11 מייסדים עזבו",
       "url": "https://www.therundown.ai/p/musk-takes-xai-into-a-full-rebuild",
@@ -115,6 +105,11 @@
       "title": "פרפלקסיטי מרחיבה לפיננסים אישיים ומס, עם צמיחה של 50% בהכנסות",
       "url": "https://www.therundown.ai/p/perplexity-agent-pivot-is-on-the-money",
       "first_seen": "2026-04-10T11:48:35.156168+00:00"
+    },
+    "22853622aefdcd29": {
+      "title": "חשוד ניסה להצית את ביתו של סם אלטמן מחשש להכחדת האנושות בידי AI",
+      "url": "https://www.therundown.ai/p/anti-ai-anger-hits-sam-altman-front-door",
+      "first_seen": "2026-04-13T12:02:24.026743+00:00"
     }
   }
 }
