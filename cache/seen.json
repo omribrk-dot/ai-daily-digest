@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T12:02:24.026829+00:00",
+  "last_updated": "2026-04-14T11:56:46.691040+00:00",
   "articles": {
     "0862900d9f4a017f": {
       "title": "xAI של מאסק בונה את עצמה מחדש: 9 מתוך 11 מייסדים עזבו",
@@ -110,6 +110,11 @@
       "title": "חשוד ניסה להצית את ביתו של סם אלטמן מחשש להכחדת האנושות בידי AI",
       "url": "https://www.therundown.ai/p/anti-ai-anger-hits-sam-altman-front-door",
       "first_seen": "2026-04-13T12:02:24.026743+00:00"
+    },
+    "9cb5398c3e379133": {
+      "title": "סוכן בינה מלאכותית מנהל חנות אמיתית בסן פרנסיסקו באופן עצמאי לחלוטין",
+      "url": "https://www.therundown.ai/p/what-happens-when-ai-runs-a-retail-store",
+      "first_seen": "2026-04-14T11:56:46.690927+00:00"
     }
   }
 }
