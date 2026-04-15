@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-14T11:56:46.691040+00:00",
+  "last_updated": "2026-04-15T11:55:50.711875+00:00",
   "articles": {
-    "0862900d9f4a017f": {
-      "title": "xAI של מאסק בונה את עצמה מחדש: 9 מתוך 11 מייסדים עזבו",
-      "url": "https://www.therundown.ai/p/musk-takes-xai-into-a-full-rebuild",
-      "first_seen": "2026-03-16T11:47:10.108999+00:00"
-    },
     "ecaf32c350bd773a": {
       "title": "Nvidia בכנס GTC: שבבים חדשים, AI לגיימינג ורובוטיקה",
       "url": "https://www.therundown.ai/p/nvidia-big-ai-day-at-gtc",
@@ -115,6 +110,11 @@
       "title": "סוכן בינה מלאכותית מנהל חנות אמיתית בסן פרנסיסקו באופן עצמאי לחלוטין",
       "url": "https://www.therundown.ai/p/what-happens-when-ai-runs-a-retail-store",
       "first_seen": "2026-04-14T11:56:46.690927+00:00"
+    },
+    "baf2a7f67bbeaca1": {
+      "title": "OpenAI משיקה מודל סייבר פתוח יותר בניגוד לגישה המגבילה של Anthropic",
+      "url": "https://www.therundown.ai/p/openai-gpt-5-4-cyber-rejects-mythos-playbook",
+      "first_seen": "2026-04-15T11:55:50.711730+00:00"
     }
   }
 }
