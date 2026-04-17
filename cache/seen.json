@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-16T11:58:09.271532+00:00",
+  "last_updated": "2026-04-17T11:52:32.785575+00:00",
   "articles": {
-    "12b2334b06ab7db7": {
-      "title": "מנכ\"לית האפליקציות של OpenAI מזהירה מפני ריבוי משימות ומחזירה למיקוד",
-      "url": "https://www.therundown.ai/p/simo-sounds-alarm-on-openai-side-quests",
-      "first_seen": "2026-03-18T11:45:44.168754+00:00"
-    },
     "49a50d4e8f0084eb": {
       "title": "גוגל משיקה את Stitch: כלי עיצוב ממשקים מבוסס בינה מלאכותית",
       "url": "https://www.therundown.ai/p/google-bets-on-vibe-design-with-stitch",
@@ -115,6 +110,16 @@
       "title": "אולבירדס עוזבת נעליים ועוברת להשכרת GPU לבינה מלאכותית",
       "url": "https://www.therundown.ai/p/allbirds-ditches-sneakers-for-ai-compute",
       "first_seen": "2026-04-16T11:58:09.271367+00:00"
+    },
+    "d5a9130ad05215e5": {
+      "title": "OpenAI מעדכנת את Codex עם יכולות סוכן מתקדמות בדרך לפלטפורמת על",
+      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
+      "first_seen": "2026-04-17T11:52:32.785470+00:00"
+    },
+    "8d38660db1870bbc": {
+      "title": "Anthropic משיקה את Claude Opus 4.7 ומתמקמת בראש דירוגי המודלים",
+      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
+      "first_seen": "2026-04-17T11:52:32.785470+00:00"
     }
   }
 }
