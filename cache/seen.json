@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-18T11:34:07.196919+00:00",
+  "last_updated": "2026-04-18T18:51:29.616406+00:00",
   "articles": {
-    "49a50d4e8f0084eb": {
-      "title": "גוגל משיקה את Stitch: כלי עיצוב ממשקים מבוסס בינה מלאכותית",
-      "url": "https://www.therundown.ai/p/google-bets-on-vibe-design-with-stitch",
-      "first_seen": "2026-03-19T11:35:30.040130+00:00"
-    },
     "f99ef41a055987c2": {
       "title": "אנתרופיק סקרה 81,000 איש על עמדותיהם כלפי בינה מלאכותית",
       "url": "https://www.therundown.ai/p/how-81k-people-really-feel-about-ai",
@@ -120,6 +115,11 @@
       "title": "Anthropic משיקה את Claude Opus 4.7 ומתמקמת בראש דירוגי המודלים",
       "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
       "first_seen": "2026-04-17T11:52:32.785470+00:00"
+    },
+    "6082ac7a4151a746": {
+      "title": "OpenAI מעדכנת את Codex לקראת פלטפורמת 'סופר-אפ' כוללת",
+      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
+      "first_seen": "2026-04-18T18:51:29.616301+00:00"
     }
   }
 }
