@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-18T18:51:29.616406+00:00",
+  "last_updated": "2026-04-19T11:34:52.219750+00:00",
   "articles": {
-    "f99ef41a055987c2": {
-      "title": "אנתרופיק סקרה 81,000 איש על עמדותיהם כלפי בינה מלאכותית",
-      "url": "https://www.therundown.ai/p/how-81k-people-really-feel-about-ai",
-      "first_seen": "2026-03-20T11:31:42.901907+00:00"
-    },
     "9a46291e19ffe480": {
       "title": "מאסק מקים 'טרהפאב': מפעל שבבי AI שישלב טסלה, SpaceX ו-xAI",
       "url": "https://www.therundown.ai/p/elon-musk-terafab-ai-chip-factory",
@@ -120,6 +115,11 @@
       "title": "OpenAI מעדכנת את Codex לקראת פלטפורמת 'סופר-אפ' כוללת",
       "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
       "first_seen": "2026-04-18T18:51:29.616301+00:00"
+    },
+    "54794a46d98d7787": {
+      "title": "קנבה משיקה גרסה 2.0 מבוססת בינה מלאכותית עם עריכה מלאה של תוצרי AI",
+      "url": "https://www.therundown.ai/p/exclusive-inside-canva-ai-2-0-with-cpo-cameron-adams",
+      "first_seen": "2026-04-19T11:34:52.219629+00:00"
     }
   }
 }
