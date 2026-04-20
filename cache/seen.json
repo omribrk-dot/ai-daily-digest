@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T11:34:52.219750+00:00",
+  "last_updated": "2026-04-20T12:03:47.544353+00:00",
   "articles": {
     "9a46291e19ffe480": {
       "title": "מאסק מקים 'טרהפאב': מפעל שבבי AI שישלב טסלה, SpaceX ו-xAI",
@@ -120,6 +120,11 @@
       "title": "קנבה משיקה גרסה 2.0 מבוססת בינה מלאכותית עם עריכה מלאה של תוצרי AI",
       "url": "https://www.therundown.ai/p/exclusive-inside-canva-ai-2-0-with-cpo-cameron-adams",
       "first_seen": "2026-04-19T11:34:52.219629+00:00"
+    },
+    "1520534fd2e2e444": {
+      "title": "אנתרופיק משיקה Claude Design: מפרומפט לפרוטוטייפ בצעד אחד",
+      "url": "https://www.therundown.ai/p/claude-comes-for-the-design-stack",
+      "first_seen": "2026-04-20T12:03:47.544225+00:00"
     }
   }
 }
