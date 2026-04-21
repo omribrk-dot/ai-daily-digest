@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T12:03:47.544353+00:00",
+  "last_updated": "2026-04-21T11:58:59.544264+00:00",
   "articles": {
     "9a46291e19ffe480": {
       "title": "מאסק מקים 'טרהפאב': מפעל שבבי AI שישלב טסלה, SpaceX ו-xAI",
@@ -125,6 +125,11 @@
       "title": "אנתרופיק משיקה Claude Design: מפרומפט לפרוטוטייפ בצעד אחד",
       "url": "https://www.therundown.ai/p/claude-comes-for-the-design-stack",
       "first_seen": "2026-04-20T12:03:47.544225+00:00"
+    },
+    "a2edd37d018cd1fe": {
+      "title": "סרגיי ברין מוביל צוות ייעודי ב-DeepMind לשיפור יכולות הקידוד של Gemini",
+      "url": "https://www.therundown.ai/p/sergey-brin-commits-deepmind-to-a-claude-catch-up",
+      "first_seen": "2026-04-21T11:58:59.544142+00:00"
     }
   }
 }
