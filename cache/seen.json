@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-21T11:58:59.544264+00:00",
+  "last_updated": "2026-04-22T11:59:22.051681+00:00",
   "articles": {
-    "9a46291e19ffe480": {
-      "title": "מאסק מקים 'טרהפאב': מפעל שבבי AI שישלב טסלה, SpaceX ו-xAI",
-      "url": "https://www.therundown.ai/p/elon-musk-terafab-ai-chip-factory",
-      "first_seen": "2026-03-23T11:43:08.146131+00:00"
-    },
     "d7b5e3958702a6aa": {
       "title": "קלוד של Anthropic יכול כעת לשלוט מרחוק במחשב Mac",
       "url": "https://www.therundown.ai/p/anthropic-claude-gets-remote-control",
@@ -130,6 +125,11 @@
       "title": "סרגיי ברין מוביל צוות ייעודי ב-DeepMind לשיפור יכולות הקידוד של Gemini",
       "url": "https://www.therundown.ai/p/sergey-brin-commits-deepmind-to-a-claude-catch-up",
       "first_seen": "2026-04-21T11:58:59.544142+00:00"
+    },
+    "cba9cf1dac5731bc": {
+      "title": "OpenAI מחזירה את הבכורה ביצירת תמונות עם השקת ChatGPT Images 2.0",
+      "url": "https://www.therundown.ai/p/openai-reclaims-the-image-crown",
+      "first_seen": "2026-04-22T11:59:22.051570+00:00"
     }
   }
 }
