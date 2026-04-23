@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-22T11:59:22.051681+00:00",
+  "last_updated": "2026-04-23T11:58:43.363477+00:00",
   "articles": {
-    "d7b5e3958702a6aa": {
-      "title": "קלוד של Anthropic יכול כעת לשלוט מרחוק במחשב Mac",
-      "url": "https://www.therundown.ai/p/anthropic-claude-gets-remote-control",
-      "first_seen": "2026-03-24T11:44:56.887749+00:00"
-    },
     "bbce4d5a2584202a": {
       "title": "OpenAI סוגרת את Sora ומעבירה מיקוד למודל וידאו חדש",
       "url": "https://www.therundown.ai/p/openai-sora-gets-the-axe",
@@ -130,6 +125,11 @@
       "title": "OpenAI מחזירה את הבכורה ביצירת תמונות עם השקת ChatGPT Images 2.0",
       "url": "https://www.therundown.ai/p/openai-reclaims-the-image-crown",
       "first_seen": "2026-04-22T11:59:22.051570+00:00"
+    },
+    "cdd73407765ad49c": {
+      "title": "מערכת ה-AI הסודית של Anthropic דלפה לקבוצת Discord",
+      "url": "https://www.therundown.ai/p/anthropic-locked-down-mythos-leaks",
+      "first_seen": "2026-04-23T11:58:43.363376+00:00"
     }
   }
 }
