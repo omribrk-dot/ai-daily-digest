@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-23T11:58:43.363477+00:00",
+  "last_updated": "2026-04-24T11:56:41.470181+00:00",
   "articles": {
-    "bbce4d5a2584202a": {
-      "title": "OpenAI סוגרת את Sora ומעבירה מיקוד למודל וידאו חדש",
-      "url": "https://www.therundown.ai/p/openai-sora-gets-the-axe",
-      "first_seen": "2026-03-25T11:41:18.847493+00:00"
-    },
     "131ae47ea9b64fbe": {
       "title": "ARC-AGI-3: המבחן החדש שמשאיר את מודלי הבינה המלאכותית המובילים מתחת ל-1%",
       "url": "https://www.therundown.ai/p/arc-agi-3-resets-frontier-ai-scoreboard",
@@ -130,6 +125,11 @@
       "title": "מערכת ה-AI הסודית של Anthropic דלפה לקבוצת Discord",
       "url": "https://www.therundown.ai/p/anthropic-locked-down-mythos-leaks",
       "first_seen": "2026-04-23T11:58:43.363376+00:00"
+    },
+    "4328efb06980f503": {
+      "title": "GPT-5.5 של OpenAI עולה בדירוגים בזמן שמתחרה Anthropic מתמודדת עם ביקורת",
+      "url": "https://www.therundown.ai/p/openai-spud-dethrones-claude-on-the-frontier",
+      "first_seen": "2026-04-24T11:56:41.470080+00:00"
     }
   }
 }
