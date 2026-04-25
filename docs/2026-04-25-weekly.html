@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AI Weekly Digest - 19-25 באפריל 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F5F5F0;
+            --surface: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-secondary: #4A4A4A;
+            --text-tertiary: #888888;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --border: #E8E8E5;
+            --category-bg: #EDEDEA;
+            --badge-bg: #F0F0ED;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+            --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+            --like-color: #22C55E;
+            --nope-color: #EF4444;
+            --radius: 20px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0F0F0F;
+                --surface: #1A1A1A;
+                --text-primary: #EAEAEA;
+                --text-secondary: #B0B0B0;
+                --text-tertiary: #666666;
+                --accent: #60A5FA;
+                --accent-hover: #93C5FD;
+                --border: #2A2A2A;
+                --category-bg: #252525;
+                --badge-bg: #2A2A2A;
+                --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+                --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+                --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Heebo', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow: hidden;
+            height: 100dvh;
+            position: fixed;
+            width: 100%;
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            height: 100dvh;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 16px 16px 0;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 12px;
+            flex-shrink: 0;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        header .date {
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0 12px;
+            flex-shrink: 0;
+        }
+
+        .progress-track {
+            flex: 1;
+            height: 3px;
+            background: var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        .progress-text {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            white-space: nowrap;
+            min-width: 45px;
+            text-align: center;
+            direction: ltr;
+            unicode-bidi: isolate;
+        }
+
+        .card-stack {
+            position: relative;
+            flex: 1;
+            min-height: 0;
+            margin-bottom: 8px;
+        }
+
+        .card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--surface);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            user-select: none;
+            will-change: transform, opacity;
+            touch-action: pan-y;
+        }
+
+        .card.swiping { transition: none !important; }
+        .card.animate-out { transition: transform 0.4s ease-out, opacity 0.4s ease-out; }
+        .card.swipe-right { transform: translateX(120%) rotate(15deg) !important; opacity: 0 !important; }
+        .card.swipe-left { transform: translateX(-120%) rotate(-15deg) !important; opacity: 0 !important; }
+
+        .card-inner {
+            height: 100%;
+            overflow-y: auto;
+            padding: 24px 20px 80px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .card-category {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--text-tertiary);
+            background: var(--category-bg);
+            padding: 3px 10px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-summary {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.78rem;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .source-badge {
+            background: var(--badge-bg);
+            color: var(--text-tertiary);
+            padding: 3px 10px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .card-time { color: var(--text-tertiary); }
+
+        .card-expanded {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out;
+        }
+
+        .card-expanded.open { max-height: 400px; }
+
+        .card-expanded-inner {
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        .card-detail {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .card-read-more {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background 0.15s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-read-more:hover { background: var(--accent-hover); }
+
+        .expand-btn {
+            background: none;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--accent);
+            padding: 8px 16px;
+            font-family: inherit;
+            font-size: 0.82rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 4px;
+            transition: background 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .expand-btn:hover { background: var(--category-bg); }
+
+        .expand-icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 0.7rem;
+        }
+
+        .expand-btn.expanded .expand-icon { transform: rotate(180deg); }
+
+        .swipe-indicator {
+            position: absolute;
+            top: 30px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .swipe-indicator.like {
+            right: 20px;
+            border: 3px solid var(--like-color);
+            color: var(--like-color);
+            transform: rotate(12deg);
+        }
+
+        .swipe-indicator.nope {
+            left: 20px;
+            border: 3px solid var(--nope-color);
+            color: var(--nope-color);
+            transform: rotate(-12deg);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 12px 0;
+            flex-shrink: 0;
+            padding-bottom: max(12px, env(safe-area-inset-bottom));
+        }
+
+        .action-btn {
+            border-radius: 50%;
+            border: 2px solid var(--border);
+            background: var(--surface);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .action-btn:active { transform: scale(0.9); }
+
+        .action-btn.nope-btn { width: 52px; height: 52px; font-size: 1.3rem; color: var(--nope-color); }
+        .action-btn.like-btn { width: 52px; height: 52px; font-size: 1.3rem; color: var(--like-color); }
+        .action-btn.expand-action-btn { width: 40px; height: 40px; font-size: 0.85rem; color: var(--accent); }
+
+        .summary-screen { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+        .summary-screen.hidden { display: none; }
+
+        .summary-content { text-align: center; padding: 20px 0; }
+        .summary-content h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
+
+        .summary-stats { display: flex; justify-content: center; gap: 32px; margin-bottom: 28px; }
+        .stat-number { display: block; font-size: 2rem; font-weight: 700; }
+        .stat-label { font-size: 0.85rem; color: var(--text-tertiary); }
+        .stat.liked .stat-number { color: var(--like-color); }
+        .stat.skipped .stat-number { color: var(--nope-color); }
+
+        .liked-list { list-style: none; text-align: right; margin: 16px 0; }
+        .liked-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .liked-list li:last-child { border-bottom: none; }
+        .liked-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.92rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .liked-list a:hover { color: var(--accent); }
+        .liked-list .source-badge { font-size: 0.72rem; }
+
+        .summary-section { margin-top: 24px; text-align: right; }
+        .summary-section h3 { font-size: 1rem; font-weight: 600; margin-bottom: 10px; text-align: center; }
+        .summary-insight {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            background: var(--category-bg);
+            padding: 14px 16px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .reset-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: background 0.15s;
+        }
+        .reset-btn:hover { background: var(--accent-hover); }
+
+        footer { text-align: center; padding: 8px 0; flex-shrink: 0; }
+        footer p { font-size: 0.7rem; color: var(--text-tertiary); }
+
+        @media (min-width: 600px) {
+            .app { padding: 24px 24px 0; }
+            .card-inner { padding: 28px 24px 80px; }
+            header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>AI Weekly Digest</h1>
+            <div class="date">19-25 באפריל 2026 · 46 ידיעות</div>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">0 / 46</span>
+        </div>
+
+        <div class="card-stack" id="cardStack">
+
+            <div class="card" data-index="0" data-id="wd-001" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://openai.com/index/introducing-gpt-5-5/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">OpenAI משיקה GPT-5.5 ('Spud')</h2>
+                    <p class="card-summary">מודל הדגל החדש עוקף את Claude Opus 4.7 ו-Gemini 3.1 Pro במדדי בינה, אך עם 86% הזיות לעומת 36% ב-Opus 4.7.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">פער ההזיות מעלה שאלה: האם הקפיצה בביצועים שווה את ירידת האמינות? מומלץ לבדוק לעומק לפני שמחליפים מודל ייצור.</p>
+                        <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="1" data-id="wd-002" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://openai.com/index/introducing-chatgpt-images-2-0/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">ChatGPT Images 2.0 מחזיר ל-OpenAI את הכתר ביצירת תמונות</h2>
+                    <p class="card-summary">מודל ראשון שמתכנן, מחפש ברשת ובודק את עצמו, מדיח את Nano Banana אחרי שנה. אלטמן: ״כמו GPT-3 ל-GPT-5 בבת אחת״.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">המעבר מתוצאה חד-פעמית למודל שמתכנן ובודק את עצמו הוא קפיצת מדרגה ארכיטקטונית, לא רק שדרוג איכות. שווה לראות אם זה מחזיר את OpenAI להובלה ביצירת תמונות לאחר שנה של פיגור.</p>
+                        <a href="https://openai.com/index/introducing-chatgpt-images-2-0/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="2" data-id="wd-003" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://www.anthropic.com/news/claude-design-anthropic-labs" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Anthropic משיקה Claude Design</h2>
+                    <p class="card-summary">כלי שהופך פרומפטים, צילומי מסך וקוד לפרוטוטייפים. מניית Figma צללה -7% ביום ההשקה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">תגובת השוק של Figma חושפת איום ישיר על שכבת הפרוטוטייפינג. אם Claude Design תופס תאוצה, המורה הקלאסית של עיצוב→קוד עוברת ל-AI.</p>
+                        <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="3" data-id="wd-004" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">DeepSeek משחררת V4 Pro ו-V4 Flash בקוד פתוח</h2>
+                    <p class="card-summary">V4 Pro עם 1.6T פרמטרים (49B פעילים) הוא הגדול ביותר של החברה ועלה לראש מודלי הקוד-פתוח.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">שנה אחרי הזעזוע של V3, סין שוב משחררת מודל קוד-פתוח שמתחרה בענקיות האמריקאיות. ההבדל: עכשיו זה לא הפתעה, זה שגרה.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="4" data-id="wd-005" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://www.kimi.com/blog/kimi-k2-6" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Moonshot Kimi K2.6 מצמצם את פער הקוד-פתוח</h2>
+                    <p class="card-summary">מודל אגנטי ב-$0.95/$4 שעקף את GPT-5.4 ו-Opus 4.6, יכול לרוץ 12+ שעות רצוף עם 4,000 קריאות כלים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">12 שעות ריצה ו-4,000 קריאות כלים זה לא רק חיסכון בעלות - זה משנה את סוג המשימות שאפשר להפעיל אוטונומית. סוכן שיכול לרוץ יום עבודה שלם.</p>
+                        <a href="https://www.kimi.com/blog/kimi-k2-6" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="5" data-id="wd-006" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://qwen.ai/blog?id=qwen3.6-27b" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Alibaba משחררת Qwen3.6-27B בקוד פתוח</h2>
+                    <p class="card-summary">מודל 27B שעקף את הקודם שלה (397B) במבחני קוד; תואם ל-OpenClaw, Claude Code ו-Qwen Code.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">27B עוקף 397B - זו עדות לכך שאיכות נתונים וארכיטקטורה גוברות על גודל. וזה הופך הרצה מקומית למציאותית גם למפתחי יחיד.</p>
+                        <a href="https://qwen.ai/blog?id=qwen3.6-27b" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="6" data-id="wd-007" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Google חושפת Deep Research ו-Deep Research Max</h2>
+                    <p class="card-summary">סוכני SOTA על Gemini 3.1 Pro עם תמיכת MCP, גרפים ואינפוגרפיקה ילידיים, עוקפים את Opus 4.6 ו-GPT-5.4.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">תמיכת MCP ילידית בגוגל מאשרת את הסטנדרט של Anthropic - חשוב לכל מי שבונה אינטגרציות. הגרפים הילידיים מתחרים ישירות מול ChatGPT Deep Research.</p>
+                        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="7" data-id="wd-008" data-source="The Rundown AI" data-category="מודלים ומוצרים חדשים" data-url="https://www.canva.com/newsroom/news/canva-create-2026-ai/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Canva AI 2.0</h2>
+                    <p class="card-summary">סביבת עיצוב מונעת-AI לחלוטין; כל פלט נשאר עריך לאורך כל הזרימה. מתחרה ישירות מול Adobe Firefly ו-Claude Design.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״עריכה לאורך כל הזרימה״ זו התשובה של Canva לתחושת ה-״one-shot״ של מחוללי AI אחרים. מי ששולט בסבב העריכה - שולט בלקוח.</p>
+                        <a href="https://www.canva.com/newsroom/news/canva-create-2026-ai/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="8" data-id="wd-009" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://openai.com/index/making-chatgpt-better-for-clinicians/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">OpenAI משיקה ChatGPT for Clinicians</h2>
+                    <p class="card-summary">חינם לרופאים אמריקאים מאומתים, מבוסס GPT-5.4, עקף את Opus 4.7 ו-Gemini 3.1 Pro ב-HealthBench Pro.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">חינם לרופאים זה מהלך הפצה אגרסיבי - OpenAI קונה את שכבת הקלינאים לפני שהמתחרים מגיעים. הסיכונים הרגולטוריים ברפואה גבוהים, אבל גם הנעילה.</p>
+                        <a href="https://openai.com/index/making-chatgpt-better-for-clinicians/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="9" data-id="wd-010" data-source="Bay Area Times" data-category="מודלים ומוצרים חדשים" data-url="https://openai.com/index/introducing-openai-privacy-filter/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">OpenAI משחררת Privacy Filter</h2>
+                    <p class="card-summary">מודל קוד-פתוח קטן (1.5B פרמטרים) למיסוך מידע אישי בטקסט, ברישיון Apache 2.0.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">OpenAI משחררת קוד פתוח? נדיר. רישיון Apache 2.0 אומר שאפשר להטמיע במוצרים מסחריים בלי הגבלות - יעיל לכל מי שמטפל ב-PII.</p>
+                        <a href="https://openai.com/index/introducing-openai-privacy-filter/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="10" data-id="wd-011" data-source="The Rundown AI" data-category="מודלים ומוצרים חדשים" data-url="https://news.adobe.com/news/2026/04/adobe-redefines-custome-experience" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">מודלים ומוצרים חדשים</div>
+                    <h2 class="card-title">Adobe משיקה CX Enterprise</h2>
+                    <p class="card-summary">פלטפורמה אגנטית לתיאום מודעות, תוכן ואינטראקציות עם לקוחות; מתחבר ל-ChatGPT, Claude, Gemini ו-Copilot.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">החיבור לכל ספקי ה-AI זו הצהרה - Adobe לא בוחרת צד. הם רוצים להיות שכבת ה-orchestration השיווקית, גם אם המוח עובר ללקוח.</p>
+                        <a href="https://news.adobe.com/news/2026/04/adobe-redefines-custome-experience" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="11" data-id="wd-012" data-source="Bay Area Times" data-category="בטיחות AI ואתיקה" data-url="https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">בטיחות AI ואתיקה</div>
+                    <h2 class="card-title">Mythos של Anthropic דלף לקבוצת Discord</h2>
+                    <p class="card-summary">קבוצה חיצונית מקבלת גישה יומיומית למודל שהוגדר ״מסוכן מדי לציבור״ דרך כניסה שאולה של קבלן וקוד שדלף בפרצת Mercor.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">המסר: מודל ״מסוכן מדי לציבור״ דולף דרך הקבלנים, לא דרך פריצות מתוחכמות. זנב הספקים הוא שטח ההתקפה האמיתי, וזה ידהד ברגולציה הקרובה.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-21/anthropic-s-mythos-model-is-being-accessed-by-unauthorized-users" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="12" data-id="wd-013" data-source="The Rundown AI" data-category="בטיחות AI ואתיקה" data-url="https://cdn.sanity.io/files/4zrzovbb/website/3a8d990bc90098038eabd77b0d12ff636ed58d50.pdf" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">בטיחות AI ואתיקה</div>
+                    <h2 class="card-title">סקר Anthropic: מי שמרוויח הכי הרבה מ-AI גם הכי חרד</h2>
+                    <p class="card-summary">80,508 עובדים, אנשי מקצוע שמשתמשים בקלוד הכי הרבה מבטאים פחד פיטורים פי 3, צעירים בפרט.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">פרדוקס מעניין: דווקא הכוח-המשתמש מרגיש את האיום הכי חזק. כי הוא הראשון שרואה כמה הרבה ה-AI יודע לעשות. סיפור מעולה לפודקאסט.</p>
+                        <a href="https://cdn.sanity.io/files/4zrzovbb/website/3a8d990bc90098038eabd77b0d12ff636ed58d50.pdf" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="13" data-id="wd-014" data-source="Bay Area Times" data-category="בטיחות AI ואתיקה" data-url="https://www.businessinsider.com/meta-new-ai-tool-tracks-staff-activity-sparks-concern-2026-4" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">בטיחות AI ואתיקה</div>
+                    <h2 class="card-title">Meta תיעדה הקלדות, קליקים וצילומי מסך לאימון AI</h2>
+                    <p class="card-summary">אין אפשרות opt-out; CTO בוסוורת': ״אין אופציה לוותר״. המהלך מגיע על רקע פיטורי 8,000 עובדים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״אין אופציה לוותר״ זה מסר חד - שכשהפיטורים מתקרבים, פרטיות העובד יורדת בעדיפות. וזה תקדים שמעבידים אחרים יסתכלו עליו.</p>
+                        <a href="https://www.businessinsider.com/meta-new-ai-tool-tracks-staff-activity-sparks-concern-2026-4" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="14" data-id="wd-015" data-source="Bay Area Times" data-category="בטיחות AI ואתיקה" data-url="https://www.anthropic.com/engineering/april-23-postmortem" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">בטיחות AI ואתיקה</div>
+                    <h2 class="card-title">Anthropic פרסמה post-mortem על Claude Code</h2>
+                    <p class="card-summary">שלושה באגים בהיגיון ובמטמון פגעו בביצועים; מאפסים מגבלות שימוש ללקוחות.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">post-mortem פתוח עם פיצוי הוא תקן זהב לאמון מפתחים. שווה לקרוא לפני שמרגיעים את העצמאיים שאיבדו ימי עבודה.</p>
+                        <a href="https://www.anthropic.com/engineering/april-23-postmortem" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="15" data-id="wd-016" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://x.com/SpaceX/status/2046713419978453374" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">SpaceX מתחייבת ל-Cursor $10B עם אופציה לרכישה ב-$60B</h2>
+                    <p class="card-summary">Colossus של xAI יספק את כוח המחשוב; Cursor הגיע ל-$2.7B ARR (פי 14 בשנה) עם הפסד $900M.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">פי 14 בשנה ב-ARR עם $900M הפסד - הגישה הקלאסית של ״לרוץ קדימה ולממן עם אופציה״. אם מאסק קונה, Cursor הופך לכלי הקוד של xAI.</p>
+                        <a href="https://x.com/SpaceX/status/2046713419978453374" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="16" data-id="wd-017" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.ft.com/content/4492c0d6-855b-4164-9ae5-f4d855a95f1e" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Cohere ו-Aleph Alpha מתמזגות ב-~$20B ל״AI ריבוני״</h2>
+                    <p class="card-summary">בגיבוי ממשלות גרמניה וקנדה; חלופה אירופית למודלים אמריקאים/סיניים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״AI ריבוני״ הופך ממונח לסטרטגיית מדינה. אירופה מתחילה להבין שהיא לא תוכל להתחרות בלי קונסולידציה - ומישהו אחר יחליט בשבילה.</p>
+                        <a href="https://www.ft.com/content/4492c0d6-855b-4164-9ae5-f4d855a95f1e" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="17" data-id="wd-018" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.theinformation.com/articles/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Tencent ו-Alibaba שוקלות השקעה ב-DeepSeek מעל $20B</h2>
+                    <p class="card-summary">$300M+ בסבב הראשון; מקביל את DeepSeek ל-OpenAI/Anthropic.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">סין מאחדת שורות סביב DeepSeek כתשובה ל-OpenAI/Anthropic. שוויית $20B אומרת שזה כבר לא ״מתמודדת״ - זו הראשונה שלהם.</p>
+                        <a href="https://www.theinformation.com/articles/tencent-alibaba-talks-invest-deepseek-20-billion-plus-valuation" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="18" data-id="wd-019" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Amazon משקיעה עד $25B נוספים ב-Anthropic</h2>
+                    <p class="card-summary">$5B ראשוני ב-$380B שווי; Anthropic מתחייבת ל-$100B+ ב-AWS על פני עשור עם 5GW כוח מחשוב.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">$100B+ חזרה ל-AWS על פני עשור - זה לא השקעה, זו עסקת השכרת מחשוב מובנית. אמזון קונה ביקוש ל-AWS, Anthropic קונה ודאות תפעולית.</p>
+                        <a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="19" data-id="wd-020" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.ft.com/content/87ea0ced-bf3c-4822-8dda-437241570ded" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Project Prometheus של בזוס מתקרב לגיוס $10B בשווי $38B</h2>
+                    <p class="card-summary">JPMorgan ו-BlackRock בין המשקיעים; $6.2B כבר גויסו בנובמבר.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">בזוס בונה ״עוד OpenAI״ - בלי מוצר ידוע אבל עם $16B במאזן. זה מה שקורה כשיש לך הון בלתי מוגבל ושעמום עם e-commerce.</p>
+                        <a href="https://www.ft.com/content/87ea0ced-bf3c-4822-8dda-437241570ded" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="20" data-id="wd-021" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Cognition במגעים לגיוס מאות מיליונים בשווי $25B</h2>
+                    <p class="card-summary">סטארטאפ קוד AI; שיחות נמשכות.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">$25B לסטארטאפ קוד שעוד לא ברור איפה הוא בשוק - הסימן שכל קטגוריה ״סוכן קוד״ עוברת ריצה אגרסיבית של מימון לפני שמתבהר מי המנצח.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="21" data-id="wd-022" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.cnbc.com/2026/04/17/cerebras-new-ipo-ai-chips.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Cerebras מגישה IPO</h2>
+                    <p class="card-summary">סימול CBRS; שווי אפשרי $35B; הסטארטאפ מודה שאינו בעל ה-data centers שעליהם הוא מסתמך.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">ההודאה ש״לא בעל הדאטה סנטרים״ זו אמירה כלכלית בסיכון - תלות מבנית במישהו אחר. שווה לעקוב אחרי זה כעדות לבועת התשתית.</p>
+                        <a href="https://www.cnbc.com/2026/04/17/cerebras-new-ipo-ai-chips.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="22" data-id="wd-023" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.theinformation.com/articles/polymarket-talks-raise-money-15-billion-valuation" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Polymarket מבקשת $400M בשווי ~$15B</h2>
+                    <p class="card-summary">מתחת ל-$22B של Kalshi המתחרה; הסבב יכול להגיע ל-$1B.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">פער של $7B בין שני שווקי תחזיות זה מקור לסיפור: למה השוק האמריקאי מעדיף את Kalshi הרגולטורי על Polymarket שמוכר את עצמו כ-״הטוב יותר״?</p>
+                        <a href="https://www.theinformation.com/articles/polymarket-talks-raise-money-15-billion-valuation" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="23" data-id="wd-024" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.cnbc.com/2026/04/22/nvidia-backs-ai-company-vast-data.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Vast Data גייסה $1B בסבב F בשווי $30B</h2>
+                    <p class="card-summary">בהשתתפות NVIDIA; יותר מ-$4B הזמנות מצטברות, $500M+ ARR.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">סבב F = חברה במצב משובח. NVIDIA כמשקיע אסטרטגי = Vast הופך לחלק מהאקוסיסטם של GPU/אחסון, לא רק ספק.</p>
+                        <a href="https://www.cnbc.com/2026/04/22/nvidia-backs-ai-company-vast-data.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="24" data-id="wd-025" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.ft.com/content/a92bf04b-bbac-400f-9554-5b1c70957ad4" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Recursive Superintelligence גייסה $500M+ בשווי $4.5B</h2>
+                    <p class="card-summary">סטארטאפ של בני 4 חודשים מבוגרי OpenAI ו-DeepMind, בונים AI שמשפר את עצמו.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">$4.5B בארבעה חודשים בלי מוצר. זה מה שקורה כשהשוק מאמין שכל ״צוות מהשורה הראשונה״ + ״AI שמשפר את עצמו״ = stake ב-AGI. סיפור שווה לעיון.</p>
+                        <a href="https://www.ft.com/content/a92bf04b-bbac-400f-9554-5b1c70957ad4" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="25" data-id="wd-026" data-source="Future Party" data-category="עסקאות ומימון" data-url="https://www.businessinsider.com/anthropic-trillion-dollar-valuation-on-secondary-markets-2026" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">Anthropic עוברת את OpenAI בשווי בשוקי משני - $1T</h2>
+                    <p class="card-summary">לפי דיווח, Anthropic עברה את OpenAI על פלטפורמות מסחר משני בקרב מניות פרטיות.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">השוק המשני אומר מה שמשקיעים מוכנים לשלם, לא מה שהבורד החליט. זה אינדיקטור חשוב, גם אם השווי הראשי עדיין נמוך יותר.</p>
+                        <a href="https://www.businessinsider.com/anthropic-trillion-dollar-valuation-on-secondary-markets-2026" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="26" data-id="wd-027" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.bloomberg.com/news/articles/2026-04-23/softbank-seeks-10-billion-margin-loan-backed-by-openai-shares" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">SoftBank מבקשת הלוואת מרג'ין של $10B כנגד מניות OpenAI</h2>
+                    <p class="card-summary">לפי דיווח.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">הלוואת מרג'ין על מניות פרטיות - מהלך נדיר ומסוכן. אם OpenAI נופלת ב-30%, SoftBank עלולה להיכנס למצב margin call כואב.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-23/softbank-seeks-10-billion-margin-loan-backed-by-openai-shares" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="27" data-id="wd-028" data-source="Bay Area Times" data-category="עסקאות ומימון" data-url="https://www.businessinsider.com/elon-musk-xai-explored-collaborating-with-mistral-cursor-2026-4" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">xAI ו-SpaceX במגעים עם Mistral ו-Cursor לשותפות משולשת</h2>
+                    <p class="card-summary">מאסק רוצה להתמודד מול Anthropic; Devendra Chaplot עבר מ-Mistral ל-xAI במרץ.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">מאסק בונה גוש אסטרטגי - חומרה (xAI Colossus), מודל (Mistral אירופה), כלי קוד (Cursor). אם זה מתממש, אנתרופיק מקבלת מתחרה כבד מאוד.</p>
+                        <a href="https://www.businessinsider.com/elon-musk-xai-explored-collaborating-with-mistral-cursor-2026-4" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="28" data-id="wd-029" data-source="Future Party" data-category="עסקאות ומימון" data-url="https://www.businessinsider.com/original-openai-office-is-on-the-market-2026-4" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">עסקאות ומימון</div>
+                    <h2 class="card-title">הבית הראשון של OpenAI למכירה ב-$1.5M</h2>
+                    <p class="card-summary">נכס בסן פרנסיסקו ששימש כמשרד הראשון; OpenAI בחרה לא לקנות חזרה למרות שווי החברה ~$300B.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">סיפור צבעוני שמנגיש את הסיפור של OpenAI - מ-$1.5M לבית ועד $300B שווי. מתאים בולט לפודקאסט או לאינסטוריה.</p>
+                        <a href="https://www.businessinsider.com/original-openai-office-is-on-the-market-2026-4" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="29" data-id="wd-030" data-source="Bay Area Times" data-category="שוק עבודה ופיטורים" data-url="https://www.bloomberg.com/news/articles/2026-04-23/meta-tells-staff-it-will-cut-10-of-jobs-in-push-for-efficiency" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">שוק עבודה ופיטורים</div>
+                    <h2 class="card-title">Meta תפטר 8,000 עובדים החל מ-20.5 (10% מהחברה)</h2>
+                    <p class="card-summary">ועוד 6,000 משרות פתוחות לא יאוישו; חלק מאסטרטגיית AI.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">14,000 תפקידים פחות (פיטורים + לא איוש) - זו לא ״התאמה״, זו אמירה אסטרטגית: Meta מאמינה שיותר AI = פחות אנשים. הראשון בליגה הגדולה לעשות את זה כל-כך פומבית.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-23/meta-tells-staff-it-will-cut-10-of-jobs-in-push-for-efficiency" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="30" data-id="wd-031" data-source="Bay Area Times" data-category="שוק עבודה ופיטורים" data-url="https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">שוק עבודה ופיטורים</div>
+                    <h2 class="card-title">Microsoft מציעה פרישה מרצון ל-~7% מהעובדים האמריקאים (8,750)</h2>
+                    <p class="card-summary">תוכנית buyouts ראשונה של החברה בקנה מידה כזה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״פרישה מרצון״ = פיטורים בלי הכותרות. גם Microsoft נכנסת לשלב ההתכווצות, אחרי Meta. שתי הענקיות מסמנות את התקופה.</p>
+                        <a href="https://www.cnbc.com/2026/04/23/microsoft-plans-first-voluntary-retirement-program-for-us-employees.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="31" data-id="wd-032" data-source="Bay Area Times" data-category="שוק עבודה ופיטורים" data-url="https://www.cnbc.com/2026/04/20/apple-names-john-ternus-ceo-replacing-tim-cook-who-becomes-chairman.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">שוק עבודה ופיטורים</div>
+                    <h2 class="card-title">Apple: טים קוק עוזב, ג'ון טרנוס מנכ״ל החדש מ-1.9</h2>
+                    <p class="card-summary">קוק יישאר כיו״ר ויתמקד בקשרי ממשל; הוא הכפיל פי 4 את הרווחים השנתיים ל-$110B במהלך 15 שנות כהונתו.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">Apple במעבר דורי בעיצומו של מרוץ AI שהיא מאחור בו. טרנוס מהנדס חומרה - השינוי האסטרטגי האמיתי יבחן בשנה הראשונה.</p>
+                        <a href="https://www.cnbc.com/2026/04/20/apple-names-john-ternus-ceo-replacing-tim-cook-who-becomes-chairman.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="32" data-id="wd-033" data-source="The Rundown AI" data-category="שוק עבודה ופיטורים" data-url="https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">שוק עבודה ופיטורים</div>
+                    <h2 class="card-title">שלושה בכירים עוזבים את OpenAI</h2>
+                    <p class="card-summary">לשעבר CPO קווין וייל, ראש Sora ביל פיבלס, ומנהל אפליקציות ארגוניות סריניבאס נראיאנן; מסע חיתוך ״side quests״ של אלטמן.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״side quests״ זה מונח של אלטמן לחיתוך פרויקטים. שלושה בכירים בבת אחת זה רעש - השאלה אם זה ניקוי טבעי או סימן למתח פנימי עמוק יותר.</p>
+                        <a href="https://www.wired.com/story/openai-executive-kevin-weil-is-leaving-the-company/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="33" data-id="wd-034" data-source="The Rundown AI" data-category="רגולציה וגיאופוליטיקה" data-url="https://www.whitehouse.gov/wp-content/uploads/2026/04/NSTM-4.pdf" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">רגולציה וגיאופוליטיקה</div>
+                    <h2 class="card-title">הבית הלבן מאשים מעבדות סיניות ב״דיסטילציה תעשייתית״ של AI אמריקאי</h2>
+                    <p class="card-summary">מזכר NSTM-4 שבועות לפני פגישת טראמפ-שי בבייג'ינג; אנתרופיק כבר האשימה את DeepSeek, Moonshot ו-MiniMax בפברואר.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״דיסטילציה תעשייתית״ הופך מטענה של חברה לעמדה של מדינה. צפוי שזה ישפיע על משטר היצוא של מודלים והגישה ל-API.</p>
+                        <a href="https://www.whitehouse.gov/wp-content/uploads/2026/04/NSTM-4.pdf" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="34" data-id="wd-035" data-source="Bay Area Times" data-category="רגולציה וגיאופוליטיקה" data-url="https://www.axios.com/2026/04/17/anthropic-white-house-wiles-bessent-amodei" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">רגולציה וגיאופוליטיקה</div>
+                    <h2 class="card-title">Amodei של Anthropic נפגש עם בסנט וויילס</h2>
+                    <p class="card-summary">דיון על Mythos והגנות על שחרור מודלים; ה-NSA כבר משתמש במודל למרות שהפנטגון הגדיר אותו ״סיכון לשרשרת אספקה״.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">סתירה מבנית: NSA משתמש, פנטגון אוסר. זה מה שקורה כשממשל-משתמש לא הסתנכרן על מי מחליט מה ״בטוח לשימוש״.</p>
+                        <a href="https://www.axios.com/2026/04/17/anthropic-white-house-wiles-bessent-amodei" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="35" data-id="wd-036" data-source="Bay Area Times" data-category="רגולציה וגיאופוליטיקה" data-url="https://www.axios.com/2026/04/21/anthropic-outspends-openai-biggest-lobbying-quarter" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">רגולציה וגיאופוליטיקה</div>
+                    <h2 class="card-title">Anthropic עוברת את OpenAI בהוצאות לובי</h2>
+                    <p class="card-summary">+344% ל-$1.6M ברבעון 1; OpenAI עלתה ב-78.6% ל-$1M; טראמפ אומר ״עסקה עם Anthropic אפשרית״.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">+344% ב-לובי בתוך רבעון = השקעה בכוח פוליטי. אנתרופיק מבינה שהטכנולוגיה כבר לא תכריע - הרגולציה תכריע.</p>
+                        <a href="https://www.axios.com/2026/04/21/anthropic-outspends-openai-biggest-lobbying-quarter" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="36" data-id="wd-037" data-source="Bay Area Times" data-category="חומרה והפצה" data-url="https://www.bloomberg.com/news/articles/2026-04-22/google-cloud-releases-new-tpu-chip-lineup-in-bid-to-speed-up-ai" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">חומרה והפצה</div>
+                    <h2 class="card-title">גוגל חושפת דור 8 של TPUs</h2>
+                    <p class="card-summary">TPU 8t לאימון (124% שיפור ביצועים/וואט, עד 9,600 שבבים) ו-TPU 8i להסקה (117% שיפור); זמין השנה.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">+124% ביצועים/וואט = פחות חשמל לאותה תוצאה. זה משנה את כלכלת הענן עבור AI ומחזק את הטענה של גוגל שלהיות בעל סיליקון משלך זה לא מותרות.</p>
+                        <a href="https://www.bloomberg.com/news/articles/2026-04-22/google-cloud-releases-new-tpu-chip-lineup-in-bid-to-speed-up-ai" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="37" data-id="wd-038" data-source="Bay Area Times" data-category="חומרה והפצה" data-url="https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">חומרה והפצה</div>
+                    <h2 class="card-title">טסלה Q1: הכנסות +16% ל-$22.4B; אישרה גרסאות זולות של Model Y/3</h2>
+                    <p class="card-summary">שולי רווח אוטומוטיביים 19.2%; capex צפוי לעבור $25B השנה לעומת $8.6B ב-2025.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">capex של $25B - פי 3 מ-2025 - אומר שטסלה מהמרת הכל על Optimus, Robotaxi ו-Dojo. שנת ביצוע גדולה מתחילה.</p>
+                        <a href="https://www.cnbc.com/2026/04/22/tesla-tsla-q1-2026-earnings-report.html" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="38" data-id="wd-039" data-source="Bay Area Times" data-category="AI Agents בארגונים" data-url="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">AI Agents בארגונים</div>
+                    <h2 class="card-title">OpenAI משיקה Workspace Agents ב-ChatGPT</h2>
+                    <p class="card-summary">סוכנים משותפים מבוססי-Codex לצוותים; פועלים גם ב-Slack, אוטונומיים עם הרשאות.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">סוכנים משותפים בצוות = זרימה אחרת של עבודה. במקום ״אני מפעיל סוכן״, זה ״הצוות מפעיל סוכן בשם הצוות״. שינוי תפיסתי, לא רק טכני.</p>
+                        <a href="https://openai.com/index/introducing-workspace-agents-in-chatgpt/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="39" data-id="wd-040" data-source="Bay Area Times" data-category="AI Agents בארגונים" data-url="https://www.zdnet.com/article/google-cloud-next-enterprise-agent-platform-ai/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">AI Agents בארגונים</div>
+                    <h2 class="card-title">גוגל משיקה Gemini Enterprise Agent Platform</h2>
+                    <p class="card-summary">גישה ל-200+ מודלים כולל מ-Anthropic; מתחבר ל-Wiz לסוכני אבטחה; Mira Murati של TML חתמה עסקת ענן בשווי מיליארדים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">200+ מודלים כולל של מתחרים - גוגל בוחרת לחיות בעולם רב-מודלים. החיבור ל-Wiz סוגר את לולאת האבטחה לארגונים גדולים.</p>
+                        <a href="https://www.zdnet.com/article/google-cloud-next-enterprise-agent-platform-ai/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="40" data-id="wd-041" data-source="Bay Area Times" data-category="AI Agents בארגונים" data-url="https://www.businessinsider.com/google-ai-generated-code-75-gemini-agents-software-2026-4" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">AI Agents בארגונים</div>
+                    <h2 class="card-title">75% מהקוד החדש בגוגל נכתב על ידי AI</h2>
+                    <p class="card-summary">לעומת 50% בסתיו; שיפורים משמעותיים באבטחה ובתפעול.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">קפיצה מ-50% ל-75% בחצי שנה - האקצלרציה אמיתית. השאלה המעניינת: מה זה אומר על תפקיד המהנדס בגוגל ב-2027.</p>
+                        <a href="https://www.businessinsider.com/google-ai-generated-code-75-gemini-agents-software-2026-4" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="41" data-id="wd-042" data-source="Bay Area Times" data-category="AI Agents בארגונים" data-url="https://www.axios.com/2026/04/17/worldcoin-zoom-shopify-retail-partnership" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">AI Agents בארגונים</div>
+                    <h2 class="card-title">World של אלטמן מתפשט: Tinder, Zoom, DocuSign, Okta, Vercel</h2>
+                    <p class="card-summary">פרוטוקול ״הוכחת אדם״ משולב להגנה מפני deepfakes, אימות מנויים, וחתימה דיגיטלית; 17.9M משתמשים גלובלית.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">״הוכחת אדם״ הופכת מרעיון מוזר של אלטמן לפרוטוקול שזוקפים אליו ענקיות. אם זה ימשיך, World תהיה שכבת זהות מקבילה לאינטרנט.</p>
+                        <a href="https://www.axios.com/2026/04/17/worldcoin-zoom-shopify-retail-partnership" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="42" data-id="wd-043" data-source="Bay Area Times" data-category="סטארטאפים ושותפויות" data-url="https://www.theinformation.com/articles/google-creates-strike-team-improve-coding-models" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">סטארטאפים ושותפויות</div>
+                    <h2 class="card-title">סרגיי ברין מוביל ״צוות סטרייק״ ב-DeepMind לסגור פער מ-Claude בקוד</h2>
+                    <p class="card-summary">ראיית-יעד: AI שמשפר את עצמו; לוח usage פנימי בשם Jetski למעקב.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">ברין חוזר לעבוד hands-on - סימן חזק לכמה גוגל לוקחת ברצינות את הפיגור בקוד. ״צוות סטרייק״ זה לשון אגרסיבית במיוחד עבור גוגל.</p>
+                        <a href="https://www.theinformation.com/articles/google-creates-strike-team-improve-coding-models" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="43" data-id="wd-044" data-source="The Rundown AI" data-category="סטארטאפים ושותפויות" data-url="https://hy.tencent.com/hy3-preview" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">סטארטאפים ושותפויות</div>
+                    <h2 class="card-title">Tencent משחררת Hy3 בקוד פתוח</h2>
+                    <p class="card-summary">מודל ראשון מ-stack אימון מחודש, עם ביצועי קוד אגנטי תחרותיים.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">The Rundown AI</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">עוד שחקן סיני מתחרה ב-DeepSeek/Moonshot על תואר ״מודל הקוד הפתוח האגנטי״. ההצפה הזו מבריחה את המחירים של גישה ל-AI מטה.</p>
+                        <a href="https://hy.tencent.com/hy3-preview" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="44" data-id="wd-045" data-source="Bay Area Times" data-category="סטארטאפים ושותפויות" data-url="https://www.forbes.com/sites/iainmartin/2026/04/16/how-frances-mistral-built-a-14-billion-ai-empire-by-not-being-american/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">סטארטאפים ושותפויות</div>
+                    <h2 class="card-title">Mistral נסחפת לאלטרנטיבה אירופית</h2>
+                    <p class="card-summary">מטרה $80M הכנסות חודשיות עד דצמבר; מועמדת לשותפות עם xAI/SpaceX/Cursor.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Bay Area Times</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">Mistral נמצאת בצומת מעניין - בין ״אלטרנטיבה ריבונית אירופית״ לבין ״שותף של מאסק״. שתי אסטרטגיות שלא מסתדרות יחד.</p>
+                        <a href="https://www.forbes.com/sites/iainmartin/2026/04/16/how-frances-mistral-built-a-14-billion-ai-empire-by-not-being-american/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+            <div class="card" data-index="45" data-id="wd-046" data-source="Future Party" data-category="סטארטאפים ושותפויות" data-url="https://www.thewrap.com/creative-content/movies/ai-movie-bitcoin-killing-satoshi-gal-gadot-casey-affleck-doug-liman/" style="display:none;">
+                <div class="swipe-indicator like">&#10084; מעניין</div>
+                <div class="swipe-indicator nope">&#10007; לא רלוונטי</div>
+                <div class="card-inner">
+                    <div class="card-category">סטארטאפים ושותפויות</div>
+                    <h2 class="card-title">Doug Liman סיים סרט הוליוודי של $70M שנוצר לחלוטין עם AI</h2>
+                    <p class="card-summary">Bitcoin: Killing Satoshi עם קייסי אפלק וגל גדות; היה עולה $300M בלי AI. הסרט יוצג ב-Cannes במאי.</p>
+                    <div class="card-meta">
+                        <span class="source-badge">Future Party</span>
+                    </div>
+                    <div class="card-expanded"><div class="card-expanded-inner">
+                        <p class="card-detail">$70M לעומת $300M - פי 4 חיסכון בעלות הפקה. זה לא ״עתיד״ - זה כבר במאי. גל גדות בסרט שנוצר עם AI זה גם נקודת נגיעה ישראלית מצוינת.</p>
+                        <a href="https://www.thewrap.com/creative-content/movies/ai-movie-bitcoin-killing-satoshi-gal-gadot-casey-affleck-doug-liman/" target="_blank" rel="noopener" class="card-read-more">קרא את המאמר המלא</a>
+                    </div></div>
+                    <button class="expand-btn" type="button"><span class="expand-icon">&#9660;</span><span class="expand-label">עוד פרטים</span></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="action-buttons" id="actionButtons">
+            <button class="action-btn nope-btn" id="nopeBtn" aria-label="דלג">&#10007;</button>
+            <button class="action-btn expand-action-btn" id="expandBtn" aria-label="הרחב">&#9660;</button>
+            <button class="action-btn like-btn" id="likeBtn" aria-label="מעניין">&#10084;</button>
+        </div>
+
+        <div class="summary-screen hidden" id="summaryScreen"></div>
+
+        <footer>
+            <p>AI Weekly Digest · 19-25.4.26 · 46 ידיעות מ-3 ניוזלטרים</p>
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        'use strict';
+
+        const TOTAL = 46;
+        const SWIPE_THRESHOLD = 80;
+        const ROTATION_FACTOR = 0.12;
+
+        const state = {
+            current: 0,
+            cards: [],
+            isDragging: false,
+            isExpanded: false,
+            isAnimating: false,
+            startX: 0,
+            deltaX: 0,
+            liked: [],
+            dismissed: []
+        };
+
+        const stack = document.getElementById('cardStack');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const actionButtons = document.getElementById('actionButtons');
+        const summaryScreen = document.getElementById('summaryScreen');
+        const nopeBtn = document.getElementById('nopeBtn');
+        const likeBtn = document.getElementById('likeBtn');
+        const expandBtn = document.getElementById('expandBtn');
+
+        function init() {
+            state.cards = Array.from(stack.querySelectorAll('.card'));
+            sortByPreference();
+            updateStack();
+            updateProgress();
+            bindButtons();
+            bindKeyboard();
+        }
+
+        function sortByPreference() {
+            const prefs = loadPrefs();
+            if (!prefs.sourceScores || Object.keys(prefs.sourceScores).length === 0) return;
+
+            state.cards.forEach(card => {
+                const src = card.dataset.source;
+                const cat = card.dataset.category;
+                const ss = prefs.sourceScores[src]?.score ?? 0.5;
+                const cs = prefs.categoryScores[cat]?.score ?? 0.5;
+                card._prefScore = ss * 0.6 + cs * 0.4;
+            });
+
+            state.cards.sort((a, b) => (b._prefScore || 0.5) - (a._prefScore || 0.5));
+            state.cards.forEach((card, i) => {
+                card.dataset.index = i;
+                stack.appendChild(card);
+            });
+        }
+
+        function updateStack() {
+            state.cards.forEach((card, i) => {
+                const offset = i - state.current;
+                if (offset < 0 || offset > 2) {
+                    card.style.display = 'none';
+                    return;
+                }
+                card.style.display = '';
+                card.style.zIndex = 3 - offset;
+                card.style.pointerEvents = offset === 0 ? 'auto' : 'none';
+
+                if (offset === 0) {
+                    card.style.transform = '';
+                    card.style.opacity = '1';
+                } else {
+                    const s = 1 - offset * 0.04;
+                    const y = offset * 8;
+                    card.style.transform = 'scale(' + s + ') translateY(' + y + 'px)';
+                    card.style.opacity = String(1 - offset * 0.15);
+                }
+
+                card.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+
+                if (offset === 0 && !card._bound) {
+                    bindTouch(card);
+                    bindMouse(card);
+                    bindExpand(card);
+                    card._bound = true;
+                }
+            });
+        }
+
+        function updateProgress() {
+            const pct = (state.current / TOTAL) * 100;
+            progressFill.style.width = pct + '%';
+            progressText.textContent = state.current + ' / ' + TOTAL;
+        }
+
+        function completeSwipe(direction) {
+            if (state.isAnimating || state.current >= TOTAL) return;
+            state.isAnimating = true;
+
+            const card = state.cards[state.current];
+            const id = card.dataset.id;
+            const source = card.dataset.source;
+            const category = card.dataset.category;
+
+            if (state.isExpanded) toggleExpand(card);
+
+            card.classList.remove('swiping');
+            card.classList.add('animate-out');
+            card.classList.add(direction === 'like' ? 'swipe-right' : 'swipe-left');
+
+            if (direction === 'like') {
+                state.liked.push(id);
+            } else {
+                state.dismissed.push(id);
+            }
+            recordPref(id, source, category, direction === 'like');
+
+            if (navigator.vibrate) navigator.vibrate(direction === 'like' ? [15] : [10, 10, 10]);
+
+            state.current++;
+            updateProgress();
+
+            setTimeout(function() {
+                card.style.display = 'none';
+                card.classList.remove('animate-out', 'swipe-right', 'swipe-left');
+                state.isAnimating = false;
+
+                if (state.current >= TOTAL) {
+                    showSummary();
+                } else {
+                    updateStack();
+                }
+            }, 420);
+        }
+
+        function bindTouch(card) {
+            let startX = 0, startY = 0, deltaX = 0, locked = false, scrolling = false;
+
+            card.addEventListener('touchstart', function(e) {
+                if (state.isExpanded || state.isAnimating) return;
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                deltaX = 0;
+                locked = false;
+                scrolling = false;
+                card.classList.add('swiping');
+            }, { passive: true });
+
+            card.addEventListener('touchmove', function(e) {
+                if (state.isExpanded || state.isAnimating || scrolling) return;
+                const dx = e.touches[0].clientX - startX;
+                const dy = e.touches[0].clientY - startY;
+
+                if (!locked) {
+                    if (Math.abs(dy) > Math.abs(dx) && Math.abs(dx) < 15) {
+                        scrolling = true;
+                        card.classList.remove('swiping');
+                        return;
+                    }
+                    locked = true;
+                }
+
+                e.preventDefault();
+                deltaX = dx;
+                const rot = dx * ROTATION_FACTOR;
+                card.style.transform = 'translateX(' + dx + 'px) rotate(' + rot + 'deg)';
+
+                const progress = Math.min(Math.abs(dx) / SWIPE_THRESHOLD, 1);
+                const likeInd = card.querySelector('.swipe-indicator.like');
+                const nopeInd = card.querySelector('.swipe-indicator.nope');
+                if (dx > 0) {
+                    likeInd.style.opacity = progress;
+                    nopeInd.style.opacity = 0;
+                } else {
+                    nopeInd.style.opacity = progress;
+                    likeInd.style.opacity = 0;
+                }
+            }, { passive: false });
+
+            card.addEventListener('touchend', function() {
+                if (state.isExpanded || state.isAnimating || scrolling) return;
+                card.classList.remove('swiping');
+
+                if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
+                    completeSwipe(deltaX > 0 ? 'like' : 'nope');
+                } else {
+                    card.style.transition = 'transform 0.3s ease';
+                    card.style.transform = '';
+                    card.querySelector('.swipe-indicator.like').style.opacity = 0;
+                    card.querySelector('.swipe-indicator.nope').style.opacity = 0;
+                    setTimeout(function() { card.style.transition = ''; }, 300);
+                }
+                deltaX = 0;
+            });
+        }
+
+        function bindMouse(card) {
+            let startX = 0, deltaX = 0, dragging = false;
+
+            card.addEventListener('mousedown', function(e) {
+                if (state.isExpanded || state.isAnimating) return;
+                if (e.target.closest('.expand-btn') || e.target.closest('.card-read-more')) return;
+                startX = e.clientX;
+                deltaX = 0;
+                dragging = true;
+                card.classList.add('swiping');
+                card.style.cursor = 'grabbing';
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', function(e) {
+                if (!dragging) return;
+                deltaX = e.clientX - startX;
+                const rot = deltaX * ROTATION_FACTOR;
+                card.style.transform = 'translateX(' + deltaX + 'px) rotate(' + rot + 'deg)';
+
+                const progress = Math.min(Math.abs(deltaX) / SWIPE_THRESHOLD, 1);
+                const likeInd = card.querySelector('.swipe-indicator.like');
+                const nopeInd = card.querySelector('.swipe-indicator.nope');
+                if (deltaX > 0) {
+                    likeInd.style.opacity = progress;
+                    nopeInd.style.opacity = 0;
+                } else {
+                    nopeInd.style.opacity = progress;
+                    likeInd.style.opacity = 0;
+                }
+            });
+
+            document.addEventListener('mouseup', function() {
+                if (!dragging) return;
+                dragging = false;
+                card.classList.remove('swiping');
+                card.style.cursor = '';
+
+                if (Math.abs(deltaX) >= SWIPE_THRESHOLD) {
+                    completeSwipe(deltaX > 0 ? 'like' : 'nope');
+                } else {
+                    card.style.transition = 'transform 0.3s ease';
+                    card.style.transform = '';
+                    card.querySelector('.swipe-indicator.like').style.opacity = 0;
+                    card.querySelector('.swipe-indicator.nope').style.opacity = 0;
+                    setTimeout(function() { card.style.transition = ''; }, 300);
+                }
+            });
+        }
+
+        function bindExpand(card) {
+            const btn = card.querySelector('.expand-btn');
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleExpand(card);
+            });
+        }
+
+        function toggleExpand(card) {
+            if (!card) card = state.cards[state.current];
+            if (!card) return;
+            const expanded = card.querySelector('.card-expanded');
+            const btn = card.querySelector('.expand-btn');
+            const icon = btn.querySelector('.expand-icon');
+            const label = btn.querySelector('.expand-label');
+
+            if (expanded.classList.contains('open')) {
+                expanded.classList.remove('open');
+                btn.classList.remove('expanded');
+                label.textContent = 'עוד פרטים';
+                state.isExpanded = false;
+            } else {
+                expanded.classList.add('open');
+                btn.classList.add('expanded');
+                label.textContent = 'פחות פרטים';
+                state.isExpanded = true;
+            }
+        }
+
+        function bindButtons() {
+            nopeBtn.addEventListener('click', function() { completeSwipe('nope'); });
+            likeBtn.addEventListener('click', function() { completeSwipe('like'); });
+            expandBtn.addEventListener('click', function() {
+                if (state.current < TOTAL) toggleExpand(state.cards[state.current]);
+            });
+        }
+
+        function bindKeyboard() {
+            document.addEventListener('keydown', function(e) {
+                if (state.current >= TOTAL) return;
+                switch(e.key) {
+                    case 'ArrowRight': completeSwipe('like'); break;
+                    case 'ArrowLeft': completeSwipe('nope'); break;
+                    case 'ArrowDown':
+                    case ' ':
+                        toggleExpand(state.cards[state.current]);
+                        e.preventDefault();
+                        break;
+                }
+            });
+        }
+
+        function loadPrefs() {
+            try {
+                const raw = localStorage.getItem('aiDigestPrefs');
+                if (!raw) return { version: 1, interactions: {}, sourceScores: {}, categoryScores: {}, stats: { totalLiked: 0, totalDismissed: 0 } };
+                return JSON.parse(raw);
+            } catch(e) {
+                return { version: 1, interactions: {}, sourceScores: {}, categoryScores: {}, stats: { totalLiked: 0, totalDismissed: 0 } };
+            }
+        }
+
+        function savePrefs(prefs) {
+            try {
+                const keys = Object.keys(prefs.interactions);
+                if (keys.length > 500) {
+                    const sorted = keys.sort((a,b) => {
+                        return (prefs.interactions[a].ts || '') > (prefs.interactions[b].ts || '') ? 1 : -1;
+                    });
+                    sorted.slice(0, keys.length - 500).forEach(k => delete prefs.interactions[k]);
+                }
+                prefs.lastUpdated = new Date().toISOString();
+                localStorage.setItem('aiDigestPrefs', JSON.stringify(prefs));
+            } catch(e) {}
+        }
+
+        function recordPref(id, source, category, liked) {
+            const prefs = loadPrefs();
+            prefs.interactions[id] = { liked: liked, source: source, category: category, ts: new Date().toISOString() };
+
+            if (!prefs.sourceScores[source]) prefs.sourceScores[source] = { liked: 0, dismissed: 0, score: 0.5 };
+            const ss = prefs.sourceScores[source];
+            liked ? ss.liked++ : ss.dismissed++;
+            ss.score = ss.liked / (ss.liked + ss.dismissed);
+
+            if (!prefs.categoryScores[category]) prefs.categoryScores[category] = { liked: 0, dismissed: 0, score: 0.5 };
+            const cs = prefs.categoryScores[category];
+            liked ? cs.liked++ : cs.dismissed++;
+            cs.score = cs.liked / (cs.liked + cs.dismissed);
+
+            prefs.stats.totalLiked += liked ? 1 : 0;
+            prefs.stats.totalDismissed += liked ? 0 : 1;
+
+            savePrefs(prefs);
+        }
+
+        function showSummary() {
+            stack.style.display = 'none';
+            actionButtons.style.display = 'none';
+
+            const prefs = loadPrefs();
+            const likedCards = state.liked.map(function(id) {
+                const card = stack.querySelector('[data-id="' + id + '"]');
+                return card ? { title: card.querySelector('.card-title').textContent, url: card.dataset.url, source: card.dataset.source, category: card.dataset.category } : null;
+            }).filter(Boolean);
+
+            const topCategories = Object.entries(prefs.categoryScores || {})
+                .sort((a,b) => b[1].score - a[1].score)
+                .slice(0, 3)
+                .map(e => e[0])
+                .join(' · ');
+
+            let html = '<div class="summary-content">';
+            html += '<h2>סיכום הקריאה</h2>';
+            html += '<div class="summary-stats">';
+            html += '<div class="stat liked"><span class="stat-number">' + state.liked.length + '</span><span class="stat-label">מעניינים</span></div>';
+            html += '<div class="stat skipped"><span class="stat-number">' + state.dismissed.length + '</span><span class="stat-label">דולגו</span></div>';
+            html += '</div>';
+
+            if (likedCards.length > 0) {
+                html += '<div class="summary-section"><h3>שמרת לקריאה</h3><ul class="liked-list">';
+                likedCards.forEach(function(a) {
+                    html += '<li><a href="' + a.url + '" target="_blank" rel="noopener">' + a.title + '</a>';
+                    html += '<span class="source-badge">' + a.category + '</span></li>';
+                });
+                html += '</ul></div>';
+            }
+
+            if (topCategories) {
+                html += '<div class="summary-section"><h3>הקטגוריות המובילות שלך</h3>';
+                html += '<div class="summary-insight">' + topCategories + '</div></div>';
+            }
+
+            html += '<button class="reset-btn" onclick="location.reload()">צפה שוב</button>';
+            html += '</div>';
+
+            summaryScreen.innerHTML = html;
+            summaryScreen.classList.remove('hidden');
+        }
+
+        init();
+    })();
+    </script>
+</body>
+</html>
