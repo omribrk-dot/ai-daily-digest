@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-04-24T11:56:41.470181+00:00",
+  "last_updated": "2026-04-27T12:19:43.849374+00:00",
   "articles": {
-    "131ae47ea9b64fbe": {
-      "title": "ARC-AGI-3: המבחן החדש שמשאיר את מודלי הבינה המלאכותית המובילים מתחת ל-1%",
-      "url": "https://www.therundown.ai/p/arc-agi-3-resets-frontier-ai-scoreboard",
-      "first_seen": "2026-03-26T11:50:05.760693+00:00"
-    },
-    "24d65f3c90f73cdc": {
-      "title": "מטא משיקה מודל AI בקוד פתוח לחיזוי פעילות נוירונים במוח",
-      "url": "https://www.therundown.ai/p/meta-new-open-source-brain-ai",
-      "first_seen": "2026-03-27T11:41:25.624248+00:00"
-    },
     "2b4d47993f01c711": {
       "title": "עליבאבא מציגה Accio Work: מערכת סוכנים דיגיטליים לעסקים",
       "url": "https://www.therundown.ai/p/an-exclusive-q-a-with-alibaba-com-s-kuo-zhang",
@@ -130,6 +120,11 @@
       "title": "GPT-5.5 של OpenAI עולה בדירוגים בזמן שמתחרה Anthropic מתמודדת עם ביקורת",
       "url": "https://www.therundown.ai/p/openai-spud-dethrones-claude-on-the-frontier",
       "first_seen": "2026-04-24T11:56:41.470080+00:00"
+    },
+    "69d92e6532bac0bd": {
+      "title": "DeepSeek משיקה את V4: מודל פתוח וחסכוני עם תמיכה בשבבי Huawei",
+      "url": "https://www.therundown.ai/p/deepseek-resurfaces-with-cheap-capable-v4",
+      "first_seen": "2026-04-27T12:19:43.849266+00:00"
     }
   }
 }
