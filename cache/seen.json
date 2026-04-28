@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-27T12:19:43.849374+00:00",
+  "last_updated": "2026-04-28T12:23:38.916591+00:00",
   "articles": {
-    "2b4d47993f01c711": {
-      "title": "עליבאבא מציגה Accio Work: מערכת סוכנים דיגיטליים לעסקים",
-      "url": "https://www.therundown.ai/p/an-exclusive-q-a-with-alibaba-com-s-kuo-zhang",
-      "first_seen": "2026-03-29T11:28:39.493829+00:00"
-    },
     "06d62db7fbfd41e4": {
       "title": "אנתרופיק חשפה בטעות פרטים על מודל קלוד חדש בשם 'Mythos'",
       "url": "https://www.therundown.ai/p/anthropic-secret-mythos-model",
@@ -125,6 +120,11 @@
       "title": "DeepSeek משיקה את V4: מודל פתוח וחסכוני עם תמיכה בשבבי Huawei",
       "url": "https://www.therundown.ai/p/deepseek-resurfaces-with-cheap-capable-v4",
       "first_seen": "2026-04-27T12:19:43.849266+00:00"
+    },
+    "61cf9ba59a4a8855": {
+      "title": "מיקרוסופט מרפה את אחיזתה ב-OpenAI: השותפות עוברת שינוי מהותי",
+      "url": "https://www.therundown.ai/p/openai-and-microsoft-new-open-relationship",
+      "first_seen": "2026-04-28T12:23:38.916490+00:00"
     }
   }
 }
