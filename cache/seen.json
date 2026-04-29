@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-28T12:23:38.916591+00:00",
+  "last_updated": "2026-04-29T12:17:07.092577+00:00",
   "articles": {
-    "06d62db7fbfd41e4": {
-      "title": "אנתרופיק חשפה בטעות פרטים על מודל קלוד חדש בשם 'Mythos'",
-      "url": "https://www.therundown.ai/p/anthropic-secret-mythos-model",
-      "first_seen": "2026-03-30T11:54:06.818916+00:00"
-    },
     "2d45c5c02be74adc": {
       "title": "דיסני קיבלה התראה של פחות משעה על סגירת Sora — חשיפת הפרטים מאחורי הקלעים",
       "url": "https://www.therundown.ai/p/openai-1b-disney-blindside",
@@ -125,6 +120,11 @@
       "title": "מיקרוסופט מרפה את אחיזתה ב-OpenAI: השותפות עוברת שינוי מהותי",
       "url": "https://www.therundown.ai/p/openai-and-microsoft-new-open-relationship",
       "first_seen": "2026-04-28T12:23:38.916490+00:00"
+    },
+    "6f6bcf29ad4bf18d": {
+      "title": "משפט מאסק נגד OpenAI נפתח: תביעה של 130 מיליארד דולר",
+      "url": "https://www.therundown.ai/p/the-biggest-ai-trial-ever-kicks-off",
+      "first_seen": "2026-04-29T12:17:07.092463+00:00"
     }
   }
 }
