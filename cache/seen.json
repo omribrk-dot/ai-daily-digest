@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-29T12:17:07.092577+00:00",
+  "last_updated": "2026-04-30T12:15:17.666571+00:00",
   "articles": {
-    "2d45c5c02be74adc": {
-      "title": "דיסני קיבלה התראה של פחות משעה על סגירת Sora — חשיפת הפרטים מאחורי הקלעים",
-      "url": "https://www.therundown.ai/p/openai-1b-disney-blindside",
-      "first_seen": "2026-03-31T11:49:47.928864+00:00"
-    },
     "1582ea81d269b60e": {
       "title": "OpenAI גייסה 122 מיליארד דולר בסבב ההון סיכון הגדול בהיסטוריה",
       "url": "https://www.therundown.ai/p/openai-new-122b-funding-superapp",
@@ -125,6 +120,11 @@
       "title": "משפט מאסק נגד OpenAI נפתח: תביעה של 130 מיליארד דולר",
       "url": "https://www.therundown.ai/p/the-biggest-ai-trial-ever-kicks-off",
       "first_seen": "2026-04-29T12:17:07.092463+00:00"
+    },
+    "407b0bc9f29e75b8": {
+      "title": "צוקרברג וצ'אן משקיעים 500 מיליון דולר ביוזמת ביולוגיה וירטואלית מבוססת AI",
+      "url": "https://www.therundown.ai/p/zuckerberg-500m-ai-biology-swing",
+      "first_seen": "2026-04-30T12:15:17.666472+00:00"
     }
   }
 }
