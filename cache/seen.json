@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-04-30T12:15:17.666571+00:00",
+  "last_updated": "2026-05-01T11:59:01.211117+00:00",
   "articles": {
-    "1582ea81d269b60e": {
-      "title": "OpenAI גייסה 122 מיליארד דולר בסבב ההון סיכון הגדול בהיסטוריה",
-      "url": "https://www.therundown.ai/p/openai-new-122b-funding-superapp",
-      "first_seen": "2026-04-01T11:53:23.622195+00:00"
-    },
     "6b9e0bd256307af9": {
       "title": "ג'ק דורסי מתכנן להחליף את שכבת הניהול בחברת Block בבינה מלאכותית",
       "url": "https://www.therundown.ai/p/dorsey-makes-the-ai-case-against-managers",
@@ -125,6 +120,11 @@
       "title": "צוקרברג וצ'אן משקיעים 500 מיליון דולר ביוזמת ביולוגיה וירטואלית מבוססת AI",
       "url": "https://www.therundown.ai/p/zuckerberg-500m-ai-biology-swing",
       "first_seen": "2026-04-30T12:15:17.666472+00:00"
+    },
+    "5fa86e886d407767": {
+      "title": "הבית הלבן משנה גישה כלפי אנתרופיק בשל יכולות הסייבר של מודל Mythos",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "first_seen": "2026-05-01T11:59:01.211014+00:00"
     }
   }
 }
