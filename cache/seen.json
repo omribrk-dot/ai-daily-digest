@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-01T11:59:01.211117+00:00",
+  "last_updated": "2026-05-03T11:41:44.198227+00:00",
   "articles": {
-    "6b9e0bd256307af9": {
-      "title": "ג'ק דורסי מתכנן להחליף את שכבת הניהול בחברת Block בבינה מלאכותית",
-      "url": "https://www.therundown.ai/p/dorsey-makes-the-ai-case-against-managers",
-      "first_seen": "2026-04-02T11:44:29.325774+00:00"
-    },
-    "f99bd46194c2e7f7": {
-      "title": "מייסד יחיד בנה חברת טלה-רפואה עם תחזית מכירות של 1.8 מיליארד דולר בעזרת AI",
-      "url": "https://www.therundown.ai/p/ai-just-made-the-billion-dollar-solo-founder-real",
-      "first_seen": "2026-04-03T11:37:23.134887+00:00"
-    },
     "cb2c621083aace51": {
       "title": "אנתרופיק מנתקת פלטפורמות סוכנים חיצוניות מתוכניות המנוי של קלוד",
       "url": "https://www.therundown.ai/p/anthropic-tells-openclaw-users-to-pay-up",
@@ -125,6 +115,11 @@
       "title": "הבית הלבן משנה גישה כלפי אנתרופיק בשל יכולות הסייבר של מודל Mythos",
       "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
       "first_seen": "2026-05-01T11:59:01.211014+00:00"
+    },
+    "4840c122206b084f": {
+      "title": "מנהל השיווק של UiPath: כיצד AI משנה את מקום העבודה",
+      "url": "https://www.therundown.ai/p/exclusive-uipath-cmo-michael-atalla-on-ai-at-work",
+      "first_seen": "2026-05-03T11:41:44.198100+00:00"
     }
   }
 }
