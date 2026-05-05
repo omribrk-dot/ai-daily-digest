@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T12:20:45.675711+00:00",
+  "last_updated": "2026-05-05T12:01:00.486719+00:00",
   "articles": {
     "cb2c621083aace51": {
       "title": "אנתרופיק מנתקת פלטפורמות סוכנים חיצוניות מתוכניות המנוי של קלוד",
@@ -125,6 +125,11 @@
       "title": "מחקר הרווארד: מודל AI של OpenAI עלה על רופאי חדר מיון",
       "url": "https://www.therundown.ai/p/ai-shows-its-skills-in-the-emergency-room",
       "first_seen": "2026-05-04T12:20:45.675613+00:00"
+    },
+    "ac9cee6fd0233eac": {
+      "title": "סטארטאפ Panthalassa גייס 140 מיליון דולר למרכזי נתונים צפים באוקיינוס",
+      "url": "https://www.therundown.ai/p/ai-data-centers-head-for-the-ocean",
+      "first_seen": "2026-05-05T12:01:00.486613+00:00"
     }
   }
 }
