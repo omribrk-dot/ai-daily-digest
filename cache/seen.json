@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-05T12:01:00.486719+00:00",
+  "last_updated": "2026-05-06T12:26:58.336252+00:00",
   "articles": {
-    "cb2c621083aace51": {
-      "title": "אנתרופיק מנתקת פלטפורמות סוכנים חיצוניות מתוכניות המנוי של קלוד",
-      "url": "https://www.therundown.ai/p/anthropic-tells-openclaw-users-to-pay-up",
-      "first_seen": "2026-04-06T11:49:15.273984+00:00"
-    },
     "1ca19a4e1053a1bc": {
       "title": "אלטמן מציע מס על רובוטים, שבוע עבודה של 4 ימים וקרן עושר לאומית לעידן ה-AI",
       "url": "https://www.therundown.ai/p/sam-altman-new-social-contract-for-ai",
@@ -130,6 +125,11 @@
       "title": "סטארטאפ Panthalassa גייס 140 מיליון דולר למרכזי נתונים צפים באוקיינוס",
       "url": "https://www.therundown.ai/p/ai-data-centers-head-for-the-ocean",
       "first_seen": "2026-05-05T12:01:00.486613+00:00"
+    },
+    "eadbdcafc81c2545": {
+      "title": "OpenAI מאיצה פיתוח טלפון AI עצמאי עם יעד השקה ב-2027",
+      "url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
+      "first_seen": "2026-05-06T12:26:58.336143+00:00"
     }
   }
 }
