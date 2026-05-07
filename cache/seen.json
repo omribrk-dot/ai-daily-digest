@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-06T12:26:58.336252+00:00",
+  "last_updated": "2026-05-07T12:28:30.865206+00:00",
   "articles": {
-    "1ca19a4e1053a1bc": {
-      "title": "אלטמן מציע מס על רובוטים, שבוע עבודה של 4 ימים וקרן עושר לאומית לעידן ה-AI",
-      "url": "https://www.therundown.ai/p/sam-altman-new-social-contract-for-ai",
-      "first_seen": "2026-04-07T11:54:08.033989+00:00"
-    },
     "eef08593b2280878": {
       "title": "אנתרופיק משיקה מודל Claude Mythos Preview – בלעדי לשימוש הגנתי בסייבר",
       "url": "https://www.therundown.ai/p/anthropic-new-ai-is-too-powerful-for-the-world",
@@ -130,6 +125,11 @@
       "title": "OpenAI מאיצה פיתוח טלפון AI עצמאי עם יעד השקה ב-2027",
       "url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
       "first_seen": "2026-05-06T12:26:58.336143+00:00"
+    },
+    "6d64b6f9dcd1da1e": {
+      "title": "אנתרופיק תשכור את אשכול המחשוב Colossus של SpaceX/xAI",
+      "url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
+      "first_seen": "2026-05-07T12:28:30.865095+00:00"
     }
   }
 }
