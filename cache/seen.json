@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-07T12:28:30.865206+00:00",
+  "last_updated": "2026-05-08T12:08:18.640666+00:00",
   "articles": {
-    "eef08593b2280878": {
-      "title": "אנתרופיק משיקה מודל Claude Mythos Preview – בלעדי לשימוש הגנתי בסייבר",
-      "url": "https://www.therundown.ai/p/anthropic-new-ai-is-too-powerful-for-the-world",
-      "first_seen": "2026-04-08T11:55:08.504483+00:00"
-    },
     "badb50b736ee40e1": {
       "title": "מטא משיקה את המודל הראשון של Meta Superintelligence Labs",
       "url": "https://www.therundown.ai/p/meta-superintelligence-labs-ships-its-first-model",
@@ -130,6 +125,11 @@
       "title": "אנתרופיק תשכור את אשכול המחשוב Colossus של SpaceX/xAI",
       "url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
       "first_seen": "2026-05-07T12:28:30.865095+00:00"
+    },
+    "a5503070be4e11b5": {
+      "title": "OpenAI משיקה שלושה מודלי קול חדשים בזמן אמת עם יכולות היסק מתקדמות",
+      "url": "https://www.therundown.ai/p/openai-closes-reasoning-gap-in-voice-agents",
+      "first_seen": "2026-05-08T12:08:18.640565+00:00"
     }
   }
 }
