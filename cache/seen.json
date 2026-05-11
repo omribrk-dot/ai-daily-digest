@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-08T12:08:18.640666+00:00",
+  "last_updated": "2026-05-11T13:47:51.998781+00:00",
   "articles": {
-    "badb50b736ee40e1": {
-      "title": "מטא משיקה את המודל הראשון של Meta Superintelligence Labs",
-      "url": "https://www.therundown.ai/p/meta-superintelligence-labs-ships-its-first-model",
-      "first_seen": "2026-04-09T11:54:49.343590+00:00"
-    },
-    "e7e69be8329710f9": {
-      "title": "פרפלקסיטי מרחיבה לפיננסים אישיים ומס, עם צמיחה של 50% בהכנסות",
-      "url": "https://www.therundown.ai/p/perplexity-agent-pivot-is-on-the-money",
-      "first_seen": "2026-04-10T11:48:35.156168+00:00"
-    },
     "22853622aefdcd29": {
       "title": "חשוד ניסה להצית את ביתו של סם אלטמן מחשש להכחדת האנושות בידי AI",
       "url": "https://www.therundown.ai/p/anti-ai-anger-hits-sam-altman-front-door",
@@ -130,6 +120,11 @@
       "title": "OpenAI משיקה שלושה מודלי קול חדשים בזמן אמת עם יכולות היסק מתקדמות",
       "url": "https://www.therundown.ai/p/openai-closes-reasoning-gap-in-voice-agents",
       "first_seen": "2026-05-08T12:08:18.640565+00:00"
+    },
+    "a5cd829a749cd941": {
+      "title": "DeepMind מציגה מערכת AI לפתרון בעיות מתמטיות מורכבות",
+      "url": "https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician",
+      "first_seen": "2026-05-11T13:47:51.998675+00:00"
     }
   }
 }
