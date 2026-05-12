@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T13:47:51.998781+00:00",
+  "last_updated": "2026-05-12T13:03:29.647423+00:00",
   "articles": {
     "22853622aefdcd29": {
       "title": "חשוד ניסה להצית את ביתו של סם אלטמן מחשש להכחדת האנושות בידי AI",
@@ -125,6 +125,11 @@
       "title": "DeepMind מציגה מערכת AI לפתרון בעיות מתמטיות מורכבות",
       "url": "https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician",
       "first_seen": "2026-05-11T13:47:51.998675+00:00"
+    },
+    "6f5fc23a98c5a79a": {
+      "title": "מירה מוראטי מציגה 'מודלי אינטראקציה' – גישה חדשה לשיתוף פעולה בין אדם ל-AI",
+      "url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
+      "first_seen": "2026-05-12T13:03:29.647312+00:00"
     }
   }
 }
