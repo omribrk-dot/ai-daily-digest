@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-12T13:03:29.647423+00:00",
+  "last_updated": "2026-05-13T13:11:02.726399+00:00",
   "articles": {
-    "22853622aefdcd29": {
-      "title": "חשוד ניסה להצית את ביתו של סם אלטמן מחשש להכחדת האנושות בידי AI",
-      "url": "https://www.therundown.ai/p/anti-ai-anger-hits-sam-altman-front-door",
-      "first_seen": "2026-04-13T12:02:24.026743+00:00"
-    },
     "9cb5398c3e379133": {
       "title": "סוכן בינה מלאכותית מנהל חנות אמיתית בסן פרנסיסקו באופן עצמאי לחלוטין",
       "url": "https://www.therundown.ai/p/what-happens-when-ai-runs-a-retail-store",
@@ -130,6 +125,11 @@
       "title": "מירה מוראטי מציגה 'מודלי אינטראקציה' – גישה חדשה לשיתוף פעולה בין אדם ל-AI",
       "url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
       "first_seen": "2026-05-12T13:03:29.647312+00:00"
+    },
+    "ea29f7100dc80f36": {
+      "title": "גוגל מציגה Gemini Intelligence: מערכת AI משולבת לאנדרואיד ומחשבים",
+      "url": "https://www.therundown.ai/p/android-enters-its-gemini-intelligence-era",
+      "first_seen": "2026-05-13T13:11:02.726292+00:00"
     }
   }
 }
