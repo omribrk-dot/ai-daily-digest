@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-05-15T12:52:33.938210+00:00",
+  "last_updated": "2026-05-18T14:29:15.486265+00:00",
   "articles": {
-    "e9d84dbf24c7c888": {
-      "title": "אולבירדס עוזבת נעליים ועוברת להשכרת GPU לבינה מלאכותית",
-      "url": "https://www.therundown.ai/p/allbirds-ditches-sneakers-for-ai-compute",
-      "first_seen": "2026-04-16T11:58:09.271367+00:00"
-    },
-    "d5a9130ad05215e5": {
-      "title": "OpenAI מעדכנת את Codex עם יכולות סוכן מתקדמות בדרך לפלטפורמת על",
-      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
-      "first_seen": "2026-04-17T11:52:32.785470+00:00"
-    },
-    "8d38660db1870bbc": {
-      "title": "Anthropic משיקה את Claude Opus 4.7 ומתמקמת בראש דירוגי המודלים",
-      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
-      "first_seen": "2026-04-17T11:52:32.785470+00:00"
-    },
     "6082ac7a4151a746": {
       "title": "OpenAI מעדכנת את Codex לקראת פלטפורמת 'סופר-אפ' כוללת",
       "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
@@ -130,6 +115,11 @@
       "title": "OpenAI משלבת את Codex באפליקציית ChatGPT לנייד",
       "url": "https://www.therundown.ai/p/openai-takes-codex-mobile",
       "first_seen": "2026-05-15T12:52:33.938109+00:00"
+    },
+    "5f87ddba9157314f": {
+      "title": "ניסוי חברתי חושף דעה קדומה נגד אמנות AI: אנשים גינו ציור אמיתי של מונה בטעות",
+      "url": "https://www.therundown.ai/p/ai-anger-comes-for-claude-monet",
+      "first_seen": "2026-05-18T14:29:15.486164+00:00"
     }
   }
 }
