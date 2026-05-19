@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-18T14:29:15.486265+00:00",
+  "last_updated": "2026-05-19T13:54:54.674662+00:00",
   "articles": {
-    "6082ac7a4151a746": {
-      "title": "OpenAI מעדכנת את Codex לקראת פלטפורמת 'סופר-אפ' כוללת",
-      "url": "https://www.therundown.ai/p/openai-superapp-hiding-inside-codex",
-      "first_seen": "2026-04-18T18:51:29.616301+00:00"
-    },
-    "54794a46d98d7787": {
-      "title": "קנבה משיקה גרסה 2.0 מבוססת בינה מלאכותית עם עריכה מלאה של תוצרי AI",
-      "url": "https://www.therundown.ai/p/exclusive-inside-canva-ai-2-0-with-cpo-cameron-adams",
-      "first_seen": "2026-04-19T11:34:52.219629+00:00"
-    },
     "1520534fd2e2e444": {
       "title": "אנתרופיק משיקה Claude Design: מפרומפט לפרוטוטייפ בצעד אחד",
       "url": "https://www.therundown.ai/p/claude-comes-for-the-design-stack",
@@ -120,6 +110,11 @@
       "title": "ניסוי חברתי חושף דעה קדומה נגד אמנות AI: אנשים גינו ציור אמיתי של מונה בטעות",
       "url": "https://www.therundown.ai/p/ai-anger-comes-for-claude-monet",
       "first_seen": "2026-05-18T14:29:15.486164+00:00"
+    },
+    "c11952d2a1cfb39c": {
+      "title": "המושבעים דחו את תביעת מאסק נגד OpenAI – הוא מכריז על ערעור",
+      "url": "https://www.therundown.ai/p/musk-openai-case-runs-out-of-time",
+      "first_seen": "2026-05-19T13:54:54.674550+00:00"
     }
   }
 }
