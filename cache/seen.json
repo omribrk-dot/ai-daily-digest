@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-19T13:54:54.674662+00:00",
+  "last_updated": "2026-05-20T13:37:42.745312+00:00",
   "articles": {
-    "1520534fd2e2e444": {
-      "title": "אנתרופיק משיקה Claude Design: מפרומפט לפרוטוטייפ בצעד אחד",
-      "url": "https://www.therundown.ai/p/claude-comes-for-the-design-stack",
-      "first_seen": "2026-04-20T12:03:47.544225+00:00"
-    },
     "a2edd37d018cd1fe": {
       "title": "סרגיי ברין מוביל צוות ייעודי ב-DeepMind לשיפור יכולות הקידוד של Gemini",
       "url": "https://www.therundown.ai/p/sergey-brin-commits-deepmind-to-a-claude-catch-up",
@@ -115,6 +110,11 @@
       "title": "המושבעים דחו את תביעת מאסק נגד OpenAI – הוא מכריז על ערעור",
       "url": "https://www.therundown.ai/p/musk-openai-case-runs-out-of-time",
       "first_seen": "2026-05-19T13:54:54.674550+00:00"
+    },
+    "3bbab1cd646025ce": {
+      "title": "גוגל I/O: ג'מיני הופך למנוע האג'נטי המרכזי בכל מוצרי החברה",
+      "url": "https://www.therundown.ai/p/gemini-busy-agentic-day-at-google-i-o",
+      "first_seen": "2026-05-20T13:37:42.745201+00:00"
     }
   }
 }
