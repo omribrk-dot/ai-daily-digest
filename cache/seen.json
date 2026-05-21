@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-20T13:37:42.745312+00:00",
+  "last_updated": "2026-05-21T14:14:36.871741+00:00",
   "articles": {
-    "a2edd37d018cd1fe": {
-      "title": "סרגיי ברין מוביל צוות ייעודי ב-DeepMind לשיפור יכולות הקידוד של Gemini",
-      "url": "https://www.therundown.ai/p/sergey-brin-commits-deepmind-to-a-claude-catch-up",
-      "first_seen": "2026-04-21T11:58:59.544142+00:00"
-    },
     "cba9cf1dac5731bc": {
       "title": "OpenAI מחזירה את הבכורה ביצירת תמונות עם השקת ChatGPT Images 2.0",
       "url": "https://www.therundown.ai/p/openai-reclaims-the-image-crown",
@@ -115,6 +110,11 @@
       "title": "גוגל I/O: ג'מיני הופך למנוע האג'נטי המרכזי בכל מוצרי החברה",
       "url": "https://www.therundown.ai/p/gemini-busy-agentic-day-at-google-i-o",
       "first_seen": "2026-05-20T13:37:42.745201+00:00"
+    },
+    "3ef5fb6f49cd3eb1": {
+      "title": "מודל של OpenAI הפריך באופן עצמאי תיאוריה מתמטית בת 80 שנה",
+      "url": "https://www.therundown.ai/p/openai-cracks-an-80-year-math-belief",
+      "first_seen": "2026-05-21T14:14:36.871618+00:00"
     }
   }
 }
