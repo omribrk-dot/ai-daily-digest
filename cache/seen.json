@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-21T14:14:36.871741+00:00",
+  "last_updated": "2026-05-22T13:31:35.947712+00:00",
   "articles": {
-    "cba9cf1dac5731bc": {
-      "title": "OpenAI מחזירה את הבכורה ביצירת תמונות עם השקת ChatGPT Images 2.0",
-      "url": "https://www.therundown.ai/p/openai-reclaims-the-image-crown",
-      "first_seen": "2026-04-22T11:59:22.051570+00:00"
-    },
     "cdd73407765ad49c": {
       "title": "מערכת ה-AI הסודית של Anthropic דלפה לקבוצת Discord",
       "url": "https://www.therundown.ai/p/anthropic-locked-down-mythos-leaks",
@@ -115,6 +110,11 @@
       "title": "מודל של OpenAI הפריך באופן עצמאי תיאוריה מתמטית בת 80 שנה",
       "url": "https://www.therundown.ai/p/openai-cracks-an-80-year-math-belief",
       "first_seen": "2026-05-21T14:14:36.871618+00:00"
+    },
+    "92aa622d6ab7bc80": {
+      "title": "פיצ'אי: ה-AI של היום ייראה מיושן כמו טלפון מתקפל תוך שלוש שנים",
+      "url": "https://www.therundown.ai/p/exclusive-interview-sundar-pichai-on-ai-flip-phone-moment",
+      "first_seen": "2026-05-22T13:31:35.947608+00:00"
     }
   }
 }
