@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-25T13:59:07.114094+00:00",
+  "last_updated": "2026-05-26T13:53:22.564404+00:00",
   "articles": {
     "69d92e6532bac0bd": {
       "title": "DeepSeek משיקה את V4: מודל פתוח וחסכוני עם תמיכה בשבבי Huawei",
@@ -110,6 +110,11 @@
       "title": "גוגל דיפמיינד פתרה 9 בעיות מתמטיות פתוחות של ארדוש, עוקפת את OpenAI",
       "url": "https://www.therundown.ai/p/google-tops-openai-math-breakthrough-9-to-1",
       "first_seen": "2026-05-25T13:59:07.113990+00:00"
+    },
+    "308bcc3c0a8d41fb": {
+      "title": "האפיפיור לאו ה-14 פרסם אנציקליקה של 42,000 מילים על בינה מלאכותית",
+      "url": "https://www.therundown.ai/p/the-pope-just-weighed-in-on-ai",
+      "first_seen": "2026-05-26T13:53:22.564296+00:00"
     }
   }
 }
