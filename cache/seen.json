@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-26T13:53:22.564404+00:00",
+  "last_updated": "2026-05-27T14:26:25.068798+00:00",
   "articles": {
-    "69d92e6532bac0bd": {
-      "title": "DeepSeek משיקה את V4: מודל פתוח וחסכוני עם תמיכה בשבבי Huawei",
-      "url": "https://www.therundown.ai/p/deepseek-resurfaces-with-cheap-capable-v4",
-      "first_seen": "2026-04-27T12:19:43.849266+00:00"
-    },
     "61cf9ba59a4a8855": {
       "title": "מיקרוסופט מרפה את אחיזתה ב-OpenAI: השותפות עוברת שינוי מהותי",
       "url": "https://www.therundown.ai/p/openai-and-microsoft-new-open-relationship",
@@ -115,6 +110,11 @@
       "title": "האפיפיור לאו ה-14 פרסם אנציקליקה של 42,000 מילים על בינה מלאכותית",
       "url": "https://www.therundown.ai/p/the-pope-just-weighed-in-on-ai",
       "first_seen": "2026-05-26T13:53:22.564296+00:00"
+    },
+    "39a1491f9b02fadf": {
+      "title": "מנכ\"ל DeepMind: AGI יושג עד 2030",
+      "url": "https://www.therundown.ai/p/exclusive-demis-hassabis-on-agi-curing-diseases-with-ai",
+      "first_seen": "2026-05-27T14:26:25.068693+00:00"
     }
   }
 }
