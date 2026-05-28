@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-27T14:26:25.068798+00:00",
+  "last_updated": "2026-05-28T14:37:15.463702+00:00",
   "articles": {
-    "61cf9ba59a4a8855": {
-      "title": "מיקרוסופט מרפה את אחיזתה ב-OpenAI: השותפות עוברת שינוי מהותי",
-      "url": "https://www.therundown.ai/p/openai-and-microsoft-new-open-relationship",
-      "first_seen": "2026-04-28T12:23:38.916490+00:00"
-    },
     "6f6bcf29ad4bf18d": {
       "title": "משפט מאסק נגד OpenAI נפתח: תביעה של 130 מיליארד דולר",
       "url": "https://www.therundown.ai/p/the-biggest-ai-trial-ever-kicks-off",
@@ -115,6 +110,11 @@
       "title": "מנכ\"ל DeepMind: AGI יושג עד 2030",
       "url": "https://www.therundown.ai/p/exclusive-demis-hassabis-on-agi-curing-diseases-with-ai",
       "first_seen": "2026-05-27T14:26:25.068693+00:00"
+    },
+    "65bff1f63c60a198": {
+      "title": "Biohub משיקה מודל AI פתוח לביולוגיית חלבונים",
+      "url": "https://www.therundown.ai/p/a-world-model-for-proteins-is-here",
+      "first_seen": "2026-05-28T14:37:15.463583+00:00"
     }
   }
 }
