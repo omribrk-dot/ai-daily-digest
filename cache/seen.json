@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-05-28T14:37:15.463702+00:00",
+  "last_updated": "2026-05-29T13:58:57.288723+00:00",
   "articles": {
-    "6f6bcf29ad4bf18d": {
-      "title": "משפט מאסק נגד OpenAI נפתח: תביעה של 130 מיליארד דולר",
-      "url": "https://www.therundown.ai/p/the-biggest-ai-trial-ever-kicks-off",
-      "first_seen": "2026-04-29T12:17:07.092463+00:00"
-    },
     "407b0bc9f29e75b8": {
       "title": "צוקרברג וצ'אן משקיעים 500 מיליון דולר ביוזמת ביולוגיה וירטואלית מבוססת AI",
       "url": "https://www.therundown.ai/p/zuckerberg-500m-ai-biology-swing",
@@ -115,6 +110,11 @@
       "title": "Biohub משיקה מודל AI פתוח לביולוגיית חלבונים",
       "url": "https://www.therundown.ai/p/a-world-model-for-proteins-is-here",
       "first_seen": "2026-05-28T14:37:15.463583+00:00"
+    },
+    "eed961e8ecf30e12": {
+      "title": "אנתרופיק משיקה את Opus 4.8 ומתקרבת להערכת שווי של טריליון דולר",
+      "url": "https://www.therundown.ai/p/anthropic-just-eclipsed-openai",
+      "first_seen": "2026-05-29T13:58:57.288629+00:00"
     }
   }
 }
