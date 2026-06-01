@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-29T13:58:57.288723+00:00",
+  "last_updated": "2026-06-01T09:25:52.510703+00:00",
   "articles": {
-    "407b0bc9f29e75b8": {
-      "title": "צוקרברג וצ'אן משקיעים 500 מיליון דולר ביוזמת ביולוגיה וירטואלית מבוססת AI",
-      "url": "https://www.therundown.ai/p/zuckerberg-500m-ai-biology-swing",
-      "first_seen": "2026-04-30T12:15:17.666472+00:00"
-    },
-    "5fa86e886d407767": {
-      "title": "הבית הלבן משנה גישה כלפי אנתרופיק בשל יכולות הסייבר של מודל Mythos",
-      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
-      "first_seen": "2026-05-01T11:59:01.211014+00:00"
-    },
     "4840c122206b084f": {
       "title": "מנהל השיווק של UiPath: כיצד AI משנה את מקום העבודה",
       "url": "https://www.therundown.ai/p/exclusive-uipath-cmo-michael-atalla-on-ai-at-work",
@@ -115,6 +105,11 @@
       "title": "אנתרופיק משיקה את Opus 4.8 ומתקרבת להערכת שווי של טריליון דולר",
       "url": "https://www.therundown.ai/p/anthropic-just-eclipsed-openai",
       "first_seen": "2026-05-29T13:58:57.288629+00:00"
+    },
+    "ca5c1685949cb595": {
+      "title": "סטארטאפ מציע ניקיון דירות חינם בתמורה לנתוני אימון לבינה מלאכותית",
+      "url": "https://www.therundown.ai/p/ai-next-dataset-is-your-apartment",
+      "first_seen": "2026-06-01T09:25:52.510597+00:00"
     }
   }
 }
