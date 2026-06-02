@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-01T09:25:52.510703+00:00",
+  "last_updated": "2026-06-02T14:52:38.557011+00:00",
   "articles": {
-    "4840c122206b084f": {
-      "title": "מנהל השיווק של UiPath: כיצד AI משנה את מקום העבודה",
-      "url": "https://www.therundown.ai/p/exclusive-uipath-cmo-michael-atalla-on-ai-at-work",
-      "first_seen": "2026-05-03T11:41:44.198100+00:00"
-    },
     "8b655fcc3161aa8f": {
       "title": "מחקר הרווארד: מודל AI של OpenAI עלה על רופאי חדר מיון",
       "url": "https://www.therundown.ai/p/ai-shows-its-skills-in-the-emergency-room",
@@ -110,6 +105,11 @@
       "title": "סטארטאפ מציע ניקיון דירות חינם בתמורה לנתוני אימון לבינה מלאכותית",
       "url": "https://www.therundown.ai/p/ai-next-dataset-is-your-apartment",
       "first_seen": "2026-06-01T09:25:52.510597+00:00"
+    },
+    "26f573f8b579477c": {
+      "title": "נבידיה ב-COMPUTEX: 'עידן סוכני ה-AI הגיע'",
+      "url": "https://www.therundown.ai/p/nvidia-corners-the-ai-agent-stack",
+      "first_seen": "2026-06-02T14:52:38.556880+00:00"
     }
   }
 }
