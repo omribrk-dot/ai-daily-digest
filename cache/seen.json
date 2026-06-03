@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-02T14:52:38.557011+00:00",
+  "last_updated": "2026-06-03T15:26:26.187296+00:00",
   "articles": {
-    "8b655fcc3161aa8f": {
-      "title": "מחקר הרווארד: מודל AI של OpenAI עלה על רופאי חדר מיון",
-      "url": "https://www.therundown.ai/p/ai-shows-its-skills-in-the-emergency-room",
-      "first_seen": "2026-05-04T12:20:45.675613+00:00"
-    },
     "ac9cee6fd0233eac": {
       "title": "סטארטאפ Panthalassa גייס 140 מיליון דולר למרכזי נתונים צפים באוקיינוס",
       "url": "https://www.therundown.ai/p/ai-data-centers-head-for-the-ocean",
@@ -110,6 +105,11 @@
       "title": "נבידיה ב-COMPUTEX: 'עידן סוכני ה-AI הגיע'",
       "url": "https://www.therundown.ai/p/nvidia-corners-the-ai-agent-stack",
       "first_seen": "2026-06-02T14:52:38.556880+00:00"
+    },
+    "6bee3eb75964bfca": {
+      "title": "מיקרוסופט מציגה 7 מודלי AI פנימיים וחומרה לעידן הסוכנים בכנס Build 2026",
+      "url": "https://www.therundown.ai/p/microsoft-paves-its-own-ai-way-at-build",
+      "first_seen": "2026-06-03T15:26:26.187185+00:00"
     }
   }
 }
