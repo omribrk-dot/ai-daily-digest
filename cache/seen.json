@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-03T15:26:26.187296+00:00",
+  "last_updated": "2026-06-04T13:57:34.483800+00:00",
   "articles": {
-    "ac9cee6fd0233eac": {
-      "title": "סטארטאפ Panthalassa גייס 140 מיליון דולר למרכזי נתונים צפים באוקיינוס",
-      "url": "https://www.therundown.ai/p/ai-data-centers-head-for-the-ocean",
-      "first_seen": "2026-05-05T12:01:00.486613+00:00"
-    },
     "eadbdcafc81c2545": {
       "title": "OpenAI מאיצה פיתוח טלפון AI עצמאי עם יעד השקה ב-2027",
       "url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
@@ -110,6 +105,11 @@
       "title": "מיקרוסופט מציגה 7 מודלי AI פנימיים וחומרה לעידן הסוכנים בכנס Build 2026",
       "url": "https://www.therundown.ai/p/microsoft-paves-its-own-ai-way-at-build",
       "first_seen": "2026-06-03T15:26:26.187185+00:00"
+    },
+    "a11ea16502b7e0dd": {
+      "title": "Ideogram 4.0 ו-Reve 2.0: עריכה מתקדמת לאחר יצירת תמונות AI",
+      "url": "https://www.therundown.ai/p/ideogram-and-reve-rethink-how-ai-images-get-made",
+      "first_seen": "2026-06-04T13:57:34.483665+00:00"
     }
   }
 }
