@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-04T13:57:34.483800+00:00",
+  "last_updated": "2026-06-05T13:52:40.782646+00:00",
   "articles": {
-    "eadbdcafc81c2545": {
-      "title": "OpenAI מאיצה פיתוח טלפון AI עצמאי עם יעד השקה ב-2027",
-      "url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
-      "first_seen": "2026-05-06T12:26:58.336143+00:00"
-    },
     "6d64b6f9dcd1da1e": {
       "title": "אנתרופיק תשכור את אשכול המחשוב Colossus של SpaceX/xAI",
       "url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
@@ -110,6 +105,11 @@
       "title": "Ideogram 4.0 ו-Reve 2.0: עריכה מתקדמת לאחר יצירת תמונות AI",
       "url": "https://www.therundown.ai/p/ideogram-and-reve-rethink-how-ai-images-get-made",
       "first_seen": "2026-06-04T13:57:34.483665+00:00"
+    },
+    "a7db1b851510b62d": {
+      "title": "אנתרופיק: בינה מלאכותית כבר מאיצה את פיתוח הדור הבא של עצמה",
+      "url": "https://www.therundown.ai/p/anthropic-confronts-the-rsi-clock",
+      "first_seen": "2026-06-05T13:52:40.782536+00:00"
     }
   }
 }
