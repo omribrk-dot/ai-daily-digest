@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-05T13:52:40.782646+00:00",
+  "last_updated": "2026-06-08T14:47:50.541616+00:00",
   "articles": {
-    "6d64b6f9dcd1da1e": {
-      "title": "אנתרופיק תשכור את אשכול המחשוב Colossus של SpaceX/xAI",
-      "url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
-      "first_seen": "2026-05-07T12:28:30.865095+00:00"
-    },
-    "a5503070be4e11b5": {
-      "title": "OpenAI משיקה שלושה מודלי קול חדשים בזמן אמת עם יכולות היסק מתקדמות",
-      "url": "https://www.therundown.ai/p/openai-closes-reasoning-gap-in-voice-agents",
-      "first_seen": "2026-05-08T12:08:18.640565+00:00"
-    },
     "a5cd829a749cd941": {
       "title": "DeepMind מציגה מערכת AI לפתרון בעיות מתמטיות מורכבות",
       "url": "https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician",
@@ -110,6 +100,11 @@
       "title": "אנתרופיק: בינה מלאכותית כבר מאיצה את פיתוח הדור הבא של עצמה",
       "url": "https://www.therundown.ai/p/anthropic-confronts-the-rsi-clock",
       "first_seen": "2026-06-05T13:52:40.782536+00:00"
+    },
+    "0b83dbe054ce58dd": {
+      "title": "ממשלת ארה\"ב בדיונים לקבלת נתח הון עצמי ב-OpenAI",
+      "url": "https://www.therundown.ai/p/washington-wants-a-piece-of-openai",
+      "first_seen": "2026-06-08T14:47:50.541512+00:00"
     }
   }
 }
