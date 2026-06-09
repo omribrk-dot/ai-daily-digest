@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T14:47:50.541616+00:00",
+  "last_updated": "2026-06-09T13:43:59.676515+00:00",
   "articles": {
     "a5cd829a749cd941": {
       "title": "DeepMind מציגה מערכת AI לפתרון בעיות מתמטיות מורכבות",
@@ -105,6 +105,11 @@
       "title": "ממשלת ארה\"ב בדיונים לקבלת נתח הון עצמי ב-OpenAI",
       "url": "https://www.therundown.ai/p/washington-wants-a-piece-of-openai",
       "first_seen": "2026-06-08T14:47:50.541512+00:00"
+    },
+    "872198191a887fae": {
+      "title": "אפל משדרגת את Siri עם יכולות AI בכנס WWDC26",
+      "url": "https://www.therundown.ai/p/apple-siri-ai-overhaul-is-here-sort-of",
+      "first_seen": "2026-06-09T13:43:59.676407+00:00"
     }
   }
 }
