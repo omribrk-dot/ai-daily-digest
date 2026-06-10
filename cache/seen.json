@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-09T13:43:59.676515+00:00",
+  "last_updated": "2026-06-10T14:21:53.012089+00:00",
   "articles": {
-    "a5cd829a749cd941": {
-      "title": "DeepMind מציגה מערכת AI לפתרון בעיות מתמטיות מורכבות",
-      "url": "https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician",
-      "first_seen": "2026-05-11T13:47:51.998675+00:00"
-    },
     "6f5fc23a98c5a79a": {
       "title": "מירה מוראטי מציגה 'מודלי אינטראקציה' – גישה חדשה לשיתוף פעולה בין אדם ל-AI",
       "url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
@@ -110,6 +105,11 @@
       "title": "אפל משדרגת את Siri עם יכולות AI בכנס WWDC26",
       "url": "https://www.therundown.ai/p/apple-siri-ai-overhaul-is-here-sort-of",
       "first_seen": "2026-06-09T13:43:59.676407+00:00"
+    },
+    "d30a6feac51b8bdc": {
+      "title": "אנתרופיק משיקה את Fable: מודל ה-AI החזק ביותר שלה לציבור הרחב",
+      "url": "https://www.therundown.ai/p/anthropic-hands-the-public-mythos-class-ai",
+      "first_seen": "2026-06-10T14:21:53.011967+00:00"
     }
   }
 }
