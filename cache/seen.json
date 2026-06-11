@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-10T14:21:53.012089+00:00",
+  "last_updated": "2026-06-11T14:35:39.396548+00:00",
   "articles": {
-    "6f5fc23a98c5a79a": {
-      "title": "מירה מוראטי מציגה 'מודלי אינטראקציה' – גישה חדשה לשיתוף פעולה בין אדם ל-AI",
-      "url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
-      "first_seen": "2026-05-12T13:03:29.647312+00:00"
-    },
     "ea29f7100dc80f36": {
       "title": "גוגל מציגה Gemini Intelligence: מערכת AI משולבת לאנדרואיד ומחשבים",
       "url": "https://www.therundown.ai/p/android-enters-its-gemini-intelligence-era",
@@ -110,6 +105,11 @@
       "title": "אנתרופיק משיקה את Fable: מודל ה-AI החזק ביותר שלה לציבור הרחב",
       "url": "https://www.therundown.ai/p/anthropic-hands-the-public-mythos-class-ai",
       "first_seen": "2026-06-10T14:21:53.011967+00:00"
+    },
+    "bd1e93e55f6a62d2": {
+      "title": "מנכ\"ל אנתרופיק קורא לממשל האמריקאי להאיץ רגולציה על בינה מלאכותית",
+      "url": "https://www.therundown.ai/p/anthropic-writes-washington-an-ai-regulation-playbook",
+      "first_seen": "2026-06-11T14:35:39.396439+00:00"
     }
   }
 }
