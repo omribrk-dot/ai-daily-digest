@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-11T14:35:39.396548+00:00",
+  "last_updated": "2026-06-12T14:09:24.903847+00:00",
   "articles": {
-    "ea29f7100dc80f36": {
-      "title": "גוגל מציגה Gemini Intelligence: מערכת AI משולבת לאנדרואיד ומחשבים",
-      "url": "https://www.therundown.ai/p/android-enters-its-gemini-intelligence-era",
-      "first_seen": "2026-05-13T13:11:02.726292+00:00"
-    },
     "f69fa1280887f6d1": {
       "title": "אנתרופיק עוקפת את OpenAI באימוץ עסקי בתשלום",
       "url": "https://www.therundown.ai/p/the-enterprise-shift-openai-saw-coming",
@@ -110,6 +105,11 @@
       "title": "מנכ\"ל אנתרופיק קורא לממשל האמריקאי להאיץ רגולציה על בינה מלאכותית",
       "url": "https://www.therundown.ai/p/anthropic-writes-washington-an-ai-regulation-playbook",
       "first_seen": "2026-06-11T14:35:39.396439+00:00"
+    },
+    "bd654f7e7d19df8f": {
+      "title": "Jeff Bezos' $41B 'artificial general engineer'",
+      "url": "https://www.therundown.ai/p/jeff-bezos-41b-artificial-general-engineer",
+      "first_seen": "2026-06-12T14:09:24.903740+00:00"
     }
   }
 }
