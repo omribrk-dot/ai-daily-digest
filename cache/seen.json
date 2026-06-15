@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-12T14:09:24.903847+00:00",
+  "last_updated": "2026-06-15T10:22:59.539590+00:00",
   "articles": {
-    "f69fa1280887f6d1": {
-      "title": "אנתרופיק עוקפת את OpenAI באימוץ עסקי בתשלום",
-      "url": "https://www.therundown.ai/p/the-enterprise-shift-openai-saw-coming",
-      "first_seen": "2026-05-14T12:23:58.299479+00:00"
-    },
-    "ea0671c4f7685c8c": {
-      "title": "OpenAI משלבת את Codex באפליקציית ChatGPT לנייד",
-      "url": "https://www.therundown.ai/p/openai-takes-codex-mobile",
-      "first_seen": "2026-05-15T12:52:33.938109+00:00"
-    },
     "5f87ddba9157314f": {
       "title": "ניסוי חברתי חושף דעה קדומה נגד אמנות AI: אנשים גינו ציור אמיתי של מונה בטעות",
       "url": "https://www.therundown.ai/p/ai-anger-comes-for-claude-monet",
@@ -110,6 +100,11 @@
       "title": "Jeff Bezos' $41B 'artificial general engineer'",
       "url": "https://www.therundown.ai/p/jeff-bezos-41b-artificial-general-engineer",
       "first_seen": "2026-06-12T14:09:24.903740+00:00"
+    },
+    "d1fe683278f3ec05": {
+      "title": "Anthropic pulls Mythos, Fable after U.S. order",
+      "url": "https://www.therundown.ai/p/anthropic-pulls-mythos-fable-after-u-s-order",
+      "first_seen": "2026-06-15T10:22:59.539492+00:00"
     }
   }
 }
