@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T09:25:46.202285+00:00",
+  "last_updated": "2026-06-17T14:25:36.736357+00:00",
   "articles": {
     "5f87ddba9157314f": {
       "title": "ניסוי חברתי חושף דעה קדומה נגד אמנות AI: אנשים גינו ציור אמיתי של מונה בטעות",
@@ -110,6 +110,11 @@
       "title": "Why 100+ security experts say the Fable 5 ban backfires",
       "url": "https://www.therundown.ai/p/why-100-security-experts-say-the-fable-5-ban-backfires",
       "first_seen": "2026-06-16T09:25:46.202176+00:00"
+    },
+    "23763acacc45d67b": {
+      "title": "Cursor officially joins the SpaceX AI machine",
+      "url": "https://www.therundown.ai/p/cursor-officially-joins-the-spacex-ai-machine",
+      "first_seen": "2026-06-17T14:25:36.736258+00:00"
     }
   }
 }
