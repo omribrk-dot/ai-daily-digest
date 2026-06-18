@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-17T14:25:36.736357+00:00",
+  "last_updated": "2026-06-18T14:09:19.204081+00:00",
   "articles": {
-    "5f87ddba9157314f": {
-      "title": "ניסוי חברתי חושף דעה קדומה נגד אמנות AI: אנשים גינו ציור אמיתי של מונה בטעות",
-      "url": "https://www.therundown.ai/p/ai-anger-comes-for-claude-monet",
-      "first_seen": "2026-05-18T14:29:15.486164+00:00"
-    },
-    "c11952d2a1cfb39c": {
-      "title": "המושבעים דחו את תביעת מאסק נגד OpenAI – הוא מכריז על ערעור",
-      "url": "https://www.therundown.ai/p/musk-openai-case-runs-out-of-time",
-      "first_seen": "2026-05-19T13:54:54.674550+00:00"
-    },
     "3bbab1cd646025ce": {
       "title": "גוגל I/O: ג'מיני הופך למנוע האג'נטי המרכזי בכל מוצרי החברה",
       "url": "https://www.therundown.ai/p/gemini-busy-agentic-day-at-google-i-o",
@@ -115,6 +105,11 @@
       "title": "Cursor officially joins the SpaceX AI machine",
       "url": "https://www.therundown.ai/p/cursor-officially-joins-the-spacex-ai-machine",
       "first_seen": "2026-06-17T14:25:36.736258+00:00"
+    },
+    "2954deba38152bef": {
+      "title": "Inside the deadlock keeping Mythos offline",
+      "url": "https://www.therundown.ai/p/inside-the-deadlock-keeping-mythos-offline",
+      "first_seen": "2026-06-18T14:09:19.203969+00:00"
     }
   }
 }
