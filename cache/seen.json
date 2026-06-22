@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-06-19T09:05:17.509670+00:00",
+  "last_updated": "2026-06-22T09:47:14.623301+00:00",
   "articles": {
-    "3bbab1cd646025ce": {
-      "title": "גוגל I/O: ג'מיני הופך למנוע האג'נטי המרכזי בכל מוצרי החברה",
-      "url": "https://www.therundown.ai/p/gemini-busy-agentic-day-at-google-i-o",
-      "first_seen": "2026-05-20T13:37:42.745201+00:00"
-    },
-    "3ef5fb6f49cd3eb1": {
-      "title": "מודל של OpenAI הפריך באופן עצמאי תיאוריה מתמטית בת 80 שנה",
-      "url": "https://www.therundown.ai/p/openai-cracks-an-80-year-math-belief",
-      "first_seen": "2026-05-21T14:14:36.871618+00:00"
-    },
-    "92aa622d6ab7bc80": {
-      "title": "פיצ'אי: ה-AI של היום ייראה מיושן כמו טלפון מתקפל תוך שלוש שנים",
-      "url": "https://www.therundown.ai/p/exclusive-interview-sundar-pichai-on-ai-flip-phone-moment",
-      "first_seen": "2026-05-22T13:31:35.947608+00:00"
-    },
     "671bf2810254ec68": {
       "title": "גוגל דיפמיינד פתרה 9 בעיות מתמטיות פתוחות של ארדוש, עוקפת את OpenAI",
       "url": "https://www.therundown.ai/p/google-tops-openai-math-breakthrough-9-to-1",
@@ -115,6 +100,11 @@
       "title": "Step into Midjourney's spa for a body scan",
       "url": "https://www.therundown.ai/p/step-into-midjourney-s-spa-for-a-body-scan",
       "first_seen": "2026-06-19T09:05:17.509569+00:00"
+    },
+    "b3045ce5d23e2201": {
+      "title": "Google's Nobel winner jumps to Anthropic",
+      "url": "https://www.therundown.ai/p/google-s-nobel-winner-jumps-to-anthropic",
+      "first_seen": "2026-06-22T09:47:14.623191+00:00"
     }
   }
 }
