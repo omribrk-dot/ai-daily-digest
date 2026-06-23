@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T09:47:14.623301+00:00",
+  "last_updated": "2026-06-23T13:42:32.948216+00:00",
   "articles": {
     "671bf2810254ec68": {
       "title": "גוגל דיפמיינד פתרה 9 בעיות מתמטיות פתוחות של ארדוש, עוקפת את OpenAI",
@@ -105,6 +105,11 @@
       "title": "Google's Nobel winner jumps to Anthropic",
       "url": "https://www.therundown.ai/p/google-s-nobel-winner-jumps-to-anthropic",
       "first_seen": "2026-06-22T09:47:14.623191+00:00"
+    },
+    "f165d1d3d07f982d": {
+      "title": "Sakana’s Fugu takes aim at the frontier",
+      "url": "https://www.therundown.ai/p/sakana-fugu-takes-aim-at-the-frontier",
+      "first_seen": "2026-06-23T13:42:32.948124+00:00"
     }
   }
 }
