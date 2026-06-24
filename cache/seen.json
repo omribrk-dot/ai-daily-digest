@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T13:42:32.948216+00:00",
+  "last_updated": "2026-06-24T13:21:30.156115+00:00",
   "articles": {
     "671bf2810254ec68": {
       "title": "גוגל דיפמיינד פתרה 9 בעיות מתמטיות פתוחות של ארדוש, עוקפת את OpenAI",
@@ -110,6 +110,11 @@
       "title": "Sakana’s Fugu takes aim at the frontier",
       "url": "https://www.therundown.ai/p/sakana-fugu-takes-aim-at-the-frontier",
       "first_seen": "2026-06-23T13:42:32.948124+00:00"
+    },
+    "dbdce0f8b0fb62b6": {
+      "title": "Meet your new Slack coworker — Claude",
+      "url": "https://www.therundown.ai/p/meet-your-new-slack-coworker-claude",
+      "first_seen": "2026-06-24T13:21:30.156009+00:00"
     }
   }
 }
