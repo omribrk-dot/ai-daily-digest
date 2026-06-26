@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-25T13:14:22.059125+00:00",
+  "last_updated": "2026-06-26T13:09:59.341722+00:00",
   "articles": {
-    "308bcc3c0a8d41fb": {
-      "title": "האפיפיור לאו ה-14 פרסם אנציקליקה של 42,000 מילים על בינה מלאכותית",
-      "url": "https://www.therundown.ai/p/the-pope-just-weighed-in-on-ai",
-      "first_seen": "2026-05-26T13:53:22.564296+00:00"
-    },
     "39a1491f9b02fadf": {
       "title": "מנכ\"ל DeepMind: AGI יושג עד 2030",
       "url": "https://www.therundown.ai/p/exclusive-demis-hassabis-on-agi-curing-diseases-with-ai",
@@ -115,6 +110,11 @@
       "title": "OpenAI's spicy new custom AI chip",
       "url": "https://www.therundown.ai/p/openai-spicy-new-custom-ai-chip",
       "first_seen": "2026-06-25T13:14:22.058992+00:00"
+    },
+    "8e965658e842c42f": {
+      "title": "White House reins in OpenAI's GPT-5.6",
+      "url": "https://www.therundown.ai/p/white-house-reins-in-openai-gpt-5-6",
+      "first_seen": "2026-06-26T13:09:59.341620+00:00"
     }
   }
 }
