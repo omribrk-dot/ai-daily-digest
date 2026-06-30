@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T14:47:19.377027+00:00",
+  "last_updated": "2026-06-30T13:08:56.742039+00:00",
   "articles": {
     "ca5c1685949cb595": {
       "title": "סטארטאפ מציע ניקיון דירות חינם בתמורה לנתוני אימון לבינה מלאכותית",
@@ -105,6 +105,11 @@
       "title": "OpenAI משיקה את GPT-5.6 – המודל החזק ביותר שלה, בגישה מוגבלת",
       "url": "https://www.therundown.ai/p/openai-most-powerful-ai-is-here-but-not-for-everyone",
       "first_seen": "2026-06-29T14:47:19.376925+00:00"
+    },
+    "210c084b9f7f4f6c": {
+      "title": "מטא פיתחה בינה מלאכותית שמפענחת סריקות מוח למשפטים שלמים – ללא ניתוח",
+      "url": "https://www.therundown.ai/p/meta-brain-reading-ai-leaves-letters-behind",
+      "first_seen": "2026-06-30T13:08:56.741924+00:00"
     }
   }
 }
