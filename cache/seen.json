@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-06-30T13:08:56.742039+00:00",
+  "last_updated": "2026-07-01T13:33:40.790892+00:00",
   "articles": {
-    "ca5c1685949cb595": {
-      "title": "סטארטאפ מציע ניקיון דירות חינם בתמורה לנתוני אימון לבינה מלאכותית",
-      "url": "https://www.therundown.ai/p/ai-next-dataset-is-your-apartment",
-      "first_seen": "2026-06-01T09:25:52.510597+00:00"
-    },
     "26f573f8b579477c": {
       "title": "נבידיה ב-COMPUTEX: 'עידן סוכני ה-AI הגיע'",
       "url": "https://www.therundown.ai/p/nvidia-corners-the-ai-agent-stack",
@@ -110,6 +105,11 @@
       "title": "מטא פיתחה בינה מלאכותית שמפענחת סריקות מוח למשפטים שלמים – ללא ניתוח",
       "url": "https://www.therundown.ai/p/meta-brain-reading-ai-leaves-letters-behind",
       "first_seen": "2026-06-30T13:08:56.741924+00:00"
+    },
+    "c95d5c87d2a86c1e": {
+      "title": "אנתרופיק משיקה Claude Sonnet 5 על רקע חזרת מודלי Fable ו-Mythos",
+      "url": "https://www.therundown.ai/p/sonnet-5-ships-as-washington-frees-fable",
+      "first_seen": "2026-07-01T13:33:40.790776+00:00"
     }
   }
 }
