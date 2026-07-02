@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T13:33:40.790892+00:00",
+  "last_updated": "2026-07-02T12:57:15.816497+00:00",
   "articles": {
     "26f573f8b579477c": {
       "title": "נבידיה ב-COMPUTEX: 'עידן סוכני ה-AI הגיע'",
@@ -110,6 +110,11 @@
       "title": "אנתרופיק משיקה Claude Sonnet 5 על רקע חזרת מודלי Fable ו-Mythos",
       "url": "https://www.therundown.ai/p/sonnet-5-ships-as-washington-frees-fable",
       "first_seen": "2026-07-01T13:33:40.790776+00:00"
+    },
+    "fa61fccab8a11599": {
+      "title": "קלוד 4 של Anthropic חוזר לזמינות גלובלית תחת פיקוח ממשלתי מוגבר",
+      "url": "https://www.therundown.ai/p/anthropic-fable-returns-worldwide",
+      "first_seen": "2026-07-02T12:57:15.816394+00:00"
     }
   }
 }
