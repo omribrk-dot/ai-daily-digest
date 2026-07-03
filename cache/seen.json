@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-02T12:57:15.816497+00:00",
+  "last_updated": "2026-07-03T12:55:26.998177+00:00",
   "articles": {
-    "26f573f8b579477c": {
-      "title": "נבידיה ב-COMPUTEX: 'עידן סוכני ה-AI הגיע'",
-      "url": "https://www.therundown.ai/p/nvidia-corners-the-ai-agent-stack",
-      "first_seen": "2026-06-02T14:52:38.556880+00:00"
-    },
     "6bee3eb75964bfca": {
       "title": "מיקרוסופט מציגה 7 מודלי AI פנימיים וחומרה לעידן הסוכנים בכנס Build 2026",
       "url": "https://www.therundown.ai/p/microsoft-paves-its-own-ai-way-at-build",
@@ -115,6 +110,11 @@
       "title": "קלוד 4 של Anthropic חוזר לזמינות גלובלית תחת פיקוח ממשלתי מוגבר",
       "url": "https://www.therundown.ai/p/anthropic-fable-returns-worldwide",
       "first_seen": "2026-07-02T12:57:15.816394+00:00"
+    },
+    "915ef23f8aaf4ac7": {
+      "title": "אלטמן מציע לממשלת ארה\"ב 5% מניות ב-OpenAI ותפקיד רגולטורי בתעשיית הבינה המלאכותי",
+      "url": "https://www.therundown.ai/p/altman-invites-washington-inside-the-ai-industry",
+      "first_seen": "2026-07-03T12:55:26.998016+00:00"
     }
   }
 }
