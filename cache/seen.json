@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T14:23:40.504743+00:00",
+  "last_updated": "2026-07-07T13:20:16.094243+00:00",
   "articles": {
     "0b83dbe054ce58dd": {
       "title": "ממשלת ארה\"ב בדיונים לקבלת נתח הון עצמי ב-OpenAI",
@@ -105,6 +105,11 @@
       "title": "מטא מפתחת מודל AI בשם 'Watermelon' שלכאורה מתחרה ב-GPT-5.5",
       "url": "https://www.therundown.ai/p/meta-sizes-up-gpt-5-5-with-watermelon",
       "first_seen": "2026-07-06T14:23:40.504632+00:00"
+    },
+    "0c5704f758cc097c": {
+      "title": "אנתרופיק גילתה מבנה נסתר במודל קלוד שמדמה עיבוד מחשבה אנושית",
+      "url": "https://www.therundown.ai/p/the-part-of-claude-s-brain-nobody-built",
+      "first_seen": "2026-07-07T13:20:16.094130+00:00"
     }
   }
 }
