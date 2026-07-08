@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-07T13:20:16.094243+00:00",
+  "last_updated": "2026-07-08T12:20:56.704262+00:00",
   "articles": {
     "0b83dbe054ce58dd": {
       "title": "ממשלת ארה\"ב בדיונים לקבלת נתח הון עצמי ב-OpenAI",
@@ -110,6 +110,11 @@
       "title": "אנתרופיק גילתה מבנה נסתר במודל קלוד שמדמה עיבוד מחשבה אנושית",
       "url": "https://www.therundown.ai/p/the-part-of-claude-s-brain-nobody-built",
       "first_seen": "2026-07-07T13:20:16.094130+00:00"
+    },
+    "ef891cf2b5afc840": {
+      "title": "מטא משיקה מודל יצירת תמונות Muse Image – מדורג שני בעולם",
+      "url": "https://www.therundown.ai/p/meta-climbs-the-ai-image-leaderboard",
+      "first_seen": "2026-07-08T12:20:56.704152+00:00"
     }
   }
 }
