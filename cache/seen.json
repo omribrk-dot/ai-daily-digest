@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-07-08T12:20:56.704262+00:00",
+  "last_updated": "2026-07-09T13:49:15.944178+00:00",
   "articles": {
-    "0b83dbe054ce58dd": {
-      "title": "ממשלת ארה\"ב בדיונים לקבלת נתח הון עצמי ב-OpenAI",
-      "url": "https://www.therundown.ai/p/washington-wants-a-piece-of-openai",
-      "first_seen": "2026-06-08T14:47:50.541512+00:00"
-    },
-    "872198191a887fae": {
-      "title": "אפל משדרגת את Siri עם יכולות AI בכנס WWDC26",
-      "url": "https://www.therundown.ai/p/apple-siri-ai-overhaul-is-here-sort-of",
-      "first_seen": "2026-06-09T13:43:59.676407+00:00"
-    },
     "d30a6feac51b8bdc": {
       "title": "אנתרופיק משיקה את Fable: מודל ה-AI החזק ביותר שלה לציבור הרחב",
       "url": "https://www.therundown.ai/p/anthropic-hands-the-public-mythos-class-ai",
@@ -115,6 +105,11 @@
       "title": "מטא משיקה מודל יצירת תמונות Muse Image – מדורג שני בעולם",
       "url": "https://www.therundown.ai/p/meta-climbs-the-ai-image-leaderboard",
       "first_seen": "2026-07-08T12:20:56.704152+00:00"
+    },
+    "24c7d9240409aaf6": {
+      "title": "xAI ו-Cursor משיקות יחד את Grok 4.5 במטרה להדביק את המתחרים",
+      "url": "https://www.therundown.ai/p/spacexai-cursor-release-the-strongest-grok-yet",
+      "first_seen": "2026-07-09T13:49:15.944059+00:00"
     }
   }
 }
