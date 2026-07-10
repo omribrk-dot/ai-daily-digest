@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T13:49:15.944178+00:00",
+  "last_updated": "2026-07-10T13:10:39.292406+00:00",
   "articles": {
     "d30a6feac51b8bdc": {
       "title": "אנתרופיק משיקה את Fable: מודל ה-AI החזק ביותר שלה לציבור הרחב",
@@ -110,6 +110,11 @@
       "title": "xAI ו-Cursor משיקות יחד את Grok 4.5 במטרה להדביק את המתחרים",
       "url": "https://www.therundown.ai/p/spacexai-cursor-release-the-strongest-grok-yet",
       "first_seen": "2026-07-09T13:49:15.944059+00:00"
+    },
+    "b4c9c69ecd6ab7d6": {
+      "title": "OpenAI משיקה GPT-5.6 Sol: ביצועים גבוהים במחיר נמוך",
+      "url": "https://www.therundown.ai/p/openai-sends-gpt-5-6-to-work",
+      "first_seen": "2026-07-10T13:10:39.292297+00:00"
     }
   }
 }
