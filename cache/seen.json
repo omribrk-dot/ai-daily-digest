@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-07-10T13:10:39.292406+00:00",
+  "last_updated": "2026-07-13T19:21:50.410471+00:00",
   "articles": {
-    "d30a6feac51b8bdc": {
-      "title": "אנתרופיק משיקה את Fable: מודל ה-AI החזק ביותר שלה לציבור הרחב",
-      "url": "https://www.therundown.ai/p/anthropic-hands-the-public-mythos-class-ai",
-      "first_seen": "2026-06-10T14:21:53.011967+00:00"
-    },
-    "bd1e93e55f6a62d2": {
-      "title": "מנכ\"ל אנתרופיק קורא לממשל האמריקאי להאיץ רגולציה על בינה מלאכותית",
-      "url": "https://www.therundown.ai/p/anthropic-writes-washington-an-ai-regulation-playbook",
-      "first_seen": "2026-06-11T14:35:39.396439+00:00"
-    },
-    "bd654f7e7d19df8f": {
-      "title": "Jeff Bezos' $41B 'artificial general engineer'",
-      "url": "https://www.therundown.ai/p/jeff-bezos-41b-artificial-general-engineer",
-      "first_seen": "2026-06-12T14:09:24.903740+00:00"
-    },
     "d1fe683278f3ec05": {
       "title": "Anthropic pulls Mythos, Fable after U.S. order",
       "url": "https://www.therundown.ai/p/anthropic-pulls-mythos-fable-after-u-s-order",
@@ -115,6 +100,11 @@
       "title": "OpenAI משיקה GPT-5.6 Sol: ביצועים גבוהים במחיר נמוך",
       "url": "https://www.therundown.ai/p/openai-sends-gpt-5-6-to-work",
       "first_seen": "2026-07-10T13:10:39.292297+00:00"
+    },
+    "f20094339cfc551e": {
+      "title": "אפל תובעת את OpenAI בטענה לגניבת סודות מסחריים בתחום החומרה",
+      "url": "https://www.therundown.ai/p/apple-takes-openai-to-court",
+      "first_seen": "2026-07-13T19:21:50.410398+00:00"
     }
   }
 }
