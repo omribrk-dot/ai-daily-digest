@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T19:21:50.410471+00:00",
+  "last_updated": "2026-07-14T12:11:07.472843+00:00",
   "articles": {
     "d1fe683278f3ec05": {
       "title": "Anthropic pulls Mythos, Fable after U.S. order",
@@ -105,6 +105,11 @@
       "title": "אפל תובעת את OpenAI בטענה לגניבת סודות מסחריים בתחום החומרה",
       "url": "https://www.therundown.ai/p/apple-takes-openai-to-court",
       "first_seen": "2026-07-13T19:21:50.410398+00:00"
+    },
+    "4590a08812fa1085": {
+      "title": "זוכי נובל וחוקרים מסטנפורד מזהירים: AI עלול לגרום לפיטורים המוניים תוך עשור",
+      "url": "https://www.therundown.ai/p/economists-researchers-put-ai-job-shock-on-the-clock",
+      "first_seen": "2026-07-14T12:11:07.472760+00:00"
     }
   }
 }
