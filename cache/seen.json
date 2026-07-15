@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-14T12:11:07.472843+00:00",
+  "last_updated": "2026-07-15T12:13:53.413169+00:00",
   "articles": {
-    "d1fe683278f3ec05": {
-      "title": "Anthropic pulls Mythos, Fable after U.S. order",
-      "url": "https://www.therundown.ai/p/anthropic-pulls-mythos-fable-after-u-s-order",
-      "first_seen": "2026-06-15T10:22:59.539492+00:00"
-    },
     "02b4e85318e5db8b": {
       "title": "Why 100+ security experts say the Fable 5 ban backfires",
       "url": "https://www.therundown.ai/p/why-100-security-experts-say-the-fable-5-ban-backfires",
@@ -110,6 +105,11 @@
       "title": "זוכי נובל וחוקרים מסטנפורד מזהירים: AI עלול לגרום לפיטורים המוניים תוך עשור",
       "url": "https://www.therundown.ai/p/economists-researchers-put-ai-job-shock-on-the-clock",
       "first_seen": "2026-07-14T12:11:07.472760+00:00"
+    },
+    "53c5fcb8e0167bf9": {
+      "title": "מנכ\"ל Google DeepMind קורא להקים גוף פיקוח אמריקאי על AI עוד השנה",
+      "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
+      "first_seen": "2026-07-15T12:13:53.413056+00:00"
     }
   }
 }
