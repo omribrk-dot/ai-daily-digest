@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-15T12:13:53.413169+00:00",
+  "last_updated": "2026-07-16T12:19:45.700764+00:00",
   "articles": {
-    "02b4e85318e5db8b": {
-      "title": "Why 100+ security experts say the Fable 5 ban backfires",
-      "url": "https://www.therundown.ai/p/why-100-security-experts-say-the-fable-5-ban-backfires",
-      "first_seen": "2026-06-16T09:25:46.202176+00:00"
-    },
     "23763acacc45d67b": {
       "title": "Cursor officially joins the SpaceX AI machine",
       "url": "https://www.therundown.ai/p/cursor-officially-joins-the-spacex-ai-machine",
@@ -110,6 +105,11 @@
       "title": "מנכ\"ל Google DeepMind קורא להקים גוף פיקוח אמריקאי על AI עוד השנה",
       "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
       "first_seen": "2026-07-15T12:13:53.413056+00:00"
+    },
+    "319b59b510bd8903": {
+      "title": "OpenAI משיקה מקלדת חומרה ראשונה לשליטה בסוכני AI במחיר 230 דולר",
+      "url": "https://www.therundown.ai/p/openai-new-230-ai-agent-control-pad",
+      "first_seen": "2026-07-16T12:19:45.700670+00:00"
     }
   }
 }
