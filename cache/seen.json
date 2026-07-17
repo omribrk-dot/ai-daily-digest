@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T12:19:45.700764+00:00",
+  "last_updated": "2026-07-17T12:08:34.994189+00:00",
   "articles": {
     "23763acacc45d67b": {
       "title": "Cursor officially joins the SpaceX AI machine",
@@ -110,6 +110,11 @@
       "title": "OpenAI משיקה מקלדת חומרה ראשונה לשליטה בסוכני AI במחיר 230 דולר",
       "url": "https://www.therundown.ai/p/openai-new-230-ai-agent-control-pad",
       "first_seen": "2026-07-16T12:19:45.700670+00:00"
+    },
+    "146ffefc7bf16c9d": {
+      "title": "Kimi K3 של Moonshot AI מתחרה במודלי AI המובילים במחיר נמוך משמעותית",
+      "url": "https://www.therundown.ai/p/moonshot-kimi-k3-closes-the-frontier-gap",
+      "first_seen": "2026-07-17T12:08:34.994082+00:00"
     }
   }
 }
