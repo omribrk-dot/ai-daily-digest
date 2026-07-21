@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20T13:04:44.145471+00:00",
+  "last_updated": "2026-07-21T12:23:19.530189+00:00",
   "articles": {
     "b3045ce5d23e2201": {
       "title": "Google's Nobel winner jumps to Anthropic",
@@ -105,6 +105,11 @@
       "title": "Anthropic מאשרת: מודל Claude Opus 4.5 יישאר זמין לצמיתות במסגרת מנויים",
       "url": "https://www.therundown.ai/p/anthropic-fable-survives-the-subscription-axe",
       "first_seen": "2026-07-20T13:04:44.145366+00:00"
+    },
+    "f9c8cfeee291aa37": {
+      "title": "קלוד של אנתרופיק הפריך השערה מתמטית בת 87 שנים בנוסחה אחת",
+      "url": "https://www.therundown.ai/p/claude-disproves-an-87-year-old-math-problem",
+      "first_seen": "2026-07-21T12:23:19.530078+00:00"
     }
   }
 }
