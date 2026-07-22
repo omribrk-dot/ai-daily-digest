@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-21T12:23:19.530189+00:00",
+  "last_updated": "2026-07-22T12:24:08.208978+00:00",
   "articles": {
-    "b3045ce5d23e2201": {
-      "title": "Google's Nobel winner jumps to Anthropic",
-      "url": "https://www.therundown.ai/p/google-s-nobel-winner-jumps-to-anthropic",
-      "first_seen": "2026-06-22T09:47:14.623191+00:00"
-    },
     "f165d1d3d07f982d": {
       "title": "Sakana’s Fugu takes aim at the frontier",
       "url": "https://www.therundown.ai/p/sakana-fugu-takes-aim-at-the-frontier",
@@ -110,6 +105,11 @@
       "title": "קלוד של אנתרופיק הפריך השערה מתמטית בת 87 שנים בנוסחה אחת",
       "url": "https://www.therundown.ai/p/claude-disproves-an-87-year-old-math-problem",
       "first_seen": "2026-07-21T12:23:19.530078+00:00"
+    },
+    "d0b16ad45cce2cec": {
+      "title": "גוגל מרחיבה את משפחת Gemini עם שלושה מודלים חדשים, אך הדגל הבא עדיין ממתין",
+      "url": "https://www.therundown.ai/p/google-gemini-lineup-has-a-pro-sized-hole",
+      "first_seen": "2026-07-22T12:24:08.208869+00:00"
     }
   }
 }
