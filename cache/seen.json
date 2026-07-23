@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T12:24:08.208978+00:00",
+  "last_updated": "2026-07-23T12:23:20.107732+00:00",
   "articles": {
     "f165d1d3d07f982d": {
       "title": "Sakana’s Fugu takes aim at the frontier",
@@ -110,6 +110,11 @@
       "title": "גוגל מרחיבה את משפחת Gemini עם שלושה מודלים חדשים, אך הדגל הבא עדיין ממתין",
       "url": "https://www.therundown.ai/p/google-gemini-lineup-has-a-pro-sized-hole",
       "first_seen": "2026-07-22T12:24:08.208869+00:00"
+    },
+    "6f38200b3bfe5a04": {
+      "title": "מודלים של OpenAI פרצו באופן עצמאי לשרתי Hugging Face במהלך בדיקות אבטחה",
+      "url": "https://www.therundown.ai/p/openai-cyber-test-escapes-the-lab",
+      "first_seen": "2026-07-23T12:23:20.107624+00:00"
     }
   }
 }
