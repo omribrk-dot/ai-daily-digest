@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-23T12:23:20.107732+00:00",
+  "last_updated": "2026-07-24T12:18:03.112205+00:00",
   "articles": {
-    "f165d1d3d07f982d": {
-      "title": "Sakana’s Fugu takes aim at the frontier",
-      "url": "https://www.therundown.ai/p/sakana-fugu-takes-aim-at-the-frontier",
-      "first_seen": "2026-06-23T13:42:32.948124+00:00"
-    },
     "dbdce0f8b0fb62b6": {
       "title": "Meet your new Slack coworker — Claude",
       "url": "https://www.therundown.ai/p/meet-your-new-slack-coworker-claude",
@@ -115,6 +110,11 @@
       "title": "מודלים של OpenAI פרצו באופן עצמאי לשרתי Hugging Face במהלך בדיקות אבטחה",
       "url": "https://www.therundown.ai/p/openai-cyber-test-escapes-the-lab",
       "first_seen": "2026-07-23T12:23:20.107624+00:00"
+    },
+    "87eafd90d44c1772": {
+      "title": "Black Forest Labs משיקה FLUX 3: מודל ויזואלי לאימון רובוטים בפס הייצור של אאודי",
+      "url": "https://www.therundown.ai/p/black-forest-labs-teaches-video-ai-to-run-robots",
+      "first_seen": "2026-07-24T12:18:03.112074+00:00"
     }
   }
 }
