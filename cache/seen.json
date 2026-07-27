@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-07-24T12:18:03.112205+00:00",
+  "last_updated": "2026-07-27T13:38:30.191462+00:00",
   "articles": {
-    "dbdce0f8b0fb62b6": {
-      "title": "Meet your new Slack coworker — Claude",
-      "url": "https://www.therundown.ai/p/meet-your-new-slack-coworker-claude",
-      "first_seen": "2026-06-24T13:21:30.156009+00:00"
-    },
-    "a99597a54317f16a": {
-      "title": "OpenAI's spicy new custom AI chip",
-      "url": "https://www.therundown.ai/p/openai-spicy-new-custom-ai-chip",
-      "first_seen": "2026-06-25T13:14:22.058992+00:00"
-    },
-    "8e965658e842c42f": {
-      "title": "White House reins in OpenAI's GPT-5.6",
-      "url": "https://www.therundown.ai/p/white-house-reins-in-openai-gpt-5-6",
-      "first_seen": "2026-06-26T13:09:59.341620+00:00"
-    },
     "e87d13e701cdd25e": {
       "title": "OpenAI משיקה את GPT-5.6 – המודל החזק ביותר שלה, בגישה מוגבלת",
       "url": "https://www.therundown.ai/p/openai-most-powerful-ai-is-here-but-not-for-everyone",
@@ -115,6 +100,11 @@
       "title": "Black Forest Labs משיקה FLUX 3: מודל ויזואלי לאימון רובוטים בפס הייצור של אאודי",
       "url": "https://www.therundown.ai/p/black-forest-labs-teaches-video-ai-to-run-robots",
       "first_seen": "2026-07-24T12:18:03.112074+00:00"
+    },
+    "678a9e104b3cc2fc": {
+      "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
+      "url": "https://www.therundown.ai/p/anthropic-opus-5-surprise",
+      "first_seen": "2026-07-27T13:38:30.191359+00:00"
     }
   }
 }
