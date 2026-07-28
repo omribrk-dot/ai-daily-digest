@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27T13:38:30.191462+00:00",
+  "last_updated": "2026-07-28T12:52:17.367552+00:00",
   "articles": {
     "e87d13e701cdd25e": {
       "title": "OpenAI משיקה את GPT-5.6 – המודל החזק ביותר שלה, בגישה מוגבלת",
@@ -105,6 +105,11 @@
       "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
       "url": "https://www.therundown.ai/p/anthropic-opus-5-surprise",
       "first_seen": "2026-07-27T13:38:30.191359+00:00"
+    },
+    "6e1ab15ef62cfb3e": {
+      "title": "Moonshot משחררת את K3 - המודל הפתוח הגדול ביותר בהיסטוריה",
+      "url": "https://www.therundown.ai/p/moonshot-lets-history-largest-open-model-loose",
+      "first_seen": "2026-07-28T12:52:17.367453+00:00"
     }
   }
 }
