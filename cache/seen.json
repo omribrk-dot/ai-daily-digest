@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T12:52:17.367552+00:00",
+  "last_updated": "2026-07-29T12:59:01.232618+00:00",
   "articles": {
     "e87d13e701cdd25e": {
       "title": "OpenAI משיקה את GPT-5.6 – המודל החזק ביותר שלה, בגישה מוגבלת",
@@ -110,6 +110,11 @@
       "title": "Moonshot משחררת את K3 - המודל הפתוח הגדול ביותר בהיסטוריה",
       "url": "https://www.therundown.ai/p/moonshot-lets-history-largest-open-model-loose",
       "first_seen": "2026-07-28T12:52:17.367453+00:00"
+    },
+    "bc49ac8105905bc0": {
+      "title": "מעל 1,000 עובדי חברות AI מובילות חותמים על עצומה לבלימת קצב פיתוח הבינה המלאכותי",
+      "url": "https://www.therundown.ai/p/1000-frontier-staffers-ask-for-an-ai-brake-pedal",
+      "first_seen": "2026-07-29T12:59:01.232486+00:00"
     }
   }
 }
