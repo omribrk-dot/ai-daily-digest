@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-07-30T12:27:56.185301+00:00",
+  "last_updated": "2026-07-31T12:54:49.811589+00:00",
   "articles": {
-    "210c084b9f7f4f6c": {
-      "title": "מטא פיתחה בינה מלאכותית שמפענחת סריקות מוח למשפטים שלמים – ללא ניתוח",
-      "url": "https://www.therundown.ai/p/meta-brain-reading-ai-leaves-letters-behind",
-      "first_seen": "2026-06-30T13:08:56.741924+00:00"
-    },
     "c95d5c87d2a86c1e": {
       "title": "אנתרופיק משיקה Claude Sonnet 5 על רקע חזרת מודלי Fable ו-Mythos",
       "url": "https://www.therundown.ai/p/sonnet-5-ships-as-washington-frees-fable",
@@ -115,6 +110,11 @@
       "title": "פרצת סוכן ה-AI של OpenAI ב-Hugging Face: חברה שנייה מאשרת נזק ללקוחותיה",
       "url": "https://www.therundown.ai/p/openai-escaped-ai-claims-another-victim",
       "first_seen": "2026-07-30T12:27:56.185186+00:00"
+    },
+    "d9498793ff50b3df": {
+      "title": "OpenAI מוזילה את GPT-4.5: המודל כתב את הקוד שהפחית את עלויותיו",
+      "url": "https://www.therundown.ai/p/openai-s-models-cut-their-own-costs",
+      "first_seen": "2026-07-31T12:54:49.811503+00:00"
     }
   }
 }
