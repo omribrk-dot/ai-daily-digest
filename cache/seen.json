@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-07-31T12:54:49.811589+00:00",
+  "last_updated": "2026-08-03T13:40:23.293054+00:00",
   "articles": {
-    "c95d5c87d2a86c1e": {
-      "title": "אנתרופיק משיקה Claude Sonnet 5 על רקע חזרת מודלי Fable ו-Mythos",
-      "url": "https://www.therundown.ai/p/sonnet-5-ships-as-washington-frees-fable",
-      "first_seen": "2026-07-01T13:33:40.790776+00:00"
-    },
-    "fa61fccab8a11599": {
-      "title": "קלוד 4 של Anthropic חוזר לזמינות גלובלית תחת פיקוח ממשלתי מוגבר",
-      "url": "https://www.therundown.ai/p/anthropic-fable-returns-worldwide",
-      "first_seen": "2026-07-02T12:57:15.816394+00:00"
-    },
-    "915ef23f8aaf4ac7": {
-      "title": "אלטמן מציע לממשלת ארה\"ב 5% מניות ב-OpenAI ותפקיד רגולטורי בתעשיית הבינה המלאכותי",
-      "url": "https://www.therundown.ai/p/altman-invites-washington-inside-the-ai-industry",
-      "first_seen": "2026-07-03T12:55:26.998016+00:00"
-    },
     "b837472ed4200884": {
       "title": "מטא מפתחת מודל AI בשם 'Watermelon' שלכאורה מתחרה ב-GPT-5.5",
       "url": "https://www.therundown.ai/p/meta-sizes-up-gpt-5-5-with-watermelon",
@@ -115,6 +100,11 @@
       "title": "OpenAI מוזילה את GPT-4.5: המודל כתב את הקוד שהפחית את עלויותיו",
       "url": "https://www.therundown.ai/p/openai-s-models-cut-their-own-costs",
       "first_seen": "2026-07-31T12:54:49.811503+00:00"
+    },
+    "306c3096c1e54e2d": {
+      "title": "OpenAI פתרה 10 בעיות מתמטיות פתוחות בעזרת מודל Astra שטרם שוחרר",
+      "url": "https://www.therundown.ai/p/openai-astra-solves-10-long-standing-math-problems",
+      "first_seen": "2026-08-03T13:40:23.292914+00:00"
     }
   }
 }
