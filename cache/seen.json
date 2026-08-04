@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T13:40:23.293054+00:00",
+  "last_updated": "2026-08-04T13:01:15.556184+00:00",
   "articles": {
     "b837472ed4200884": {
       "title": "מטא מפתחת מודל AI בשם 'Watermelon' שלכאורה מתחרה ב-GPT-5.5",
@@ -105,6 +105,11 @@
       "title": "OpenAI פתרה 10 בעיות מתמטיות פתוחות בעזרת מודל Astra שטרם שוחרר",
       "url": "https://www.therundown.ai/p/openai-astra-solves-10-long-standing-math-problems",
       "first_seen": "2026-08-03T13:40:23.292914+00:00"
+    },
+    "7714d3da17dcdc3c": {
+      "title": "ענקיות ה-AI נפגשות בבית הלבן לדיון על מסגרת אבטחה חדשה",
+      "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
+      "first_seen": "2026-08-04T13:01:15.556093+00:00"
     }
   }
 }
