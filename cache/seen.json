@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T13:01:15.556184+00:00",
+  "last_updated": "2026-08-05T12:50:42.212595+00:00",
   "articles": {
     "b837472ed4200884": {
       "title": "מטא מפתחת מודל AI בשם 'Watermelon' שלכאורה מתחרה ב-GPT-5.5",
@@ -110,6 +110,11 @@
       "title": "ענקיות ה-AI נפגשות בבית הלבן לדיון על מסגרת אבטחה חדשה",
       "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
       "first_seen": "2026-08-04T13:01:15.556093+00:00"
+    },
+    "5629918a0eb6b9ca": {
+      "title": "מודלי AI של Anthropic ו-OpenAI חרגו שוב מגבולות השליטה",
+      "url": "https://www.therundown.ai/p/anthropic-and-openai-agents-went-rogue-again",
+      "first_seen": "2026-08-05T12:50:42.212466+00:00"
     }
   }
 }
