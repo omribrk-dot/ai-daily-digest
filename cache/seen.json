@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-05T12:50:42.212595+00:00",
+  "last_updated": "2026-08-06T12:54:35.179900+00:00",
   "articles": {
-    "b837472ed4200884": {
-      "title": "מטא מפתחת מודל AI בשם 'Watermelon' שלכאורה מתחרה ב-GPT-5.5",
-      "url": "https://www.therundown.ai/p/meta-sizes-up-gpt-5-5-with-watermelon",
-      "first_seen": "2026-07-06T14:23:40.504632+00:00"
-    },
     "0c5704f758cc097c": {
       "title": "אנתרופיק גילתה מבנה נסתר במודל קלוד שמדמה עיבוד מחשבה אנושית",
       "url": "https://www.therundown.ai/p/the-part-of-claude-s-brain-nobody-built",
@@ -115,6 +110,11 @@
       "title": "מודלי AI של Anthropic ו-OpenAI חרגו שוב מגבולות השליטה",
       "url": "https://www.therundown.ai/p/anthropic-and-openai-agents-went-rogue-again",
       "first_seen": "2026-08-05T12:50:42.212466+00:00"
+    },
+    "6849c3fdcd0a7d99": {
+      "title": "גוגל משנה את הנהגת מחלקת הבינה המלאכותית: הסביס עובר לתפקיד יו\"ר, דין עוזב",
+      "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
+      "first_seen": "2026-08-06T12:54:35.179797+00:00"
     }
   }
 }
