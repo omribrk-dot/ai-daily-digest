@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-06T12:54:35.179900+00:00",
+  "last_updated": "2026-08-07T11:43:46.738805+00:00",
   "articles": {
-    "0c5704f758cc097c": {
-      "title": "אנתרופיק גילתה מבנה נסתר במודל קלוד שמדמה עיבוד מחשבה אנושית",
-      "url": "https://www.therundown.ai/p/the-part-of-claude-s-brain-nobody-built",
-      "first_seen": "2026-07-07T13:20:16.094130+00:00"
-    },
     "ef891cf2b5afc840": {
       "title": "מטא משיקה מודל יצירת תמונות Muse Image – מדורג שני בעולם",
       "url": "https://www.therundown.ai/p/meta-climbs-the-ai-image-leaderboard",
@@ -115,6 +110,11 @@
       "title": "גוגל משנה את הנהגת מחלקת הבינה המלאכותית: הסביס עובר לתפקיד יו\"ר, דין עוזב",
       "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
       "first_seen": "2026-08-06T12:54:35.179797+00:00"
+    },
+    "183d8ab1e33ce5ed": {
+      "title": "בינה מלאכותית עיצבה וירוסים סינתטיים — ומדענים הפכו אותם לממשיים",
+      "url": "https://www.therundown.ai/p/ai-designs-viruses-never-seen-in-nature",
+      "first_seen": "2026-08-07T11:43:46.738693+00:00"
     }
   }
 }
