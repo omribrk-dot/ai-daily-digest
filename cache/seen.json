@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T11:45:33.107213+00:00",
+  "last_updated": "2026-08-11T11:42:28.357826+00:00",
   "articles": {
     "f20094339cfc551e": {
       "title": "אפל תובעת את OpenAI בטענה לגניבת סודות מסחריים בתחום החומרה",
@@ -105,6 +105,11 @@
       "title": "OpenAI מסווגת את מודל Astra כסיכון סייבר קריטי ומקפיאה עבודה פנימית",
       "url": "https://www.therundown.ai/p/openai-puts-the-safety-brakes-on-astra",
       "first_seen": "2026-08-10T11:45:33.107106+00:00"
+    },
+    "4a2832f7d00d31cd": {
+      "title": "מטא מציגה מודלי AI חדשים בקוד פתוח כדי להתמודד עם הדומיננטיות הסינית",
+      "url": "https://www.therundown.ai/p/meta-returns-to-its-open-source-roots",
+      "first_seen": "2026-08-11T11:42:28.357706+00:00"
     }
   }
 }
