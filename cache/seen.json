@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T11:42:28.357826+00:00",
+  "last_updated": "2026-08-12T11:44:03.750486+00:00",
   "articles": {
     "f20094339cfc551e": {
       "title": "אפל תובעת את OpenAI בטענה לגניבת סודות מסחריים בתחום החומרה",
@@ -110,6 +110,11 @@
       "title": "מטא מציגה מודלי AI חדשים בקוד פתוח כדי להתמודד עם הדומיננטיות הסינית",
       "url": "https://www.therundown.ai/p/meta-returns-to-its-open-source-roots",
       "first_seen": "2026-08-11T11:42:28.357706+00:00"
+    },
+    "668637a0f8b18fda": {
+      "title": "אנתרופיק משיקה סימני מים בלתי נראים בתוכן שמייצר Claude",
+      "url": "https://www.therundown.ai/p/anthropic-slips-an-invisible-signature-into-claude",
+      "first_seen": "2026-08-12T11:44:03.750377+00:00"
     }
   }
 }
