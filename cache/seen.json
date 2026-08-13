@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-12T11:44:03.750486+00:00",
+  "last_updated": "2026-08-13T11:44:10.200898+00:00",
   "articles": {
-    "f20094339cfc551e": {
-      "title": "אפל תובעת את OpenAI בטענה לגניבת סודות מסחריים בתחום החומרה",
-      "url": "https://www.therundown.ai/p/apple-takes-openai-to-court",
-      "first_seen": "2026-07-13T19:21:50.410398+00:00"
-    },
     "4590a08812fa1085": {
       "title": "זוכי נובל וחוקרים מסטנפורד מזהירים: AI עלול לגרום לפיטורים המוניים תוך עשור",
       "url": "https://www.therundown.ai/p/economists-researchers-put-ai-job-shock-on-the-clock",
@@ -115,6 +110,11 @@
       "title": "אנתרופיק משיקה סימני מים בלתי נראים בתוכן שמייצר Claude",
       "url": "https://www.therundown.ai/p/anthropic-slips-an-invisible-signature-into-claude",
       "first_seen": "2026-08-12T11:44:03.750377+00:00"
+    },
+    "e8788c2cb6cb6676": {
+      "title": "xAI משיקה את Grok 4.6 עם ביצועים גבוהים ומחיר תחרותי",
+      "url": "https://www.therundown.ai/p/grok-4-6-storms-the-ai-frontier",
+      "first_seen": "2026-08-13T11:44:10.200764+00:00"
     }
   }
 }
