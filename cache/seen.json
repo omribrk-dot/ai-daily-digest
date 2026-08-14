@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-13T11:44:10.200898+00:00",
+  "last_updated": "2026-08-14T11:41:58.832043+00:00",
   "articles": {
-    "4590a08812fa1085": {
-      "title": "זוכי נובל וחוקרים מסטנפורד מזהירים: AI עלול לגרום לפיטורים המוניים תוך עשור",
-      "url": "https://www.therundown.ai/p/economists-researchers-put-ai-job-shock-on-the-clock",
-      "first_seen": "2026-07-14T12:11:07.472760+00:00"
-    },
     "53c5fcb8e0167bf9": {
       "title": "מנכ\"ל Google DeepMind קורא להקים גוף פיקוח אמריקאי על AI עוד השנה",
       "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
@@ -115,6 +110,11 @@
       "title": "xAI משיקה את Grok 4.6 עם ביצועים גבוהים ומחיר תחרותי",
       "url": "https://www.therundown.ai/p/grok-4-6-storms-the-ai-frontier",
       "first_seen": "2026-08-13T11:44:10.200764+00:00"
+    },
+    "4514f5219655c3a9": {
+      "title": "OpenAI משיקה מצב 'Ultrafast': GPT-4.1 Sol מהיר פי 14",
+      "url": "https://www.therundown.ai/p/openai-feels-the-frontier-need-for-speed",
+      "first_seen": "2026-08-14T11:41:58.831945+00:00"
     }
   }
 }
