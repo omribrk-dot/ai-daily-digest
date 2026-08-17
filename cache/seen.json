@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-08-14T11:41:58.832043+00:00",
+  "last_updated": "2026-08-17T11:23:22.799762+00:00",
   "articles": {
-    "53c5fcb8e0167bf9": {
-      "title": "מנכ\"ל Google DeepMind קורא להקים גוף פיקוח אמריקאי על AI עוד השנה",
-      "url": "https://www.therundown.ai/p/demis-hassabis-puts-a-clock-on-ai-oversight",
-      "first_seen": "2026-07-15T12:13:53.413056+00:00"
-    },
-    "319b59b510bd8903": {
-      "title": "OpenAI משיקה מקלדת חומרה ראשונה לשליטה בסוכני AI במחיר 230 דולר",
-      "url": "https://www.therundown.ai/p/openai-new-230-ai-agent-control-pad",
-      "first_seen": "2026-07-16T12:19:45.700670+00:00"
-    },
-    "146ffefc7bf16c9d": {
-      "title": "Kimi K3 של Moonshot AI מתחרה במודלי AI המובילים במחיר נמוך משמעותית",
-      "url": "https://www.therundown.ai/p/moonshot-kimi-k3-closes-the-frontier-gap",
-      "first_seen": "2026-07-17T12:08:34.994082+00:00"
-    },
     "5e153eebee313f1c": {
       "title": "Anthropic מאשרת: מודל Claude Opus 4.5 יישאר זמין לצמיתות במסגרת מנויים",
       "url": "https://www.therundown.ai/p/anthropic-fable-survives-the-subscription-axe",
@@ -115,6 +100,11 @@
       "title": "OpenAI משיקה מצב 'Ultrafast': GPT-4.1 Sol מהיר פי 14",
       "url": "https://www.therundown.ai/p/openai-feels-the-frontier-need-for-speed",
       "first_seen": "2026-08-14T11:41:58.831945+00:00"
+    },
+    "8c0247a2ab4e23ee": {
+      "title": "אמודיי מגיב למבקרים: אזהרות הבטיחות שלי הן יושר, לא פאניקה",
+      "url": "https://www.therundown.ai/p/dario-amodei-logs-on-to-answer-the-critics",
+      "first_seen": "2026-08-17T11:23:22.799648+00:00"
     }
   }
 }
