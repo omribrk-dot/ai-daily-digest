@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T11:23:51.049098+00:00",
+  "last_updated": "2026-08-19T11:24:19.544938+00:00",
   "articles": {
     "5e153eebee313f1c": {
       "title": "Anthropic מאשרת: מודל Claude Opus 4.5 יישאר זמין לצמיתות במסגרת מנויים",
@@ -110,6 +110,31 @@
       "title": "קורסור משיקה מתחרה ל-GitHub בדיוק ביום שבו הפלטפורמה קרסה",
       "url": "https://www.therundown.ai/p/cursor-origin-hits-github-on-its-worst-day",
       "first_seen": "2026-08-18T11:23:51.048996+00:00"
+    },
+    "9138cff21e167c03": {
+      "title": "OpenAI עצרה זמנית אימון מודלים עתידיים לצורך בדיקות בטיחות",
+      "url": "https://therundownai.beehiiv.com/p/pacing-comes-to-the-ai-frontier",
+      "first_seen": "2026-08-19T11:24:19.544803+00:00"
+    },
+    "496acb319603c7f4": {
+      "title": "Cursor השיקה את Origin, מתחרה ל-GitHub, ביום שבו הפלטפורמה סבלה מהפסקה נרחבת",
+      "url": "https://therundownai.beehiiv.com/p/cursor-origin-hits-github-on-its-worst-day",
+      "first_seen": "2026-08-19T11:24:19.544803+00:00"
+    },
+    "ff7a8b6ee8e37f84": {
+      "title": "דריו אמודיי: אזהרות הבטיחות של Anthropic משקפות כנות, לא פסימיות",
+      "url": "https://therundownai.beehiiv.com/p/dario-amodei-logs-on-to-answer-the-critics",
+      "first_seen": "2026-08-19T11:24:19.544803+00:00"
+    },
+    "7ef40c36a2a0ca35": {
+      "title": "OpenAI מציגה מצב Ultrafast: GPT-5.6 Sol מהיר פי 14 בשיתוף עם Cerebras",
+      "url": "https://therundownai.beehiiv.com/p/openai-feels-the-frontier-need-for-speed",
+      "first_seen": "2026-08-19T11:24:19.544803+00:00"
+    },
+    "ed5ea479e38ca284": {
+      "title": "xAI משיקה את Grok 4.6: ביצועים גבוהים במחיר מופחת",
+      "url": "https://therundownai.beehiiv.com/p/grok-4-6-storms-the-ai-frontier",
+      "first_seen": "2026-08-19T11:24:19.544803+00:00"
     }
   }
 }
