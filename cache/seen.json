@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-19T11:24:19.544938+00:00",
+  "last_updated": "2026-08-20T11:24:58.106749+00:00",
   "articles": {
-    "5e153eebee313f1c": {
-      "title": "Anthropic מאשרת: מודל Claude Opus 4.5 יישאר זמין לצמיתות במסגרת מנויים",
-      "url": "https://www.therundown.ai/p/anthropic-fable-survives-the-subscription-axe",
-      "first_seen": "2026-07-20T13:04:44.145366+00:00"
-    },
     "f9c8cfeee291aa37": {
       "title": "קלוד של אנתרופיק הפריך השערה מתמטית בת 87 שנים בנוסחה אחת",
       "url": "https://www.therundown.ai/p/claude-disproves-an-87-year-old-math-problem",
@@ -135,6 +130,11 @@
       "title": "xAI משיקה את Grok 4.6: ביצועים גבוהים במחיר מופחת",
       "url": "https://therundownai.beehiiv.com/p/grok-4-6-storms-the-ai-frontier",
       "first_seen": "2026-08-19T11:24:19.544803+00:00"
+    },
+    "46f40574d06145f0": {
+      "title": "קלוד של אנתרופיק מדגים יכולות עצמאיות בגילוי תרופות",
+      "url": "https://therundownai.beehiiv.com/p/claude-adds-protein-design-to-its-resume",
+      "first_seen": "2026-08-20T11:24:58.106630+00:00"
     }
   }
 }
