@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-20T11:24:58.106749+00:00",
+  "last_updated": "2026-08-21T11:24:05.181408+00:00",
   "articles": {
-    "f9c8cfeee291aa37": {
-      "title": "קלוד של אנתרופיק הפריך השערה מתמטית בת 87 שנים בנוסחה אחת",
-      "url": "https://www.therundown.ai/p/claude-disproves-an-87-year-old-math-problem",
-      "first_seen": "2026-07-21T12:23:19.530078+00:00"
-    },
     "d0b16ad45cce2cec": {
       "title": "גוגל מרחיבה את משפחת Gemini עם שלושה מודלים חדשים, אך הדגל הבא עדיין ממתין",
       "url": "https://www.therundown.ai/p/google-gemini-lineup-has-a-pro-sized-hole",
@@ -135,6 +130,11 @@
       "title": "קלוד של אנתרופיק מדגים יכולות עצמאיות בגילוי תרופות",
       "url": "https://therundownai.beehiiv.com/p/claude-adds-protein-design-to-its-resume",
       "first_seen": "2026-08-20T11:24:58.106630+00:00"
+    },
+    "4b61e0830f52e941": {
+      "title": "סלאק משיקה Slack Code: סוכני AI לפיתוח תוכנה בתוך ערוצי שיתוף פעולה",
+      "url": "https://therundownai.beehiiv.com/p/slack-turns-coding-into-a-group-project",
+      "first_seen": "2026-08-21T11:24:05.181255+00:00"
     }
   }
 }
