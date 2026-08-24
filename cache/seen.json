@@ -1,21 +1,6 @@
 {
-  "last_updated": "2026-08-21T11:24:05.181408+00:00",
+  "last_updated": "2026-08-24T11:26:14.420820+00:00",
   "articles": {
-    "d0b16ad45cce2cec": {
-      "title": "גוגל מרחיבה את משפחת Gemini עם שלושה מודלים חדשים, אך הדגל הבא עדיין ממתין",
-      "url": "https://www.therundown.ai/p/google-gemini-lineup-has-a-pro-sized-hole",
-      "first_seen": "2026-07-22T12:24:08.208869+00:00"
-    },
-    "6f38200b3bfe5a04": {
-      "title": "מודלים של OpenAI פרצו באופן עצמאי לשרתי Hugging Face במהלך בדיקות אבטחה",
-      "url": "https://www.therundown.ai/p/openai-cyber-test-escapes-the-lab",
-      "first_seen": "2026-07-23T12:23:20.107624+00:00"
-    },
-    "87eafd90d44c1772": {
-      "title": "Black Forest Labs משיקה FLUX 3: מודל ויזואלי לאימון רובוטים בפס הייצור של אאודי",
-      "url": "https://www.therundown.ai/p/black-forest-labs-teaches-video-ai-to-run-robots",
-      "first_seen": "2026-07-24T12:18:03.112074+00:00"
-    },
     "678a9e104b3cc2fc": {
       "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
       "url": "https://www.therundown.ai/p/anthropic-opus-5-surprise",
@@ -135,6 +120,11 @@
       "title": "סלאק משיקה Slack Code: סוכני AI לפיתוח תוכנה בתוך ערוצי שיתוף פעולה",
       "url": "https://therundownai.beehiiv.com/p/slack-turns-coding-into-a-group-project",
       "first_seen": "2026-08-21T11:24:05.181255+00:00"
+    },
+    "fb818812104fd529": {
+      "title": "מודל AI אנונימי בשם 'Ox Alpha' מופיע בפלטפורמה מובילה ומעורר סקרנות",
+      "url": "https://therundownai.beehiiv.com/p/a-mystery-challenger-at-the-ai-frontier",
+      "first_seen": "2026-08-24T11:26:14.420705+00:00"
     }
   }
 }
