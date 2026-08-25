@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T11:26:14.420820+00:00",
+  "last_updated": "2026-08-25T11:25:39.914597+00:00",
   "articles": {
     "678a9e104b3cc2fc": {
       "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
@@ -125,6 +125,11 @@
       "title": "מודל AI אנונימי בשם 'Ox Alpha' מופיע בפלטפורמה מובילה ומעורר סקרנות",
       "url": "https://therundownai.beehiiv.com/p/a-mystery-challenger-at-the-ai-frontier",
       "first_seen": "2026-08-24T11:26:14.420705+00:00"
+    },
+    "e6a7434117f3aa35": {
+      "title": "SpaceX ו-Nvidia בונות מרכזי נתונים בחלל עם יעד השקה לסוף 2027",
+      "url": "https://therundownai.beehiiv.com/p/the-spacex-nvidia-partnership-heads-for-orbit",
+      "first_seen": "2026-08-25T11:25:39.914479+00:00"
     }
   }
 }
