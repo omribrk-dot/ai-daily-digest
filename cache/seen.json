@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T11:25:39.914597+00:00",
+  "last_updated": "2026-08-26T11:28:23.292464+00:00",
   "articles": {
     "678a9e104b3cc2fc": {
       "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
@@ -130,6 +130,11 @@
       "title": "SpaceX ו-Nvidia בונות מרכזי נתונים בחלל עם יעד השקה לסוף 2027",
       "url": "https://therundownai.beehiiv.com/p/the-spacex-nvidia-partnership-heads-for-orbit",
       "first_seen": "2026-08-25T11:25:39.914479+00:00"
+    },
+    "6dfad531965e7087": {
+      "title": "OpenAI חושפת את שבב ה-AI הראשון שלה – ומדווחת על ביצועים עדיפים על Nvidia",
+      "url": "https://therundownai.beehiiv.com/p/openai-first-ai-chip-brings-the-heat",
+      "first_seen": "2026-08-26T11:28:23.292352+00:00"
     }
   }
 }
