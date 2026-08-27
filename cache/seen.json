@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-08-26T11:28:23.292464+00:00",
+  "last_updated": "2026-08-27T14:59:59.708329+00:00",
   "articles": {
-    "678a9e104b3cc2fc": {
-      "title": "אנתרופיק משיקה את Claude Opus 5 – ביצועים עולים על המתחרים במחיר תחרותי",
-      "url": "https://www.therundown.ai/p/anthropic-opus-5-surprise",
-      "first_seen": "2026-07-27T13:38:30.191359+00:00"
-    },
-    "6e1ab15ef62cfb3e": {
-      "title": "Moonshot משחררת את K3 - המודל הפתוח הגדול ביותר בהיסטוריה",
-      "url": "https://www.therundown.ai/p/moonshot-lets-history-largest-open-model-loose",
-      "first_seen": "2026-07-28T12:52:17.367453+00:00"
-    },
     "bc49ac8105905bc0": {
       "title": "מעל 1,000 עובדי חברות AI מובילות חותמים על עצומה לבלימת קצב פיתוח הבינה המלאכותי",
       "url": "https://www.therundown.ai/p/1000-frontier-staffers-ask-for-an-ai-brake-pedal",
@@ -135,6 +125,11 @@
       "title": "OpenAI חושפת את שבב ה-AI הראשון שלה – ומדווחת על ביצועים עדיפים על Nvidia",
       "url": "https://therundownai.beehiiv.com/p/openai-first-ai-chip-brings-the-heat",
       "first_seen": "2026-08-26T11:28:23.292352+00:00"
+    },
+    "bbbb76d64fe2a780": {
+      "title": "המודל המסתורי Ox Alpha זוהה: זהו GLM-5.3-Flash של חברת Z.ai הסינית",
+      "url": "https://therundownai.beehiiv.com/p/the-ox-alpha-mystery-ends-with-z-ai",
+      "first_seen": "2026-08-27T14:59:59.708224+00:00"
     }
   }
 }
