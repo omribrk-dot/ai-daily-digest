@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-08-27T14:59:59.708329+00:00",
+  "last_updated": "2026-08-28T15:55:04.653287+00:00",
   "articles": {
-    "bc49ac8105905bc0": {
-      "title": "מעל 1,000 עובדי חברות AI מובילות חותמים על עצומה לבלימת קצב פיתוח הבינה המלאכותי",
-      "url": "https://www.therundown.ai/p/1000-frontier-staffers-ask-for-an-ai-brake-pedal",
-      "first_seen": "2026-07-29T12:59:01.232486+00:00"
-    },
     "6ca95a978c23f2fc": {
       "title": "פרצת סוכן ה-AI של OpenAI ב-Hugging Face: חברה שנייה מאשרת נזק ללקוחותיה",
       "url": "https://www.therundown.ai/p/openai-escaped-ai-claims-another-victim",
@@ -130,6 +125,11 @@
       "title": "המודל המסתורי Ox Alpha זוהה: זהו GLM-5.3-Flash של חברת Z.ai הסינית",
       "url": "https://therundownai.beehiiv.com/p/the-ox-alpha-mystery-ends-with-z-ai",
       "first_seen": "2026-08-27T14:59:59.708224+00:00"
+    },
+    "2561ab01a4c8e529": {
+      "title": "אנתרופיק מרחיבה את פרוטוקול MCP לעולם הפיזי עם תקן חומרה חדש",
+      "url": "https://therundownai.beehiiv.com/p/every-machine-is-about-to-speak-claude",
+      "first_seen": "2026-08-28T15:55:04.653149+00:00"
     }
   }
 }
