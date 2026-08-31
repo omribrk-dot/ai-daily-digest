@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-08-28T15:55:04.653287+00:00",
+  "last_updated": "2026-08-31T10:34:11.136414+00:00",
   "articles": {
-    "6ca95a978c23f2fc": {
-      "title": "פרצת סוכן ה-AI של OpenAI ב-Hugging Face: חברה שנייה מאשרת נזק ללקוחותיה",
-      "url": "https://www.therundown.ai/p/openai-escaped-ai-claims-another-victim",
-      "first_seen": "2026-07-30T12:27:56.185186+00:00"
-    },
-    "d9498793ff50b3df": {
-      "title": "OpenAI מוזילה את GPT-4.5: המודל כתב את הקוד שהפחית את עלויותיו",
-      "url": "https://www.therundown.ai/p/openai-s-models-cut-their-own-costs",
-      "first_seen": "2026-07-31T12:54:49.811503+00:00"
-    },
     "306c3096c1e54e2d": {
       "title": "OpenAI פתרה 10 בעיות מתמטיות פתוחות בעזרת מודל Astra שטרם שוחרר",
       "url": "https://www.therundown.ai/p/openai-astra-solves-10-long-standing-math-problems",
@@ -130,6 +120,11 @@
       "title": "אנתרופיק מרחיבה את פרוטוקול MCP לעולם הפיזי עם תקן חומרה חדש",
       "url": "https://therundownai.beehiiv.com/p/every-machine-is-about-to-speak-claude",
       "first_seen": "2026-08-28T15:55:04.653149+00:00"
+    },
+    "96a084cb39f16d5d": {
+      "title": "OpenAI מסירה את מודליה מעורך הקוד Cursor של SpaceX",
+      "url": "https://therundownai.beehiiv.com/p/openai-cuts-out-spacex-owned-cursor",
+      "first_seen": "2026-08-31T10:34:11.136298+00:00"
     }
   }
 }
