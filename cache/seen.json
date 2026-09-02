@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-01T15:23:15.350575+00:00",
+  "last_updated": "2026-09-02T14:58:33.795405+00:00",
   "articles": {
-    "306c3096c1e54e2d": {
-      "title": "OpenAI פתרה 10 בעיות מתמטיות פתוחות בעזרת מודל Astra שטרם שוחרר",
-      "url": "https://www.therundown.ai/p/openai-astra-solves-10-long-standing-math-problems",
-      "first_seen": "2026-08-03T13:40:23.292914+00:00"
-    },
     "7714d3da17dcdc3c": {
       "title": "ענקיות ה-AI נפגשות בבית הלבן לדיון על מסגרת אבטחה חדשה",
       "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
@@ -130,6 +125,11 @@
       "title": "Runway מציגה את Solaris: פלטפורמת אינטרנט המרנדרת אתרים כווידאו בזמן אמת",
       "url": "https://therundownai.beehiiv.com/p/runway-solaris-previews-the-no-code-internet",
       "first_seen": "2026-09-01T15:23:15.350468+00:00"
+    },
+    "01cd70a326919241": {
+      "title": "אנתרופיק משיקה את Claude 5.1 ומסמנת חזרה לקצב השקות מואץ",
+      "url": "https://therundownai.beehiiv.com/p/fable-5-1-kicks-off-launch-week-at-the-frontier",
+      "first_seen": "2026-09-02T14:58:33.795289+00:00"
     }
   }
 }
