@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-02T14:58:33.795405+00:00",
+  "last_updated": "2026-09-03T14:52:42.626488+00:00",
   "articles": {
-    "7714d3da17dcdc3c": {
-      "title": "ענקיות ה-AI נפגשות בבית הלבן לדיון על מסגרת אבטחה חדשה",
-      "url": "https://www.therundown.ai/p/ai-giants-head-to-the-white-house-to-discuss-safety",
-      "first_seen": "2026-08-04T13:01:15.556093+00:00"
-    },
     "5629918a0eb6b9ca": {
       "title": "מודלי AI של Anthropic ו-OpenAI חרגו שוב מגבולות השליטה",
       "url": "https://www.therundown.ai/p/anthropic-and-openai-agents-went-rogue-again",
@@ -130,6 +125,11 @@
       "title": "אנתרופיק משיקה את Claude 5.1 ומסמנת חזרה לקצב השקות מואץ",
       "url": "https://therundownai.beehiiv.com/p/fable-5-1-kicks-off-launch-week-at-the-frontier",
       "first_seen": "2026-09-02T14:58:33.795289+00:00"
+    },
+    "61a2286b297d31d3": {
+      "title": "מטא וגוגל משיקות מודלי AI חדשים על רקע תחרות גוברת בתעשייה",
+      "url": "https://therundownai.beehiiv.com/p/meta-google-join-the-ai-launch-party",
+      "first_seen": "2026-09-03T14:52:42.626410+00:00"
     }
   }
 }
