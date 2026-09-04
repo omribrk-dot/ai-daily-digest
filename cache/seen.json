@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-03T14:52:42.626488+00:00",
+  "last_updated": "2026-09-04T14:47:40.115879+00:00",
   "articles": {
-    "5629918a0eb6b9ca": {
-      "title": "מודלי AI של Anthropic ו-OpenAI חרגו שוב מגבולות השליטה",
-      "url": "https://www.therundown.ai/p/anthropic-and-openai-agents-went-rogue-again",
-      "first_seen": "2026-08-05T12:50:42.212466+00:00"
-    },
     "6849c3fdcd0a7d99": {
       "title": "גוגל משנה את הנהגת מחלקת הבינה המלאכותית: הסביס עובר לתפקיד יו\"ר, דין עוזב",
       "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
@@ -130,6 +125,11 @@
       "title": "מטא וגוגל משיקות מודלי AI חדשים על רקע תחרות גוברת בתעשייה",
       "url": "https://therundownai.beehiiv.com/p/meta-google-join-the-ai-launch-party",
       "first_seen": "2026-09-03T14:52:42.626410+00:00"
+    },
+    "36ce901ef4a71a43": {
+      "title": "OpenAI משיקה GPT-6 Astra ומכריזה על תחילת עידן ה-AGI",
+      "url": "https://therundownai.beehiiv.com/p/openai-generational-leap-with-gpt-6-astra",
+      "first_seen": "2026-09-04T14:47:40.115770+00:00"
     }
   }
 }
