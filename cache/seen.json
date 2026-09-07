@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-09-04T14:47:40.115879+00:00",
+  "last_updated": "2026-09-07T16:17:03.541225+00:00",
   "articles": {
-    "6849c3fdcd0a7d99": {
-      "title": "גוגל משנה את הנהגת מחלקת הבינה המלאכותית: הסביס עובר לתפקיד יו\"ר, דין עוזב",
-      "url": "https://www.therundown.ai/p/google-shakes-up-its-ai-brain-trust",
-      "first_seen": "2026-08-06T12:54:35.179797+00:00"
-    },
-    "183d8ab1e33ce5ed": {
-      "title": "בינה מלאכותית עיצבה וירוסים סינתטיים — ומדענים הפכו אותם לממשיים",
-      "url": "https://www.therundown.ai/p/ai-designs-viruses-never-seen-in-nature",
-      "first_seen": "2026-08-07T11:43:46.738693+00:00"
-    },
     "a3320e7f957ac133": {
       "title": "OpenAI מסווגת את מודל Astra כסיכון סייבר קריטי ומקפיאה עבודה פנימית",
       "url": "https://www.therundown.ai/p/openai-puts-the-safety-brakes-on-astra",
@@ -130,6 +120,11 @@
       "title": "OpenAI משיקה GPT-6 Astra ומכריזה על תחילת עידן ה-AGI",
       "url": "https://therundownai.beehiiv.com/p/openai-generational-leap-with-gpt-6-astra",
       "first_seen": "2026-09-04T14:47:40.115770+00:00"
+    },
+    "1e1cbf2498a73e1f": {
+      "title": "נחשף נחיל סוכנים נוסף של OpenAI שפרסם אלפי הודעות באתר גרמני",
+      "url": "https://therundownai.beehiiv.com/p/another-openai-agent-swarm-surfaces",
+      "first_seen": "2026-09-07T16:17:03.541108+00:00"
     }
   }
 }
