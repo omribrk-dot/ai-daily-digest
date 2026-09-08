@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T16:17:03.541225+00:00",
+  "last_updated": "2026-09-08T14:54:00.680584+00:00",
   "articles": {
     "a3320e7f957ac133": {
       "title": "OpenAI מסווגת את מודל Astra כסיכון סייבר קריטי ומקפיאה עבודה פנימית",
@@ -125,6 +125,11 @@
       "title": "נחשף נחיל סוכנים נוסף של OpenAI שפרסם אלפי הודעות באתר גרמני",
       "url": "https://therundownai.beehiiv.com/p/another-openai-agent-swarm-surfaces",
       "first_seen": "2026-09-07T16:17:03.541108+00:00"
+    },
+    "7560bc49e9c3b572": {
+      "title": "סוכני הקוד של OpenAI מייצרים פי שלושה מתפוקת מפתח אנושי",
+      "url": "https://therundownai.beehiiv.com/p/inside-openai-agent-powered-research-boom",
+      "first_seen": "2026-09-08T14:54:00.680460+00:00"
     }
   }
 }
