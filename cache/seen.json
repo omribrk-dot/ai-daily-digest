@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-08T14:54:00.680584+00:00",
+  "last_updated": "2026-09-09T15:01:09.063031+00:00",
   "articles": {
-    "a3320e7f957ac133": {
-      "title": "OpenAI מסווגת את מודל Astra כסיכון סייבר קריטי ומקפיאה עבודה פנימית",
-      "url": "https://www.therundown.ai/p/openai-puts-the-safety-brakes-on-astra",
-      "first_seen": "2026-08-10T11:45:33.107106+00:00"
-    },
     "4a2832f7d00d31cd": {
       "title": "מטא מציגה מודלי AI חדשים בקוד פתוח כדי להתמודד עם הדומיננטיות הסינית",
       "url": "https://www.therundown.ai/p/meta-returns-to-its-open-source-roots",
@@ -130,6 +125,11 @@
       "title": "סוכני הקוד של OpenAI מייצרים פי שלושה מתפוקת מפתח אנושי",
       "url": "https://therundownai.beehiiv.com/p/inside-openai-agent-powered-research-boom",
       "first_seen": "2026-09-08T14:54:00.680460+00:00"
+    },
+    "971e9008374d25c3": {
+      "title": "מודל פנימי של OpenAI טוען לפתרון אחת מבעיות המתמטיקה הקשות בעולם",
+      "url": "https://therundownai.beehiiv.com/p/openai-secret-model-settles-a-1m-math-problem",
+      "first_seen": "2026-09-09T15:01:09.062936+00:00"
     }
   }
 }
