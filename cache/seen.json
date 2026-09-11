@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-10T14:50:15.229543+00:00",
+  "last_updated": "2026-09-11T14:50:40.527571+00:00",
   "articles": {
-    "668637a0f8b18fda": {
-      "title": "אנתרופיק משיקה סימני מים בלתי נראים בתוכן שמייצר Claude",
-      "url": "https://www.therundown.ai/p/anthropic-slips-an-invisible-signature-into-claude",
-      "first_seen": "2026-08-12T11:44:03.750377+00:00"
-    },
     "e8788c2cb6cb6676": {
       "title": "xAI משיקה את Grok 4.6 עם ביצועים גבוהים ומחיר תחרותי",
       "url": "https://www.therundown.ai/p/grok-4-6-storms-the-ai-frontier",
@@ -130,6 +125,11 @@
       "title": "חוקר לשעבר של Anthropic: חברות הבינה המלאכותית מהמרות בחיי האנושות",
       "url": "https://therundownai.beehiiv.com/p/an-anthropic-exit-becomes-an-extinction-debate",
       "first_seen": "2026-09-10T14:50:15.229454+00:00"
+    },
+    "3843c8ecb216b5ab": {
+      "title": "אנתרופיק פרסמה דוח מקיף על ניסיונות שימוש לרעה בקלוד לאורך שמונה חודשים",
+      "url": "https://therundownai.beehiiv.com/p/anthropic-opens-the-files-on-global-claude-misuse",
+      "first_seen": "2026-09-11T14:50:40.527432+00:00"
     }
   }
 }
