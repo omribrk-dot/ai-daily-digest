@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-09-11T14:50:40.527571+00:00",
+  "last_updated": "2026-09-14T09:34:55.089369+00:00",
   "articles": {
-    "e8788c2cb6cb6676": {
-      "title": "xAI משיקה את Grok 4.6 עם ביצועים גבוהים ומחיר תחרותי",
-      "url": "https://www.therundown.ai/p/grok-4-6-storms-the-ai-frontier",
-      "first_seen": "2026-08-13T11:44:10.200764+00:00"
-    },
-    "4514f5219655c3a9": {
-      "title": "OpenAI משיקה מצב 'Ultrafast': GPT-4.1 Sol מהיר פי 14",
-      "url": "https://www.therundown.ai/p/openai-feels-the-frontier-need-for-speed",
-      "first_seen": "2026-08-14T11:41:58.831945+00:00"
-    },
     "8c0247a2ab4e23ee": {
       "title": "אמודיי מגיב למבקרים: אזהרות הבטיחות שלי הן יושר, לא פאניקה",
       "url": "https://www.therundown.ai/p/dario-amodei-logs-on-to-answer-the-critics",
@@ -130,6 +120,11 @@
       "title": "אנתרופיק פרסמה דוח מקיף על ניסיונות שימוש לרעה בקלוד לאורך שמונה חודשים",
       "url": "https://therundownai.beehiiv.com/p/anthropic-opens-the-files-on-global-claude-misuse",
       "first_seen": "2026-09-11T14:50:40.527432+00:00"
+    },
+    "2310177597e29b2a": {
+      "title": "מנכ\"ל אנתרופיק קורא להאטת פיתוח ה-AI – ומתחריו מסכימים",
+      "url": "https://therundownai.beehiiv.com/p/top-ai-labs-want-to-pump-the-brakes",
+      "first_seen": "2026-09-14T09:34:55.089259+00:00"
     }
   }
 }
