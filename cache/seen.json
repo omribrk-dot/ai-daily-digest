@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T09:34:55.089369+00:00",
+  "last_updated": "2026-09-15T15:26:50.727426+00:00",
   "articles": {
     "8c0247a2ab4e23ee": {
       "title": "אמודיי מגיב למבקרים: אזהרות הבטיחות שלי הן יושר, לא פאניקה",
@@ -125,6 +125,11 @@
       "title": "מנכ\"ל אנתרופיק קורא להאטת פיתוח ה-AI – ומתחריו מסכימים",
       "url": "https://therundownai.beehiiv.com/p/top-ai-labs-want-to-pump-the-brakes",
       "first_seen": "2026-09-14T09:34:55.089259+00:00"
+    },
+    "c76c94842f86d392": {
+      "title": "ארה\"ב וסין מתאחדות נגד הצעת האטת פיתוח הבינה המלאכותית",
+      "url": "https://therundownai.beehiiv.com/p/trump-china-both-shoot-down-the-ai-slowdown",
+      "first_seen": "2026-09-15T15:26:50.727318+00:00"
     }
   }
 }
