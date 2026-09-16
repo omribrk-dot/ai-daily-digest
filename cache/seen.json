@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-09-15T15:26:50.727426+00:00",
+  "last_updated": "2026-09-16T15:19:58.019859+00:00",
   "articles": {
-    "8c0247a2ab4e23ee": {
-      "title": "אמודיי מגיב למבקרים: אזהרות הבטיחות שלי הן יושר, לא פאניקה",
-      "url": "https://www.therundown.ai/p/dario-amodei-logs-on-to-answer-the-critics",
-      "first_seen": "2026-08-17T11:23:22.799648+00:00"
-    },
     "b176be041b77d0ca": {
       "title": "קורסור משיקה מתחרה ל-GitHub בדיוק ביום שבו הפלטפורמה קרסה",
       "url": "https://www.therundown.ai/p/cursor-origin-hits-github-on-its-worst-day",
@@ -130,6 +125,11 @@
       "title": "ארה\"ב וסין מתאחדות נגד הצעת האטת פיתוח הבינה המלאכותית",
       "url": "https://therundownai.beehiiv.com/p/trump-china-both-shoot-down-the-ai-slowdown",
       "first_seen": "2026-09-15T15:26:50.727318+00:00"
+    },
+    "d2861672ebf5dfff": {
+      "title": "שותף מייסד של ChatGPT משיק מערכת AI חדשה שמחליטה ברקע — ללא יצירת טקסט",
+      "url": "https://therundownai.beehiiv.com/p/chatgpt-co-creator-launches-a-new-kind-of-ai",
+      "first_seen": "2026-09-16T15:19:58.019744+00:00"
     }
   }
 }
