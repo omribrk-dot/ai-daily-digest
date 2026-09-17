@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T15:19:58.019859+00:00",
+  "last_updated": "2026-09-17T09:13:20.948514+00:00",
   "articles": {
     "b176be041b77d0ca": {
       "title": "קורסור משיקה מתחרה ל-GitHub בדיוק ביום שבו הפלטפורמה קרסה",
@@ -130,6 +130,11 @@
       "title": "שותף מייסד של ChatGPT משיק מערכת AI חדשה שמחליטה ברקע — ללא יצירת טקסט",
       "url": "https://therundownai.beehiiv.com/p/chatgpt-co-creator-launches-a-new-kind-of-ai",
       "first_seen": "2026-09-16T15:19:58.019744+00:00"
+    },
+    "2fd6b46af4f9e4ff": {
+      "title": "צוקרברג: מטא תצטרף למחנה מאיצי הבינה המלאכותית ותדחה את תוכנית ההאטה",
+      "url": "https://therundownai.beehiiv.com/p/zuck-sits-out-the-ai-slowdown",
+      "first_seen": "2026-09-17T09:13:20.948400+00:00"
     }
   }
 }
